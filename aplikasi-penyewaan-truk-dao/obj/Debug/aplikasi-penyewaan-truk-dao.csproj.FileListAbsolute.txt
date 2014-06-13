@@ -1,0 +1,7 @@
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\aplikasi-penyewaan-truk-dao.csprojResolveAssemblyReference.cache
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-dao.dll
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-dao.pdb
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\aplikasi-penyewaan-truk-dao.dll
+I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\aplikasi-penyewaan-truk-dao.pdb
