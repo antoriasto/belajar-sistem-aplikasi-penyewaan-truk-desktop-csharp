@@ -14,7 +14,8 @@ namespace domain.service
         Truk hapus(Truk domain);
         Truk deleteTrukAndHargaRuteTruk(Truk domain);
         Truk cari(String id);
+        Boolean validatePoliceNumber(String policeNumber);
         String nomorOtomatis();
-        IList<Truk> cariDaftarTruk(String search);
+        IList<Truk> cariDaftarTruk(String search); 
     }
 }

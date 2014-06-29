@@ -279,5 +279,19 @@ namespace desktop.view.entry
             lblKubikasi.Hide();
             lblTonase.Hide();
         }
+
+        private void txtNomorPolisi_TextChanged(object sender, EventArgs e)
+        {
+            if (!txtNomorPolisi.Text.Equals("")) {
+                if (!trukService.validatePoliceNumber(txtNomorPolisi.Text)) {
+                    lblNomorPolisiWarning.Text = "Truk dengan nomor polisi '" + txtNomorPolisi.Text + "' sudah pernah di input";
+                    lblNomorPolisiWarning.Show();
+                    btnSimpan.Enabled = false;
+                } else {
+                    lblNomorPolisiWarning.Text = "";
+                    btnSimpan.Enabled = true;
+                }
+            }
+        }
     }
 }

@@ -35,6 +35,10 @@ namespace desktop.view.popup
             this.profilForm = pf;
             visibleOrInvisibleComponent(pf);
             initializeListView(ruteService.cariDaftarRute(""));
+            if (profilForm == ProfilForm.Menu) {
+                statusStrip1.Hide();
+                this.ControlBox = false;
+            }
         }
 
         private void initializeListView(IList<Rute> listRute)

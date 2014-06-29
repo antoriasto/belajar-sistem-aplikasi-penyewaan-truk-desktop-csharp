@@ -29,9 +29,9 @@ namespace desktop.view.popup
         {
             InitializeComponent();
             jenisTrukService = new JenisTrukServiceImpl();
-            if (pf == ProfilForm.Menu)
-            {
+            if (pf == ProfilForm.Menu) {
                 statusStrip1.Hide();
+                this.ControlBox = false;
             }
             inisialisasiListView(jenisTrukService.cariDaftarJenisTruk(""));
         }

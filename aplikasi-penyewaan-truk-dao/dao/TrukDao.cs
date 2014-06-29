@@ -36,6 +36,10 @@ namespace core.dao
             "from Truk " +
             "where TRUK_ID= @1";
 
+        private readonly string validatePoliceNumberQuery = "SELECT NOMOR_POLISI " +
+            "from Truk " +
+            "where NOMOR_POLISI= @1";
+
         private readonly string generateIdQuery = "SELECT TRUK_ID " +
             "from Truk " +
             "ORDER BY TRUK_ID DESC";
@@ -131,6 +135,23 @@ namespace core.dao
                 }
             }
             return null;
+        }
+
+        public Boolean validatePoliceNumber(String policeNumber) {
+
+            using (MySqlCommand cmd = new MySqlCommand(validatePoliceNumberQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@1", policeNumber);
+                using (MySqlDataReader mdr = cmd.ExecuteReader())
+                {
+                    if (mdr.Read())
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
         public Truk cariTrukDanHargaRute(String id)

@@ -306,6 +306,11 @@ namespace desktop.view.entry
             initializeListView();
         }
 
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
       
     }
 }

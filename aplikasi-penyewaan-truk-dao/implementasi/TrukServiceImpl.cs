@@ -202,5 +202,22 @@ namespace core.implementasi
                 }
             }
         }
+
+
+        public Boolean validatePoliceNumber(String policeNumber)
+        {
+            try {
+                trukDao.setConnection = connection;
+                connection.Open();
+                return trukDao.validatePoliceNumber(policeNumber);
+            } catch (Exception ex) {
+                Console.WriteLine(ex.ToString());
+                return true;
+            } finally {
+                connection.Close();
+                trukDao.setConnection = null;
+                hargaRuteTrukDao.setConnection = null;
+            }
+        }
     }
 }

@@ -37,9 +37,9 @@ namespace desktop.view.popup
 
         private void initializeForm(ProfilForm pf)
         {
-            if (pf == ProfilForm.Menu)
-            {
+            if (pf == ProfilForm.Menu) {
                 statusStrip1.Hide();
+                this.ControlBox = false;
             }
         }
 

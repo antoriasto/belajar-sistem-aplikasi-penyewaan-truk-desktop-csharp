@@ -33,16 +33,12 @@ namespace desktop.view.entry
 
         private void initializeForm(JenisTruk jenisTruk)
         {
-            if (jenisTruk == null)
-            {
+            if (jenisTruk == null) {
                 lblJenisTrukId.Hide();
                 txtJenisTrukId.Hide();
-            }
-            else
-            {
+            } else {
                 JenisTruk j = jenisTrukService.cari(jenisTruk.Id);
-                if (j != null)
-                {
+                if (j != null) {
                     txtJenisTrukId.Text = j.Id;
                     txtNamaJenis.Text = j.Nama;
                     nuKubikasi.Value = j.Kubikasi;
@@ -56,8 +52,7 @@ namespace desktop.view.entry
 
         private Boolean validasi()
         {
-            if (txtNamaJenis.Text.Equals(""))
-            {
+            if (txtNamaJenis.Text.Equals("")) {
                 MessageCustom.messageWarning("Jenis Truk", "Jenis Truk Belum Di Isi");
                 return false;
             }
@@ -67,33 +62,25 @@ namespace desktop.view.entry
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            if (validasi())
-            {
+            if (validasi()) {
                 JenisTruk jenisTruk = new JenisTruk();
                 jenisTruk.Nama = txtNamaJenis.Text;
                 jenisTruk.Kubikasi = Convert.ToInt32(nuKubikasi.Value);
                 jenisTruk.Tonase = nuTonase.Value;
 
-                if (txtJenisTrukId.Text.Equals(""))
-                {
-                    if (jenisTrukService.simpan(jenisTruk) != null)
-                    {
+                if (txtJenisTrukId.Text.Equals("")) {
+                    if (jenisTrukService.simpan(jenisTruk) != null) {
                         MessageCustom.messageInfo("Jenis Truk", "Data Berhasil Disimpan");
-                    }
-                    else
-                    {
+                        this.Dispose();
+                    } else {
                         MessageCustom.messageCritical("Jenis Truk", "Data Gagal Disimpan");
                     }
-                }
-                else if (!txtJenisTrukId.Text.Equals(""))
-                {
+                } else if (!txtJenisTrukId.Text.Equals("")) {
                     jenisTruk.Id = txtJenisTrukId.Text;
-                    if (jenisTrukService.ubah(jenisTruk) != null)
-                    {
+                    if (jenisTrukService.ubah(jenisTruk) != null) {
                         MessageCustom.messageInfo("Jenis Truk", "Data Berhasil Di Ubah");
-                    }
-                    else
-                    {
+                        this.Dispose();
+                    } else {
                         MessageCustom.messageCritical("Jenis Truk", "Data Gagal Di Ubah");
                     }
                 }
@@ -102,17 +89,13 @@ namespace desktop.view.entry
 
         private void btnHapus_Click(object sender, EventArgs e)
         {
-            if (!txtJenisTrukId.Text.Equals(""))
-            {
+            if (!txtJenisTrukId.Text.Equals("")) {
                 JenisTruk jenisTruk = new JenisTruk();
                 jenisTruk.Id = txtJenisTrukId.Text;
 
-                if (jenisTrukService.hapus(jenisTruk) != null)
-                {
+                if (jenisTrukService.hapus(jenisTruk) != null) {
                     MessageCustom.messageInfo("Jenis Truk", "Data Berhasil Di Hapus");
-                }
-                else
-                {
+                } else {
                     MessageCustom.messageCritical("Jenis Truk", "Data Gagal Di Hapus");
                 }
             }

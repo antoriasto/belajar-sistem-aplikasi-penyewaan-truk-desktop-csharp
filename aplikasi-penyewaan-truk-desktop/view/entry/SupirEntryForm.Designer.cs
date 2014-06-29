@@ -42,12 +42,12 @@
             this.txtKernetId = new System.Windows.Forms.TextBox();
             this.txtNamaKernet = new System.Windows.Forms.TextBox();
             this.btnCariKernet = new System.Windows.Forms.Button();
+            this.linkLblHapusKernet = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.linkLblHapusKernet = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -213,6 +213,19 @@
             this.btnCariKernet.UseVisualStyleBackColor = true;
             this.btnCariKernet.Click += new System.EventHandler(this.btnCariKernet_Click);
             // 
+            // linkLblHapusKernet
+            // 
+            this.linkLblHapusKernet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLblHapusKernet.AutoSize = true;
+            this.linkLblHapusKernet.Location = new System.Drawing.Point(506, 152);
+            this.linkLblHapusKernet.Name = "linkLblHapusKernet";
+            this.linkLblHapusKernet.Size = new System.Drawing.Size(37, 13);
+            this.linkLblHapusKernet.TabIndex = 18;
+            this.linkLblHapusKernet.TabStop = true;
+            this.linkLblHapusKernet.Text = "Hapus";
+            this.linkLblHapusKernet.Visible = false;
+            this.linkLblHapusKernet.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblHapusKernet_LinkClicked);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
@@ -257,6 +270,7 @@
             this.btnBatal.TabIndex = 16;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // label6
             // 
@@ -267,19 +281,6 @@
             this.label6.Size = new System.Drawing.Size(555, 1);
             this.label6.TabIndex = 15;
             this.label6.Text = "label6";
-            // 
-            // linkLblHapusKernet
-            // 
-            this.linkLblHapusKernet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLblHapusKernet.AutoSize = true;
-            this.linkLblHapusKernet.Location = new System.Drawing.Point(506, 152);
-            this.linkLblHapusKernet.Name = "linkLblHapusKernet";
-            this.linkLblHapusKernet.Size = new System.Drawing.Size(37, 13);
-            this.linkLblHapusKernet.TabIndex = 18;
-            this.linkLblHapusKernet.TabStop = true;
-            this.linkLblHapusKernet.Text = "Hapus";
-            this.linkLblHapusKernet.Visible = false;
-            this.linkLblHapusKernet.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblHapusKernet_LinkClicked);
             // 
             // SupirEntryForm
             // 

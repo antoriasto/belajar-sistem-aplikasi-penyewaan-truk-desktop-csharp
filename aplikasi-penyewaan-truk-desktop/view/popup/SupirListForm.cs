@@ -19,8 +19,10 @@ namespace desktop.view.popup
     {
         ISupirService supirService;
         IKernetService kernetService;
+        ITrukService trukService;
         ProfilForm profilForm;
         private Supir supir;
+        IList<Truk> listTruk;
 
         public Supir GetSupir
         {
@@ -32,15 +34,19 @@ namespace desktop.view.popup
             InitializeComponent();
             supirService = new SupirServiceImpl();
             kernetService = new KernetServiceImpl();
-
+            trukService = new TrukServiceImpl();
+            if (profilForm == ProfilForm.Unknow) {
+                listTruk = trukService.cariDaftarTruk("");
+            }
+            
             this.profilForm = profilForm;
 
 
             inisialisasiListView(supirService.cariDaftarSupir(""));
 
-            if (profilForm == ProfilForm.Menu)
-            {
+            if (profilForm == ProfilForm.Menu) {
                 statusStrip1.Hide();
+                this.ControlBox = false;
             }
         }
 
@@ -48,10 +54,8 @@ namespace desktop.view.popup
 
         private Boolean validasiListKosongAtauGa(IList<Truk> list)
         {
-            if (list != null)
-            {
-                if (list.Count != 0)
-                {
+            if (list != null) {
+                if (list.Count != 0) {
                     return true;
                 }
             }
@@ -59,36 +63,70 @@ namespace desktop.view.popup
             return false;
         }
 
+        private Boolean validasiSupirUdahPunyaTruk(String id) {
+            foreach (Truk t in listTruk) {
+                if (t.Supir.Id.Equals(id)) {
+                    MessageBox.Show(t.Supir.Id + id);
+                    return false;
+                }
+            }
+            return true;
+        }
+
         #endregion
         
         private void inisialisasiListView(IList<Supir> list)
         {
             lvSupir.Items.Clear();
-            if (list != null)
-            {
-                if (list.Count > 0)
-                {
-                    foreach (Supir s in list)
-                    {
-                        BetterListViewItem items = new BetterListViewItem(s.Id);
-                        items.SubItems.Add(s.Nama);
-                        items.SubItems.Add(s.Alamat);
-                        items.SubItems.Add(s.NomorHp);
-                        if (s.Kernet != null)
-                        {
-                            Kernet kernet = kernetService.cari(s.Kernet.Id);
-                            if (kernet != null)
-                            {
-                                items.SubItems.Add(kernet.Id);
-                                items.SubItems.Add(kernet.Nama);
+
+            if (list != null) {
+                if (list.Count > 0) {
+
+                    if (profilForm == ProfilForm.Unknow) {
+                        
+                        if (listTruk != null) {
+                            if (listTruk.Count > 0) {
+                                foreach (Supir s in list) {
+                                    if (validasiSupirUdahPunyaTruk(s.Id)) {
+                                        BetterListViewItem items = new BetterListViewItem(s.Id);
+                                        items.SubItems.Add(s.Nama);
+                                        items.SubItems.Add(s.Alamat);
+                                        items.SubItems.Add(s.NomorHp);
+                                        if (s.Kernet != null) {
+                                            Kernet kernet = kernetService.cari(s.Kernet.Id);
+                                            if (kernet != null) {
+                                                items.SubItems.Add(kernet.Id);
+                                                items.SubItems.Add(kernet.Nama);
+                                            }
+                                        } else {
+                                            items.SubItems.Add("-");
+                                            items.SubItems.Add("-");
+                                        }
+                                        lvSupir.Items.Add(items);
+                                    }
+                                    
+                                }
                             }
                         }
-                        else
-                        {
-                            items.SubItems.Add("-");
-                            items.SubItems.Add("-");
+                    } else {
+
+                        foreach (Supir s in list) {
+                            BetterListViewItem items = new BetterListViewItem(s.Id);
+                            items.SubItems.Add(s.Nama);
+                            items.SubItems.Add(s.Alamat);
+                            items.SubItems.Add(s.NomorHp);
+                            if (s.Kernet != null) {
+                                Kernet kernet = kernetService.cari(s.Kernet.Id);
+                                if (kernet != null) {
+                                    items.SubItems.Add(kernet.Id);
+                                    items.SubItems.Add(kernet.Nama);
+                                }
+                            } else {
+                                items.SubItems.Add("-");
+                                items.SubItems.Add("-");
+                            }
+                            lvSupir.Items.Add(items);
                         }
-                        lvSupir.Items.Add(items);
                     }
                 }
             }

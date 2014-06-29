@@ -51,6 +51,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblHargaTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtNoSewa = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCariCustomer = new System.Windows.Forms.Button();
@@ -62,22 +67,17 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtCustomerId = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtNoSewa = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblJumlahTruk = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvCartTruk)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +113,7 @@
             this.btnBatal.TabIndex = 16;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // label6
             // 
@@ -286,6 +287,63 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sewa";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label19, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtNoSewa, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(394, 67);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(3, 7);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(71, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Nomor Sewa:";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(3, 34);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(78, 13);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Tanggal Sewa:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(87, 30);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(252, 21);
+            this.dateTimePicker1.TabIndex = 2;
+            // 
+            // txtNoSewa
+            // 
+            this.txtNoSewa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNoSewa.Location = new System.Drawing.Point(87, 3);
+            this.txtNoSewa.Name = "txtNoSewa";
+            this.txtNoSewa.Size = new System.Drawing.Size(252, 21);
+            this.txtNoSewa.TabIndex = 3;
+            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -415,63 +473,6 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Customer ID:";
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label19, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txtNoSewa, 1, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 17);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(394, 67);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(3, 7);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Nomor Sewa:";
-            // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(3, 34);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(78, 13);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Tanggal Sewa:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(87, 30);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(252, 21);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // txtNoSewa
-            // 
-            this.txtNoSewa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNoSewa.Location = new System.Drawing.Point(87, 3);
-            this.txtNoSewa.Name = "txtNoSewa";
-            this.txtNoSewa.Size = new System.Drawing.Size(252, 21);
-            this.txtNoSewa.TabIndex = 3;
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -485,6 +486,24 @@
             this.panel2.Size = new System.Drawing.Size(295, 201);
             this.panel2.TabIndex = 27;
             // 
+            // lblJumlahTruk
+            // 
+            this.lblJumlahTruk.AutoSize = true;
+            this.lblJumlahTruk.Location = new System.Drawing.Point(136, 11);
+            this.lblJumlahTruk.Name = "lblJumlahTruk";
+            this.lblJumlahTruk.Size = new System.Drawing.Size(13, 13);
+            this.lblJumlahTruk.TabIndex = 26;
+            this.lblJumlahTruk.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Jumlah Truk:";
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -496,24 +515,6 @@
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 28;
             this.label1.Text = "Summary";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Jumlah Truk:";
-            // 
-            // lblJumlahTruk
-            // 
-            this.lblJumlahTruk.AutoSize = true;
-            this.lblJumlahTruk.Location = new System.Drawing.Point(136, 11);
-            this.lblJumlahTruk.Name = "lblJumlahTruk";
-            this.lblJumlahTruk.Size = new System.Drawing.Size(13, 13);
-            this.lblJumlahTruk.TabIndex = 26;
-            this.lblJumlahTruk.Text = "0";
             // 
             // label15
             // 
@@ -547,11 +548,11 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lvCartTruk)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

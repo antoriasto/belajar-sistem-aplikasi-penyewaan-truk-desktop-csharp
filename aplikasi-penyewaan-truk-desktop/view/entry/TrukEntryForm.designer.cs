@@ -55,6 +55,7 @@
             this.lblTonase = new System.Windows.Forms.Label();
             this.txtKubikasi = new System.Windows.Forms.TextBox();
             this.txtTonase = new System.Windows.Forms.TextBox();
+            this.lblNomorPolisiWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -122,34 +123,36 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.lblJenisTrukId, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblJenisTrukId, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtNomorPolisi, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblTrukId, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTrukId, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtJenisTrukId, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblJenisTruk, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txtJenisTruk, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lblSupirId, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.txtSupirId, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.txtNamaSupir, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.cbRute, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.btnCariJenisTruk, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnCariSupir, 2, 9);
-            this.tableLayoutPanel1.Controls.Add(this.linkLblBatalJenisTruk, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.linkLblSupir, 3, 9);
-            this.tableLayoutPanel1.Controls.Add(this.lblKubikasi, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lblTonase, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txtKubikasi, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txtTonase, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtJenisTrukId, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblJenisTruk, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtJenisTruk, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblSupirId, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.txtSupirId, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.txtNamaSupir, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.cbRute, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.btnCariJenisTruk, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnCariSupir, 2, 10);
+            this.tableLayoutPanel1.Controls.Add(this.linkLblBatalJenisTruk, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.linkLblSupir, 3, 10);
+            this.tableLayoutPanel1.Controls.Add(this.lblKubikasi, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lblTonase, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtKubikasi, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtTonase, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblNomorPolisiWarning, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(9);
-            this.tableLayoutPanel1.RowCount = 12;
+            this.tableLayoutPanel1.RowCount = 13;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -167,7 +170,7 @@
             // 
             this.lblJenisTrukId.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblJenisTrukId.AutoSize = true;
-            this.lblJenisTrukId.Location = new System.Drawing.Point(12, 80);
+            this.lblJenisTrukId.Location = new System.Drawing.Point(12, 100);
             this.lblJenisTrukId.Name = "lblJenisTrukId";
             this.lblJenisTrukId.Size = new System.Drawing.Size(73, 13);
             this.lblJenisTrukId.TabIndex = 6;
@@ -181,6 +184,7 @@
             this.txtNomorPolisi.Name = "txtNomorPolisi";
             this.txtNomorPolisi.Size = new System.Drawing.Size(383, 21);
             this.txtNomorPolisi.TabIndex = 4;
+            this.txtNomorPolisi.TextChanged += new System.EventHandler(this.txtNomorPolisi_TextChanged);
             // 
             // label2
             // 
@@ -217,7 +221,7 @@
             // txtJenisTrukId
             // 
             this.txtJenisTrukId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtJenisTrukId.Location = new System.Drawing.Point(91, 76);
+            this.txtJenisTrukId.Location = new System.Drawing.Point(91, 96);
             this.txtJenisTrukId.Name = "txtJenisTrukId";
             this.txtJenisTrukId.Size = new System.Drawing.Size(383, 21);
             this.txtJenisTrukId.TabIndex = 7;
@@ -228,7 +232,7 @@
             // 
             this.lblJenisTruk.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblJenisTruk.AutoSize = true;
-            this.lblJenisTruk.Location = new System.Drawing.Point(12, 108);
+            this.lblJenisTruk.Location = new System.Drawing.Point(12, 128);
             this.lblJenisTruk.Name = "lblJenisTruk";
             this.lblJenisTruk.Size = new System.Drawing.Size(59, 13);
             this.lblJenisTruk.TabIndex = 8;
@@ -237,7 +241,7 @@
             // txtJenisTruk
             // 
             this.txtJenisTruk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtJenisTruk.Location = new System.Drawing.Point(91, 104);
+            this.txtJenisTruk.Location = new System.Drawing.Point(91, 124);
             this.txtJenisTruk.Name = "txtJenisTruk";
             this.txtJenisTruk.Size = new System.Drawing.Size(383, 21);
             this.txtJenisTruk.TabIndex = 9;
@@ -246,7 +250,7 @@
             // 
             this.lblSupirId.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblSupirId.AutoSize = true;
-            this.lblSupirId.Location = new System.Drawing.Point(12, 200);
+            this.lblSupirId.Location = new System.Drawing.Point(12, 220);
             this.lblSupirId.Name = "lblSupirId";
             this.lblSupirId.Size = new System.Drawing.Size(49, 13);
             this.lblSupirId.TabIndex = 10;
@@ -257,7 +261,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 228);
+            this.label7.Location = new System.Drawing.Point(12, 248);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 11;
@@ -266,7 +270,7 @@
             // txtSupirId
             // 
             this.txtSupirId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSupirId.Location = new System.Drawing.Point(91, 196);
+            this.txtSupirId.Location = new System.Drawing.Point(91, 216);
             this.txtSupirId.Name = "txtSupirId";
             this.txtSupirId.Size = new System.Drawing.Size(383, 21);
             this.txtSupirId.TabIndex = 12;
@@ -276,7 +280,7 @@
             // txtNamaSupir
             // 
             this.txtNamaSupir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNamaSupir.Location = new System.Drawing.Point(91, 224);
+            this.txtNamaSupir.Location = new System.Drawing.Point(91, 244);
             this.txtNamaSupir.Name = "txtNamaSupir";
             this.txtNamaSupir.Size = new System.Drawing.Size(383, 21);
             this.txtNamaSupir.TabIndex = 13;
@@ -286,7 +290,7 @@
             this.cbRute.AutoSize = true;
             this.cbRute.Enabled = false;
             this.cbRute.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.cbRute.Location = new System.Drawing.Point(91, 252);
+            this.cbRute.Location = new System.Drawing.Point(91, 272);
             this.cbRute.Name = "cbRute";
             this.cbRute.Size = new System.Drawing.Size(71, 17);
             this.cbRute.TabIndex = 14;
@@ -295,7 +299,7 @@
             // 
             // btnCariJenisTruk
             // 
-            this.btnCariJenisTruk.Location = new System.Drawing.Point(480, 103);
+            this.btnCariJenisTruk.Location = new System.Drawing.Point(480, 123);
             this.btnCariJenisTruk.Name = "btnCariJenisTruk";
             this.btnCariJenisTruk.Size = new System.Drawing.Size(64, 23);
             this.btnCariJenisTruk.TabIndex = 15;
@@ -305,7 +309,7 @@
             // 
             // btnCariSupir
             // 
-            this.btnCariSupir.Location = new System.Drawing.Point(480, 223);
+            this.btnCariSupir.Location = new System.Drawing.Point(480, 243);
             this.btnCariSupir.Name = "btnCariSupir";
             this.btnCariSupir.Size = new System.Drawing.Size(64, 23);
             this.btnCariSupir.TabIndex = 16;
@@ -317,7 +321,7 @@
             // 
             this.linkLblBatalJenisTruk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkLblBatalJenisTruk.AutoSize = true;
-            this.linkLblBatalJenisTruk.Location = new System.Drawing.Point(550, 108);
+            this.linkLblBatalJenisTruk.Location = new System.Drawing.Point(550, 128);
             this.linkLblBatalJenisTruk.Name = "linkLblBatalJenisTruk";
             this.linkLblBatalJenisTruk.Size = new System.Drawing.Size(31, 13);
             this.linkLblBatalJenisTruk.TabIndex = 21;
@@ -330,7 +334,7 @@
             // 
             this.linkLblSupir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkLblSupir.AutoSize = true;
-            this.linkLblSupir.Location = new System.Drawing.Point(550, 228);
+            this.linkLblSupir.Location = new System.Drawing.Point(550, 248);
             this.linkLblSupir.Name = "linkLblSupir";
             this.linkLblSupir.Size = new System.Drawing.Size(31, 13);
             this.linkLblSupir.TabIndex = 22;
@@ -342,7 +346,7 @@
             // 
             this.lblKubikasi.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblKubikasi.AutoSize = true;
-            this.lblKubikasi.Location = new System.Drawing.Point(12, 136);
+            this.lblKubikasi.Location = new System.Drawing.Point(12, 156);
             this.lblKubikasi.Name = "lblKubikasi";
             this.lblKubikasi.Size = new System.Drawing.Size(49, 13);
             this.lblKubikasi.TabIndex = 23;
@@ -353,7 +357,7 @@
             // 
             this.lblTonase.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTonase.AutoSize = true;
-            this.lblTonase.Location = new System.Drawing.Point(12, 163);
+            this.lblTonase.Location = new System.Drawing.Point(12, 183);
             this.lblTonase.Name = "lblTonase";
             this.lblTonase.Size = new System.Drawing.Size(46, 13);
             this.lblTonase.TabIndex = 24;
@@ -363,7 +367,7 @@
             // txtKubikasi
             // 
             this.txtKubikasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKubikasi.Location = new System.Drawing.Point(91, 132);
+            this.txtKubikasi.Location = new System.Drawing.Point(91, 152);
             this.txtKubikasi.Name = "txtKubikasi";
             this.txtKubikasi.Size = new System.Drawing.Size(383, 21);
             this.txtKubikasi.TabIndex = 25;
@@ -372,13 +376,23 @@
             // txtTonase
             // 
             this.txtTonase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTonase.Location = new System.Drawing.Point(91, 159);
+            this.txtTonase.Location = new System.Drawing.Point(91, 179);
             this.txtTonase.Name = "txtTonase";
             this.txtTonase.Size = new System.Drawing.Size(383, 21);
             this.txtTonase.TabIndex = 26;
             this.txtTonase.Visible = false;
             // 
-            // Form1
+            // lblNomorPolisiWarning
+            // 
+            this.lblNomorPolisiWarning.AutoSize = true;
+            this.lblNomorPolisiWarning.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblNomorPolisiWarning.Location = new System.Drawing.Point(91, 63);
+            this.lblNomorPolisiWarning.Name = "lblNomorPolisiWarning";
+            this.lblNomorPolisiWarning.Size = new System.Drawing.Size(0, 13);
+            this.lblNomorPolisiWarning.TabIndex = 27;
+            this.lblNomorPolisiWarning.Visible = false;
+            // 
+            // TrukEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -386,7 +400,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form1";
+            this.Name = "TrukEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -425,5 +439,6 @@
         private System.Windows.Forms.TextBox txtKubikasi;
         private System.Windows.Forms.TextBox txtTonase;
         private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.Label lblNomorPolisiWarning;
     }
 }

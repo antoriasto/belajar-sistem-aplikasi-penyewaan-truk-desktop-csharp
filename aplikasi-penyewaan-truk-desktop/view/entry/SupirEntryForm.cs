@@ -89,42 +89,34 @@ namespace desktop.view.entry
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            if (validasi())
-            {
+            if (validasi()) {
                 Supir supir = new Supir();
                 supir.Nama = txtNama.Text;
                 supir.NomorHp = txtNoTelefon.Text;
                 supir.Alamat = txtAlamat.Text;
                 Kernet kernet = new Kernet();
 
-                if (!txtKernetId.Text.Equals(""))
-                {
+                if (!txtKernetId.Text.Equals("")) {
                     kernet.Id = txtKernetId.Text;
                 }
 
                 supir.Kernet = kernet;
 
-                if (txtSupirId.Text.Equals(""))
-                {
-                    if (supirService.simpan(supir) != null)
-                    {
+                if (txtSupirId.Text.Equals("")) {
+                    if (supirService.simpan(supir) != null) {
                         MessageCustom.messageInfo("Supir", "Data Berhasil Di Simpan");
+                        this.Dispose();
                     }
-                    else
-                    {
+                    else {
                         MessageCustom.messageCritical("", "Data Gagal Di Simpan");
                     }
-                }
-                else
-                {
+                } else {
                     supir.Id = txtSupirId.Text;
-                    if (supirService.ubah(supir) != null)
-                    {
+                    if (supirService.ubah(supir) != null) {
                         MessageBox.Show(supir.Kernet.Id);
                         MessageCustom.messageInfo("Supir", "Data Berhasil Di Ubah");
-                    }
-                    else
-                    {
+                        this.Dispose();
+                    } else {
                         MessageCustom.messageCritical("Supir", "Data Gagal Di Ubah");
                     }
                 }
@@ -140,13 +132,11 @@ namespace desktop.view.entry
         private void btnCariKernet_Click(object sender, EventArgs e)
         {
             KernetListForm j = null;
-            if (j == null)
-            {
+            if (j == null) {
                 j = new KernetListForm(ProfilForm.Unknow);
                 j.ShowDialog(this);
 
-                if (j.GetKernet != null)
-                {
+                if (j.GetKernet != null) {
                     txtKernetId.Text = j.GetKernet.Id;
                     txtNamaKernet.Text = j.GetKernet.Nama;
 
@@ -172,6 +162,11 @@ namespace desktop.view.entry
         {
             txtKernetId.Text = "";
             txtNamaKernet.Text = "";
+        }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
 
         
