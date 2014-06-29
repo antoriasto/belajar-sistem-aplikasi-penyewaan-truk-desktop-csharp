@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCDFBE2F-D737-4515-BF97-272EECC6AF41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>desktop</RootNamespace>
+    <AssemblyName>desktop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BetterListViewExpress, Version=3.9.1.0, Culture=neutral, PublicKeyToken=e6c91a3add447be2, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utilities\CustomNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="utilities\FormatRupiah.cs" />
+    <Compile Include="utilities\MessageCustom.cs" />
+    <Compile Include="utilities\ProfilForm.cs" />
+    <Compile Include="view\entry\CustomerEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\CustomerEntryForm.Designer.cs">
+      <DependentUpon>CustomerEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\TrukEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\TrukEntryForm.designer.cs">
+      <DependentUpon>TrukEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\HargaRuteTrukEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\HargaRuteTrukEntryForm.Designer.cs">
+      <DependentUpon>HargaRuteTrukEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\JenisTrukEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\JenisTrukEntryForm.Designer.cs">
+      <DependentUpon>JenisTrukEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\KernetEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\KernetEntryForm.Designer.cs">
+      <DependentUpon>KernetEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\RuteEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\RuteEntryForm.Designer.cs">
+      <DependentUpon>RuteEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\SewaEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\SewaEntryForm.Designer.cs">
+      <DependentUpon>SewaEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\SupirEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\SupirEntryForm.Designer.cs">
+      <DependentUpon>SupirEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\CustomerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\CustomerListForm.Designer.cs">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\EditHargaRuteTruk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\EditHargaRuteTruk.Designer.cs">
+      <DependentUpon>EditHargaRuteTruk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\JenisTrukListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\JenisTrukListForm.Designer.cs">
+      <DependentUpon>JenisTrukListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\KernetListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\KernetListForm.Designer.cs">
+      <DependentUpon>KernetListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\RuteListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\RuteListForm.Designer.cs">
+      <DependentUpon>RuteListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\SupirListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\SupirListForm.Designer.cs">
+      <DependentUpon>SupirListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\TrukListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\TrukListForm.Designer.cs">
+      <DependentUpon>TrukListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\TrukPopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\TrukPopUpForm.Designer.cs">
+      <DependentUpon>TrukPopUpForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="view\entry\CustomerEntryForm.resx">
+      <DependentUpon>CustomerEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\TrukEntryForm.resx">
+      <DependentUpon>TrukEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\HargaRuteTrukEntryForm.resx">
+      <DependentUpon>HargaRuteTrukEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\JenisTrukEntryForm.resx">
+      <DependentUpon>JenisTrukEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\KernetEntryForm.resx">
+      <DependentUpon>KernetEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\RuteEntryForm.resx">
+      <DependentUpon>RuteEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\SewaEntryForm.resx">
+      <DependentUpon>SewaEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\SupirEntryForm.resx">
+      <DependentUpon>SupirEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\CustomerListForm.resx">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\EditHargaRuteTruk.resx">
+      <DependentUpon>EditHargaRuteTruk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\JenisTrukListForm.resx">
+      <DependentUpon>JenisTrukListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\KernetListForm.resx">
+      <DependentUpon>KernetListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\RuteListForm.resx">
+      <DependentUpon>RuteListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\SupirListForm.resx">
+      <DependentUpon>SupirListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\TrukListForm.resx">
+      <DependentUpon>TrukListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\TrukPopUpForm.resx">
+      <DependentUpon>TrukPopUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\aplikasi-penyewaan-truk-dao\core.csproj">
+      <Project>{A1FAD32A-9B52-4D9A-A988-D1A9B7C931E5}</Project>
+      <Name>core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\aplikasi-penyewaan-truk-domain\domain.csproj">
+      <Project>{9BBC7F92-B97F-44A7-A899-E1CDD9F49054}</Project>
+      <Name>domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="resources\077_AddFile_16x16_72.png" />
+    <Content Include="resources\arrow-left-2.png" />
+    <Content Include="resources\arrow-left-double-2.png" />
+    <Content Include="resources\arrow-refresh.ico" />
+    <Content Include="resources\arrow-right-2.png" />
+    <Content Include="resources\arrow-right-double-2.png" />
+    <Content Include="resources\Cancel-icon.png" />
+    <Content Include="resources\DeleteRed.png" />
+    <Content Include="resources\edit-paste.ico" />
+    <Content Include="resources\icon_i.gif" />
+    <Content Include="resources\icon_update.gif" />
+    <Content Include="resources\printer-remote.ico" />
+    <Content Include="resources\Save_16.png" />
+    <Content Include="resources\Truck-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

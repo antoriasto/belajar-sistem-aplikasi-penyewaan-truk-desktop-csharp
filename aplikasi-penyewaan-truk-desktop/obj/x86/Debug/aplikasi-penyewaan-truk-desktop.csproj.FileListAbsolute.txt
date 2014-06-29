@@ -14,3 +14,43 @@ I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewa
 I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-dao.pdb
 I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
 I:\data kuliah juga\Periode 21\000 Tugas Akhir - Jajang\Program\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.csprojResolveAssemblyReference.cache
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-desktop.exe.config
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.exe
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.pdb
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.Properties.Resources.resources
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.entry.TrukEntryForm.resources
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.Index.resources
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.TrukListForm.resources
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-desktop.exe
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-desktop.pdb
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-dao.dll
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\MySql.Data.dll
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-dao.pdb
+D:\kkp\soft\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-desktop.exe.config
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.exe
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-desktop.exe
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-desktop.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-dao.dll
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\MySql.Data.dll
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-dao.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.csprojResolveAssemblyReference.cache
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.Properties.Resources.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.entry.TrukEntryForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.Index.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.TrukListForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi-penyewaan-truk-desktop.csproj.GenerateResource.Cache
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.entry.Form1.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.RuteListForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.EditHargaRuteTruk.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.SupirListForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.JenisTrukListForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.entry.SupirEntryForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\aplikasi_penyewaan_truk_desktop.view.popup.KernetListForm.resources

@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class Rute
     {
         private String id;
         private String nama;
+
+        // Constructor.
+        public Rute() { }
+
+        public Rute(String id)
+        {
+            this.id = id;
+        }
 
         public String Id
         {

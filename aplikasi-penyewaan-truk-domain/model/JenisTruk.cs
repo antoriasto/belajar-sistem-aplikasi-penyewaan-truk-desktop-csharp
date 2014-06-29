@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class JenisTruk
     {
@@ -11,6 +11,13 @@ namespace aplikasi_penyewaan_truk_domain.model
         private String nama;
         private Int32 kubikasi;
         private Decimal tonase;
+
+        public JenisTruk() { }
+
+        public JenisTruk(String id) 
+        {
+            this.id = id;
+        }
 
         public String Id
         {

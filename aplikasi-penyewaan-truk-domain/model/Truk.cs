@@ -3,30 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class Truk
     {
         private String id;
-        private String nama;
         private String nomorPolisi;
         private String status;
 
-        // custom field.
+        // Custom field.
         private Supir supir;
         private JenisTruk jenisTruk;
         private IList<HargaRuteTruk> listHargaRuteTruk;
+
+        // Constructor.
+        public Truk() { }
+
+        public Truk(String id)
+        {
+            this.id = id;
+        }
 
         public String Id
         {
             get { return id; }
             set { id = value; }
-        }
-
-        public String Nama
-        {
-            get { return nama; }
-            set { nama = value; }
         }
 
         public String Status

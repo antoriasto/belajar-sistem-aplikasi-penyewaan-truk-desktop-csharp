@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
-using aplikasi_penyewaan_truk_domain.model;
-using aplikasi_penyewaan_truk_dao.utilities;
+using domain.model;
+using core.utilities;
 
-namespace aplikasi_penyewaan_truk_dao.dao
+namespace core.dao
 {
     public class TrukDao
     {
@@ -24,41 +24,33 @@ namespace aplikasi_penyewaan_truk_dao.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO truk (ID, NOMOR_POLISI, SUPIR_ID, JENIS_TRUK_ID) values(@1,@2,@3,@4)";
+        private readonly string insertQuery = "INSERT INTO Truk (TRUK_ID, NOMOR_POLISI, STATUS, SUPIR_ID, JENIS_TRUK_ID) values(@1,@2,@3,@4,@5)";
 
-        private readonly string updateQuery = "UPDATE truk " +
-            "set NOMOR_POLISI=@2, SUPIR_ID=@3, JENIS_TRUK_ID=@4 " + "where ID=@1";
+        private readonly string updateQuery = "UPDATE Truk " +
+            "set NOMOR_POLISI=@1, STATUS=@2, SUPIR_ID=@3, JENIS_TRUK_ID=@4 " + "where TRUK_ID=@5";
 
-        private readonly string deleteQuery = "DELETE from truk " +
-            "where ID=@1";
+        private readonly string deleteQuery = "DELETE from Truk " +
+            "where TRUK_ID=@1";
 
-        private readonly string findByIdQuery = "SELECT ID, NOMOR_POLISI, SUPIR_ID, JENIS_TRUK_ID " +
-            "from truk " +
-            "where ID= @1";
+        private readonly string findByIdQuery = "SELECT TRUK_ID, NOMOR_POLISI, SUPIR_ID, JENIS_TRUK_ID, STATUS " +
+            "from Truk " +
+            "where TRUK_ID= @1";
 
-        private readonly string generateIdQuery = "SELECT ID " +
-            "from truk " +
-            "ORDER BY ID DESC";
+        private readonly string generateIdQuery = "SELECT TRUK_ID " +
+            "from Truk " +
+            "ORDER BY TRUK_ID DESC";
 
         private readonly string countAllDataQuery =
-                    "SELECT count(ID)" +
-                    "from truk";
+                    "SELECT count(TRUK_ID)" +
+                    "from Truk";
 
         private readonly string countAllDataSearchQuery = "SELECT count(ID)" +
-                    "from truk " +
+                    "from Truk " +
                     "where NOMOR_POLISI like @1";
 
-        private readonly string findAllDataByTrukIdQuery = "SELECT RUTE_ID, TRUK_ID AS TRUK_ID, HARGA, rute.NAMA as NAMA " +
-            "from truk_rute INNER JOIN rute ON RUTE_ID = rute.ID " +
-            "where truk_rute.TRUK_ID= @1";
-
-        private readonly string findAllDataQuery = "SELECT NOMOR_POLISI, supir.NAMA AS SUPIR_NAMA, jenis_truk.NAMA AS JENIS_TRUK_NAMA," +
-            "truk.ID AS TRUK_ID, truk.STATUS, jenis_truk.ID AS JENIS_TRUK_ID, supir.ID AS SUPIR_ID FROM truk " +
-            "LEFT JOIN supir ON supir.ID = truk.SUPIR_ID " +
-            "LEFT JOIN jenis_truk ON jenis_truk.ID = truk.JENIS_TRUK_ID " +
-            "WHERE (truk.NOMOR_POLISI LIKE @1) OR " +
-            "(supir.NAMA LIKE @2) OR " +
-            "(jenis_truk.NAMA LIKE @3) OR (truk.STATUS LIKE @4)";
+        private readonly string findAllDataQuery = "SELECT TRUK_ID, NOMOR_POLISI, SUPIR_ID, JENIS_TRUK_ID, STATUS " +
+            "from Truk " +
+            "where NOMOR_POLISI LIKE @1 OR SUPIR_ID =@2 OR JENIS_TRUK_ID =@3 OR STATUS =@4";
 
         #endregion
 
@@ -76,22 +68,38 @@ namespace aplikasi_penyewaan_truk_dao.dao
             {
                 cmd.Parameters.AddWithValue("@1", truk.Id);
                 cmd.Parameters.AddWithValue("@2", truk.NomorPolisi);
-                cmd.Parameters.AddWithValue("@3", truk.Supir.Id);
-                cmd.Parameters.AddWithValue("@4", truk.JenisTruk.Id);
+                cmd.Parameters.AddWithValue("@3", truk.Status);
+                cmd.Parameters.AddWithValue("@4", truk.Supir.Id);
+                cmd.Parameters.AddWithValue("@5", truk.JenisTruk.Id);
 
-                int x = cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+
                 return truk;
             }
         }
+
+        public Truk saveTrukAndPriceRute(Truk truk, IList<HargaRuteTruk> list)
+        {
+            save(truk);
+            HargaRuteTrukDao h = new HargaRuteTrukDao();
+            h.setConnection = this.connection;
+
+            h.doMultipleJob(list);
+
+            return truk;
+        }
+
+        
 
         public Truk update(Truk truk)
         {
             using (MySqlCommand cmd = new MySqlCommand(updateQuery, connection))
             {
-                cmd.Parameters.AddWithValue("@2", truk.NomorPolisi);
-                cmd.Parameters.AddWithValue("@2", truk.NomorPolisi);
+                cmd.Parameters.AddWithValue("@1", truk.NomorPolisi);
+                cmd.Parameters.AddWithValue("@2", truk.Status);
                 cmd.Parameters.AddWithValue("@3", truk.Supir.Id);
                 cmd.Parameters.AddWithValue("@4", truk.JenisTruk.Id);
+                cmd.Parameters.AddWithValue("@5", truk.Id);
 
                 int x = cmd.ExecuteNonQuery();
                 return truk;
@@ -125,6 +133,22 @@ namespace aplikasi_penyewaan_truk_dao.dao
             return null;
         }
 
+        public Truk cariTrukDanHargaRute(String id)
+        {
+            using (MySqlCommand cmd = new MySqlCommand(findByIdQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@1", id);
+                using (MySqlDataReader mdr = cmd.ExecuteReader())
+                {
+                    if (mdr.Read())
+                    {
+                        return mappingKeObject(mdr);
+                    }
+                }
+            }
+            return null;
+        }
+
         public String nomorOtomatis()
         {
             using (MySqlCommand cmd = new MySqlCommand(generateIdQuery, connection))
@@ -134,10 +158,11 @@ namespace aplikasi_penyewaan_truk_dao.dao
                     Truk truk = new Truk();
                     if (mdr.Read())
                     {
-                        String id = UtilsLeftRightMid.Mid(mdr.GetString("ID"), 1, 4);
-                        //Console.WriteLine("ID: " + id);
-                        //truk.Id = mdr.GetString("ID") + 1;
-                        return id;
+                        String id = UtilsLeftRightMid.Mid(mdr.GetString("TRUK_ID"), 1, 4);
+                        Int32 nilai = Convert.ToInt32(id) + 1;
+
+                        String AN = UtilsLeftRightMid.Right("0000", 4 - nilai.ToString().Length) + nilai;
+                        return "T" + AN.ToString();
                     }
                     else
                     {
@@ -176,7 +201,7 @@ namespace aplikasi_penyewaan_truk_dao.dao
                 {
                     if (mdr.Read())
                     {
-                        jumlahbaris = mdr.GetInt32("count(ID)");
+                        jumlahbaris = mdr.GetInt32("count(TRUK_ID)");
                     }
                 }
             }
@@ -190,9 +215,9 @@ namespace aplikasi_penyewaan_truk_dao.dao
             using (MySqlCommand cmd = new MySqlCommand(findAllDataQuery, connection))
             {
                 cmd.Parameters.AddWithValue("@1", "%" + search + "%");
-                cmd.Parameters.AddWithValue("@2", "%" + search + "%");
-                cmd.Parameters.AddWithValue("@3", "%" + search + "%");
-                cmd.Parameters.AddWithValue("@4", "%" + search + "%");
+                cmd.Parameters.AddWithValue("@2", "%" + "" + "%");
+                cmd.Parameters.AddWithValue("@3", "%" + "" + "%");
+                cmd.Parameters.AddWithValue("@4", "%" + "" + "%");
 
                 using (MySqlDataReader mdr = cmd.ExecuteReader())
                 {
@@ -220,7 +245,6 @@ namespace aplikasi_penyewaan_truk_dao.dao
                 {
                     Supir supir = new Supir();
                     supir.Id = mdr.GetString("SUPIR_ID");
-                    supir.Nama = mdr.GetString("SUPIR_NAMA");
                     truk.Supir = supir;
                 }
             }
@@ -231,10 +255,11 @@ namespace aplikasi_penyewaan_truk_dao.dao
                 {
                     JenisTruk j = new JenisTruk();
                     j.Id = mdr.GetString("JENIS_TRUK_ID");
-                    j.Nama = mdr.GetString("JENIS_TRUK_NAMA");
                     truk.JenisTruk = j;
                 }
             }
+
+            truk.Status = mdr.GetString("STATUS");
 
             return truk;
         }

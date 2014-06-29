@@ -6,22 +6,27 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using aplikasi_penyewaan_truk_domain.service;
-using aplikasi_penyewaan_truk_dao.implementasi;
-using aplikasi_penyewaan_truk_domain.model;
+using domain.service;
+using core.implementasi;
+using domain.model;
 using ComponentOwl.BetterListView;
-using aplikasi_penyewaan_truk_desktop.view.entry;
+using desktop.view.entry;
+using desktop.utilities;
 
-namespace aplikasi_penyewaan_truk_desktop.view.popup
+namespace desktop.view.popup
 {
     public partial class TrukListForm : Form
     {
         ITrukService trukService = new TrukServiceImpl();
+        IJenisTrukService jenisTrukService = new JenisTrukServiceImpl();
+        ISupirService supirService = new SupirServiceImpl();
+        ProfilForm profilForm;
 
-        public TrukListForm()
+        public TrukListForm(ProfilForm pf)
         {
             InitializeComponent();
-
+            initializeForm(pf);
+            this.profilForm = pf;
             IList<Truk> daftarTruk = trukService.cariDaftarTruk("");
             if (validasiListKosongAtauGa(daftarTruk))
             {
@@ -29,6 +34,15 @@ namespace aplikasi_penyewaan_truk_desktop.view.popup
             }
             
         }
+
+        private void initializeForm(ProfilForm pf)
+        {
+            if (pf == ProfilForm.Menu)
+            {
+                statusStrip1.Hide();
+            }
+        }
+
 
         private Boolean validasiListKosongAtauGa(IList<Truk> list)
         {
@@ -45,6 +59,10 @@ namespace aplikasi_penyewaan_truk_desktop.view.popup
 
         private void initializeListView(IList<Truk> daftarTruk)
         {
+            lvTruk.Items.Clear();
+            lvTruk.ImageList = imageList1;
+            lvTruk.Columns[0].ImageIndex = 0;
+
             foreach (Truk t in daftarTruk)
             {
                 BetterListViewItem items = new BetterListViewItem(t.Id);
@@ -53,7 +71,8 @@ namespace aplikasi_penyewaan_truk_desktop.view.popup
                 if (t.JenisTruk != null)
                 {
                     items.SubItems.Add(t.JenisTruk.Id);
-                    items.SubItems.Add(t.JenisTruk.Nama);
+                    JenisTruk jt = jenisTrukService.cari(t.JenisTruk.Id);
+                    items.SubItems.Add(jt.Nama);
                 }
                 else
                 {
@@ -64,7 +83,8 @@ namespace aplikasi_penyewaan_truk_desktop.view.popup
                 if (t.Supir != null)
                 {
                     items.SubItems.Add(t.Supir.Id);
-                    items.SubItems.Add(t.Supir.Nama);
+                    Supir su = supirService.cari(t.Supir.Id);
+                    items.SubItems.Add(su.Nama);
                 }
                 else
                 {
@@ -81,10 +101,88 @@ namespace aplikasi_penyewaan_truk_desktop.view.popup
 
         }
 
+        private void lvTruk_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (lvTruk.SelectedItems.Count == 1)
+            {
+                int index = lvTruk.SelectedIndices[0];
+                btnEdit.Enabled = true;
+                if (!lvTruk.Items[index].SubItems[2].Text.Equals(""))
+                {
+                    btnEditHargaRuteTruk.Enabled = true;
+                } 
+                else 
+                {
+                    btnEditHargaRuteTruk.Enabled = false;
+                }
+            }
+            else
+            {
+                btnEdit.Enabled = false;
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (lvTruk.SelectedItems.Count == 1)
+            {
+                int index = lvTruk.SelectedIndices[0];
+                Truk truk = new Truk();
+
+                truk.Id = lvTruk.Items[index].Text;
+                truk.NomorPolisi = lvTruk.Items[index].SubItems[1].Text;
+
+                JenisTruk j = new JenisTruk();
+                j.Id = lvTruk.Items[index].SubItems[2].Text;
+                j.Nama = lvTruk.Items[index].SubItems[3].Text;
+
+                Supir s = new Supir();
+                s.Id = lvTruk.Items[index].SubItems[4].Text;
+                s.Nama = lvTruk.Items[index].SubItems[5].Text;
+
+                truk.Supir = s;
+                truk.JenisTruk = j;
+
+                TrukEntryForm t = new TrukEntryForm(truk);
+                t.ShowDialog();
+                initializeListView(trukService.cariDaftarTruk(""));
+            }
+            
+        }
+
+        private void btnEditHargaRuteTruk_Click(object sender, EventArgs e)
+        {
+            if (lvTruk.SelectedItems.Count == 1)
+            {
+                int index = lvTruk.SelectedIndices[0];
+                Truk truk = new Truk();
+
+                truk.Id = lvTruk.Items[index].Text;
+                truk.NomorPolisi = lvTruk.Items[index].SubItems[1].Text;
+
+                JenisTruk j = new JenisTruk();
+                j.Id = lvTruk.Items[index].SubItems[2].Text;
+                j.Nama = lvTruk.Items[index].SubItems[3].Text;
+
+                truk.JenisTruk = j;
+
+                HargaRuteTrukEntryForm t = new HargaRuteTrukEntryForm(truk);
+                t.ShowDialog();
+                initializeListView(trukService.cariDaftarTruk(""));
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            initializeListView(trukService.cariDaftarTruk(""));
+        }
+
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            TrukEntryForm t = new TrukEntryForm();
+            TrukEntryForm t = new TrukEntryForm(null);
             t.ShowDialog();
+            initializeListView(trukService.cariDaftarTruk(""));
         }
 
     }

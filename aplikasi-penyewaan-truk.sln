@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aplikasi-penyewaan-truk-desktop", "aplikasi-penyewaan-truk-desktop\aplikasi-penyewaan-truk-desktop.csproj", "{FCDFBE2F-D737-4515-BF97-272EECC6AF41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desktop", "aplikasi-penyewaan-truk-desktop\desktop.csproj", "{FCDFBE2F-D737-4515-BF97-272EECC6AF41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aplikasi-penyewaan-truk-domain", "aplikasi-penyewaan-truk-domain\aplikasi-penyewaan-truk-domain.csproj", "{9BBC7F92-B97F-44A7-A899-E1CDD9F49054}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "aplikasi-penyewaan-truk-domain\domain.csproj", "{9BBC7F92-B97F-44A7-A899-E1CDD9F49054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aplikasi-penyewaan-truk-dao", "aplikasi-penyewaan-truk-dao\aplikasi-penyewaan-truk-dao.csproj", "{A1FAD32A-9B52-4D9A-A988-D1A9B7C931E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "aplikasi-penyewaan-truk-dao\core.csproj", "{A1FAD32A-9B52-4D9A-A988-D1A9B7C931E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,7 @@
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\core.dll
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\core.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\core.csprojResolveAssemblyReference.cache
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\core.dll
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\core.pdb
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.pdb

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class Kernet
     {
@@ -11,6 +11,16 @@ namespace aplikasi_penyewaan_truk_domain.model
         private String nama;
         private String alamat;
         private String nomorHp;
+
+        public Kernet()
+        {
+
+        }
+
+        public Kernet(String id)
+        {
+            this.id = id;
+        }
 
         public String Id
         {

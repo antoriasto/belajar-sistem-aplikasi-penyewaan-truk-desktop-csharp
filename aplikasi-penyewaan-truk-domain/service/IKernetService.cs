@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using domain.model;
 
-namespace aplikasi_penyewaan_truk_domain.service
+namespace domain.service
 {
-    interface IKernetService
+    public interface IKernetService
     {
+        Kernet simpan(Kernet domain);
+        Kernet ubah(Kernet domain);
+        Kernet hapus(Kernet domain);
+        Kernet cari(String id);
+        String nomorOtomatis();
+        IList<Kernet> cariDaftarTruk(String search);
     }
 }

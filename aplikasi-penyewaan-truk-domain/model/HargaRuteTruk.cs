@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using domain.model.enumerasi;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class HargaRuteTruk
     {
@@ -13,6 +14,9 @@ namespace aplikasi_penyewaan_truk_domain.model
         // Custom field.
         private Truk truk;
         private Rute rute;
+
+        // Additional feld.
+        private Command status;
 
         public String Id
         {
@@ -37,5 +41,12 @@ namespace aplikasi_penyewaan_truk_domain.model
             get { return rute; }
             set { rute = value; }
         }
+
+        public Command Status
+        {
+            get { return status; }
+            set { status = value; }
+        }
+
     }
 }

@@ -2,37 +2,104 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using aplikasi_penyewaan_truk_domain.service;
-using aplikasi_penyewaan_truk_domain.model;
-using aplikasi_penyewaan_truk_dao.dao;
+using domain.service;
+using domain.model;
+using core.dao;
 using MySql.Data.MySqlClient;
-using aplikasi_penyewaan_truk_dao.utilities;
+using core.utilities;
+using System.Data;
 
-namespace aplikasi_penyewaan_truk_dao.implementasi
+namespace core.implementasi
 {
     public class TrukServiceImpl : ITrukService
     {
         private TrukDao trukDao = new TrukDao();
+        private HargaRuteTrukDao hargaRuteTrukDao = new HargaRuteTrukDao();
         private MySqlConnection connection = new MySqlConnection(DataBaseConnection.stringMySqlConnection);
 
         public Truk simpan(Truk truk)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Setting koneksi dan buka koneksi.
+                trukDao.setConnection = connection;
+                connection.Open();
+                truk.Id = trukDao.nomorOtomatis();
+                return trukDao.save(truk);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return null;
         }
 
         public Truk ubah(Truk truk)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Setting koneksi dan buka koneksi di class Dao dari sini.
+                trukDao.setConnection = connection;
+                connection.Open();
+                return trukDao.update(truk);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                // Tutup Koneksi.
+                connection.Close();
+            }
+            return null;
         }
 
-        public Truk delete(Truk customer)
+        public Truk hapus(Truk truk)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Setting koneksi dan buka koneksi di class Dao dari sini.
+                trukDao.setConnection = connection;
+                connection.Open();
+                return trukDao.delete(truk);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                // Tutup Koneksi.
+                connection.Close();
+            }
+            return null;
         }
 
-        public Truk cari(string id)
+        public Truk cari(String id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Setting koneksi dan buka koneksi di class Dao dari sini.
+                trukDao.setConnection = connection;
+                connection.Open();
+                return trukDao.cari(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                connection.Close();
+            }
+            finally
+            {
+                // Tutup Koneksi.
+                connection.Close();
+            }
+            return null;
         }
 
         public String nomorOtomatis()
@@ -77,6 +144,63 @@ namespace aplikasi_penyewaan_truk_dao.implementasi
                 connection.Close();
             }
             return null;
+        }
+
+
+        public Truk simpanTrukAndPriceRute(Truk truk, IList<HargaRuteTruk> daftarHargaRuteTruk)
+        {
+            try
+            {
+                Console.WriteLine("Truk Service: Cari Daftar Truk");
+                // Setting koneksi dan buka koneksi di class Dao dari sini.
+                trukDao.setConnection = connection;
+                connection.Open();
+                truk.Id = trukDao.nomorOtomatis();
+                return trukDao.saveTrukAndPriceRute(truk, daftarHargaRuteTruk);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                // Tutup Koneksi.
+                connection.Close();
+            }
+            return null;
+            
+        }
+
+
+        public Truk deleteTrukAndHargaRuteTruk(Truk domain)
+        {
+            trukDao.setConnection = connection;
+            hargaRuteTrukDao.setConnection = connection;
+            connection.Open();
+
+            using (IDbTransaction tran = connection.BeginTransaction())
+            {
+                try
+                {
+                    // Lakuin method disini
+                    hargaRuteTrukDao.deleteByTrukId(domain.Id);
+                    trukDao.delete(domain);
+                    tran.Commit();
+                    return domain;
+                }
+                catch (Exception ex)
+                {
+                    tran.Rollback();
+                    Console.WriteLine(ex);
+                    return null;
+                }
+                finally
+                {
+                    connection.Close();
+                    trukDao.setConnection = null;
+                    hargaRuteTrukDao.setConnection = null;
+                }
+            }
         }
     }
 }

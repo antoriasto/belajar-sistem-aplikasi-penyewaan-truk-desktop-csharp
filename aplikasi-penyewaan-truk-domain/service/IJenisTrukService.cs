@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using domain.model;
 
-namespace aplikasi_penyewaan_truk_domain.service
+namespace domain.service
 {
-    interface IJenisTrukService
+    public interface IJenisTrukService
     {
+        JenisTruk simpan(JenisTruk domain);
+        JenisTruk ubah(JenisTruk domain);
+        JenisTruk hapus(JenisTruk domain);
+        JenisTruk cari(String id);
+        String nomorOtomatis();
+        IList<JenisTruk> cariDaftarJenisTruk(String search);
     }
 }

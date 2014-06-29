@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace aplikasi_penyewaan_truk_desktop.Properties {
+namespace desktop.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace aplikasi_penyewaan_truk_desktop.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("aplikasi_penyewaan_truk_desktop.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("desktop.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,16 @@ namespace aplikasi_penyewaan_truk_desktop.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Truck_icon {
+            get {
+                object obj = ResourceManager.GetObject("Truck-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

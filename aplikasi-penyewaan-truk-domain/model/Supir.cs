@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class Supir
     {
@@ -14,6 +14,13 @@ namespace aplikasi_penyewaan_truk_domain.model
 
         // kernet field
         private Kernet kernet;
+
+        public Supir() { }
+
+        public Supir(String id)
+        {
+            this.id = id;
+        }
 
         public String Id
         {
