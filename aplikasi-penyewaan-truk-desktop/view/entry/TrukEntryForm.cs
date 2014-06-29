@@ -22,6 +22,7 @@ namespace desktop.view.entry
         ISupirService supirService;
         IRuteService ruteService;
         IJenisTrukService jenisTrukService;
+        Truk temporaryTruk;
 
         long totalDataRuteTruk = 0;
 
@@ -43,6 +44,7 @@ namespace desktop.view.entry
         {
             if (truk != null)
             {
+                this.temporaryTruk = truk;
                 txtTrukId.Text = truk.Id;
                 txtTrukId.Show();
                 lblTrukId.Show();
@@ -56,6 +58,7 @@ namespace desktop.view.entry
                         txtJenisTruk.Text = j.Nama;
                         txtKubikasi.Text = j.Kubikasi.ToString();
                         txtTonase.Text = j.Tonase.ToString();
+                        this.temporaryTruk.JenisTruk = j;
                     }
                     
                 }
@@ -67,6 +70,7 @@ namespace desktop.view.entry
                         Supir supir = supirService.cari(truk.Supir.Id);
                         txtSupirId.Text = supir.Id;
                         txtNamaSupir.Text = supir.Nama;
+                        this.temporaryTruk.Supir = supir;
                     }
                     
                 }
@@ -283,12 +287,22 @@ namespace desktop.view.entry
         private void txtNomorPolisi_TextChanged(object sender, EventArgs e)
         {
             if (!txtNomorPolisi.Text.Equals("")) {
+
                 if (!trukService.validatePoliceNumber(txtNomorPolisi.Text)) {
                     lblNomorPolisiWarning.Text = "Truk dengan nomor polisi '" + txtNomorPolisi.Text + "' sudah pernah di input";
                     lblNomorPolisiWarning.Show();
                     btnSimpan.Enabled = false;
                 } else {
                     lblNomorPolisiWarning.Text = "";
+                    lblNomorPolisiWarning.Hide();
+                    btnSimpan.Enabled = true;
+                }
+            }
+
+            if (temporaryTruk != null) {
+                if (temporaryTruk.NomorPolisi.Equals(txtNomorPolisi.Text)) {
+                    lblNomorPolisiWarning.Text = "";
+                    lblNomorPolisiWarning.Hide();
                     btnSimpan.Enabled = true;
                 }
             }
