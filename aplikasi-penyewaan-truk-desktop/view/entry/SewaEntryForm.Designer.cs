@@ -72,6 +72,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.columnKeterangan = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvCartTruk)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -88,7 +90,7 @@
             this.panel1.Controls.Add(this.btnBatal);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 557);
+            this.panel1.Location = new System.Drawing.Point(0, 603);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(948, 63);
             this.panel1.TabIndex = 15;
@@ -140,7 +142,7 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(861, 57);
+            this.btnDelete.Location = new System.Drawing.Point(861, 87);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 20;
@@ -166,12 +168,13 @@
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader6);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader7);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader8);
+            this.lvCartTruk.Columns.Add(this.columnKeterangan);
             this.lvCartTruk.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCartTruk.FontGroups = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCartTruk.GridLines = ComponentOwl.BetterListView.BetterListViewGridLines.Grid;
             this.lvCartTruk.Location = new System.Drawing.Point(12, 28);
             this.lvCartTruk.Name = "lvCartTruk";
-            this.lvCartTruk.Size = new System.Drawing.Size(843, 229);
+            this.lvCartTruk.Size = new System.Drawing.Size(843, 296);
             this.lvCartTruk.TabIndex = 21;
             this.lvCartTruk.SelectedIndexChanged += new System.EventHandler(this.lvCartTruk_SelectedIndexChanged);
             // 
@@ -192,7 +195,7 @@
             // 
             this.betterListViewColumnHeader2.Name = "betterListViewColumnHeader2";
             this.betterListViewColumnHeader2.Text = "Nomor Polisi";
-            this.betterListViewColumnHeader2.Width = 260;
+            this.betterListViewColumnHeader2.Width = 137;
             // 
             // betterListViewColumnHeader11
             // 
@@ -280,7 +283,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel3);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox1.Location = new System.Drawing.Point(12, 263);
+            this.groupBox1.Location = new System.Drawing.Point(12, 351);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(400, 87);
             this.groupBox1.TabIndex = 24;
@@ -350,7 +353,7 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox2.Location = new System.Drawing.Point(15, 356);
+            this.groupBox2.Location = new System.Drawing.Point(15, 444);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(397, 153);
             this.groupBox2.TabIndex = 25;
@@ -481,7 +484,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.lblHargaTotal);
-            this.panel2.Location = new System.Drawing.Point(562, 279);
+            this.panel2.Location = new System.Drawing.Point(560, 367);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 201);
             this.panel2.TabIndex = 27;
@@ -510,7 +513,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(559, 263);
+            this.label1.Location = new System.Drawing.Point(557, 351);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 28;
@@ -527,11 +530,28 @@
             this.label15.TabIndex = 26;
             this.label15.Text = "Kereta Sewa Truk:";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.Location = new System.Drawing.Point(861, 57);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 29;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // columnKeterangan
+            // 
+            this.columnKeterangan.Name = "columnKeterangan";
+            this.columnKeterangan.Text = "Keterangan";
+            // 
             // SewaEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 620);
+            this.ClientSize = new System.Drawing.Size(948, 666);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label15);
@@ -542,6 +562,7 @@
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimumSize = new System.Drawing.Size(964, 704);
             this.Name = "SewaEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SewaEntryForm";
@@ -606,5 +627,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblJumlahTruk;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnEdit;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader columnKeterangan;
     }
 }

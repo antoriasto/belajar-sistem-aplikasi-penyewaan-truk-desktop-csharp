@@ -22,21 +22,21 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO sewa_detail (SEWA_ID, TRUK_ID, HARGA) values(@1,@2,@3)";
+        private readonly string insertQuery = "INSERT INTO sewa_detail (SEWA_ID, TRUK_ID, HARGA, KETERANGAN) values(@1,@2,@3,@4)";
 
         private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA " +
-            "from sewa " +
+            "from Sewa " +
             "where SEWA_ID= @1";
 
         private readonly string countAllDataQuery =
                     "SELECT count(SEWA_ID)" +
-                    "from sewa";
+                    "from Sewa";
 
         private readonly string countAllDataSearchQuery = "SELECT count(SEWA_ID)" +
                     "from sewa_detail " +
                     "where SEWA_ID like @1";
 
-        private readonly string findAllDataQuery = "SEWA_ID, TRUK_ID, HARGA " +
+        private readonly string findAllDataQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, KETERANGAN " +
             "from sewa_detail where SEWA_ID like @1 limit @2, @3";
 
         #endregion
@@ -142,7 +142,7 @@ namespace core.dao
             s.Id = mdr.GetString("SEWA_ID");
             s.Truk = new Truk(mdr.GetString("TRUK_ID"));
             s.Price = mdr.GetDecimal("HARGA");
-
+            s.Keterangan = mdr.GetString("KETERANGAN");
             return s;
         }
 
@@ -157,7 +157,7 @@ namespace core.dao
                     cmd.Parameters.AddWithValue("@1", s.Id);
                     cmd.Parameters.AddWithValue("@2", s.Truk.Id);
                     cmd.Parameters.AddWithValue("@3", s.Price);
-                    
+                    cmd.Parameters.AddWithValue("@4", s.Keterangan);
                     
                     int x = cmd.ExecuteNonQuery();
                 }

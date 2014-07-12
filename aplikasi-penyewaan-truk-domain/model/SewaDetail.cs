@@ -9,6 +9,7 @@ namespace domain.model
     {
         private String id;
         private Decimal price;
+        private String keterangan;
 
         // custom field.
         private Truk truk;
@@ -37,6 +38,12 @@ namespace domain.model
         {
             get { return truk; }
             set { truk = value; }
+        }
+
+        public String Keterangan
+        {
+            get { return keterangan; }
+            set { keterangan = value; }
         }
 
     }

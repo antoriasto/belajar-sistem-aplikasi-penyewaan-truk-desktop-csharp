@@ -50,6 +50,7 @@
     <Compile Include="model\Rute.cs" />
     <Compile Include="model\Sewa.cs" />
     <Compile Include="model\Supir.cs" />
+    <Compile Include="model\SuratJalan.cs" />
     <Compile Include="model\Truk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="service\ICustomerService.cs" />
@@ -57,8 +58,10 @@
     <Compile Include="service\IJenisTrukService.cs" />
     <Compile Include="service\IKernetService.cs" />
     <Compile Include="service\IRuteService.cs" />
+    <Compile Include="service\ISewaDetailService.cs" />
     <Compile Include="service\ISewaService.cs" />
     <Compile Include="service\ISupirService.cs" />
+    <Compile Include="service\ISuratJalanService.cs" />
     <Compile Include="service\ITrukService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

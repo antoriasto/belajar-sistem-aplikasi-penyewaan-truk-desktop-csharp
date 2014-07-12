@@ -14,6 +14,12 @@ namespace domain.model
         // custom field.
         private Customer customer;
 
+        public Sewa() { }
+
+        public Sewa(String id) {
+            this.id = id;
+        }
+
         public String Id
         {
             get { return id; }

@@ -62,6 +62,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblNodeInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.suratJalanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -100,62 +101,63 @@
             this.trukToolStripMenuItem1,
             this.jenisTrukToolStripMenuItem});
             this.trukToolStripMenuItem.Name = "trukToolStripMenuItem";
-            this.trukToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.trukToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.trukToolStripMenuItem.Text = "Truk";
             // 
             // trukToolStripMenuItem1
             // 
             this.trukToolStripMenuItem1.Name = "trukToolStripMenuItem1";
-            this.trukToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.trukToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.trukToolStripMenuItem1.Text = "Truk";
             this.trukToolStripMenuItem1.Click += new System.EventHandler(this.trukToolStripMenuItem1_Click);
             // 
             // jenisTrukToolStripMenuItem
             // 
             this.jenisTrukToolStripMenuItem.Name = "jenisTrukToolStripMenuItem";
-            this.jenisTrukToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jenisTrukToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.jenisTrukToolStripMenuItem.Text = "Jenis Truk";
             // 
             // ruteToolStripMenuItem
             // 
             this.ruteToolStripMenuItem.Name = "ruteToolStripMenuItem";
-            this.ruteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ruteToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.ruteToolStripMenuItem.Text = "Rute";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(117, 6);
             // 
             // supirToolStripMenuItem
             // 
             this.supirToolStripMenuItem.Name = "supirToolStripMenuItem";
-            this.supirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.supirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.supirToolStripMenuItem.Text = "Supir";
             this.supirToolStripMenuItem.Click += new System.EventHandler(this.supirToolStripMenuItem_Click);
             // 
             // kernetToolStripMenuItem
             // 
             this.kernetToolStripMenuItem.Name = "kernetToolStripMenuItem";
-            this.kernetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kernetToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.kernetToolStripMenuItem.Text = "Kernet";
             this.kernetToolStripMenuItem.Click += new System.EventHandler(this.kernetToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(117, 6);
             // 
             // customerToolStripMenuItem
             // 
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.customerToolStripMenuItem.Text = "Customer";
             // 
             // transaksiToolStripMenuItem
             // 
             this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sewaToolStripMenuItem});
+            this.sewaToolStripMenuItem,
+            this.suratJalanToolStripMenuItem});
             this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
             this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.transaksiToolStripMenuItem.Text = "Transaksi";
@@ -225,6 +227,13 @@
             this.treeView1.TabIndex = 4;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
+            // suratJalanToolStripMenuItem
+            // 
+            this.suratJalanToolStripMenuItem.Name = "suratJalanToolStripMenuItem";
+            this.suratJalanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.suratJalanToolStripMenuItem.Text = "Surat Jalan";
+            this.suratJalanToolStripMenuItem.Click += new System.EventHandler(this.suratJalanToolStripMenuItem_Click);
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,5 +279,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ToolStripStatusLabel lblNodeInfo;
+        private System.Windows.Forms.ToolStripMenuItem suratJalanToolStripMenuItem;
     }
 }

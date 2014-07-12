@@ -23,25 +23,25 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO sewa (SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID) values(@1,@2,@3,@4)";
+        private readonly string insertQuery = "INSERT INTO Sewa (SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID) values(@1,@2,@3,@4)";
 
         private readonly string generateIdQuery = "SELECT SEWA_ID " +
-            "from sewa " +
+            "from Sewa " +
             "ORDER BY SEWA_ID DESC";
 
         private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
-            "from sewa " +
+            "from Sewa " +
             "where SEWA_ID= @1";
 
         private readonly string countAllDataQuery =
                     "SELECT count(SEWA_ID)" +
-                    "from sewa";
+                    "from Sewa";
 
         private readonly string countAllDataSearchQuery = "SELECT count(SEWA_ID)" +
-                    "from sewa " +
+                    "from Sewa " +
                     "where SEWA_ID like @1";
 
-        private readonly string findAllDataQuery = "SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
+        private readonly string findAllDataQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
             "from sewa where CUSTOMER_ID like @1 limit @2, @3";
 
         #endregion

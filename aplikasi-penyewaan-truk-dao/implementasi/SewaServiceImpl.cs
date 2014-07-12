@@ -67,9 +67,24 @@ namespace core.implementasi
             return null;
         }
 
-        public IList<Sewa> findAllData(string search)
+        public IList<Sewa> findAllData(String search)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Setting koneksi dan buka koneksi.
+                sewaDao.setConnection = connection;
+                connection.Open();
+                return sewaDao.findAllData("");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return null;
         }
 
 

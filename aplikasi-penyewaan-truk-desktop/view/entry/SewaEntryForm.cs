@@ -102,6 +102,14 @@ namespace desktop.view.entry
                     return false;
                 }
             }
+
+            for (int x=0; x<lvCartTruk.Items.Count; x++) {
+                if (lvCartTruk.Items[x].SubItems[13].Text.Equals("")) {
+                    MessageCustom.messageWarning("Sewa", "Keterangan Truk Belum Di Isi. \n Nomor Polisi: " + lvCartTruk.Items[x].SubItems[2].Text);
+                    return false;
+                }
+            }
+
             return true;
         }
 
@@ -152,6 +160,11 @@ namespace desktop.view.entry
                     Kernet kernet = kernetService.cari(supir.Kernet.Id);
                     items.SubItems.Add(supir.Kernet.Id);
                     items.SubItems.Add(kernet.Nama);
+                    items.SubItems.Add("");
+                } else {
+                    items.SubItems.Add("");
+                    items.SubItems.Add("");
+                    items.SubItems.Add("");
                 }
                 
                 lvCartTruk.Items.Add(items);
@@ -159,6 +172,7 @@ namespace desktop.view.entry
                 lblJumlahTruk.Text = cartTruk.Count.ToString() + " Unit";
             }
 
+            lblJumlahTruk.Text = cartTruk.Count.ToString() + " Unit";
             lblHargaTotal.Text = FormatRupiah.ToRupiah(Convert.ToInt64(hargaTotal.ToString()));
         }
 
@@ -256,6 +270,7 @@ namespace desktop.view.entry
                 IList<SewaDetail> listSewaDetail = new List<SewaDetail>();
                 foreach (HargaRuteTruk h in cartTruk) {
                     SewaDetail s = new SewaDetail(sewa.Id, h.Harga, new Truk(h.Truk.Id));
+                    s.Keterangan = getKeterangan(h.Truk.Id);
                     listSewaDetail.Add(s);
                 }
 
@@ -265,9 +280,6 @@ namespace desktop.view.entry
                     MessageCustom.messageCritical("Sewa", "Data Gagal Disimpan");
                 }
             }
-            
-
-            
         }
 
         private void btnCariCustomer_Click_1(object sender, EventArgs e)
@@ -309,6 +321,40 @@ namespace desktop.view.entry
         private void btnBatal_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (lvCartTruk.SelectedItems.Count == 1) {
+                int x = lvCartTruk.SelectedIndices[0];
+                String id = lvCartTruk.Items[x].Text;
+                MessageBox.Show(id);
+                EditKeteranganSewaDetail ek = new EditKeteranganSewaDetail(lvCartTruk.Items[x].SubItems[7].Text,
+                    lvCartTruk.Items[x].SubItems[5].Text);
+                ek.ShowDialog();
+                if (ek.Keterangan != null) {
+                    addKeterangan(id, ek.Keterangan);
+                }
+            }
+        }
+
+        private void addKeterangan(String id, String keterangan) 
+        {
+            for (int x=0; x < lvCartTruk.Items.Count; x++) {
+                if (lvCartTruk.Items[x].Text.Equals(id)){
+                    lvCartTruk.Items[x].SubItems[13].Text = keterangan;
+                }
+            }
+        }
+
+        private String getKeterangan(String id) {
+            String keteranagan = "";
+            for (int x=0; x < lvCartTruk.Items.Count; x++) {
+                if (lvCartTruk.Items[x].SubItems[1].Text.Equals(id)) {
+                    keteranagan = lvCartTruk.Items[x].SubItems[13].Text;
+                }
+            }
+            return keteranagan;
         }
 
       

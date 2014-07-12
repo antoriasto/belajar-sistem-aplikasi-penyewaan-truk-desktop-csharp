@@ -64,6 +64,12 @@
     <Compile Include="view\entry\CustomerEntryForm.Designer.cs">
       <DependentUpon>CustomerEntryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\entry\SuratJalanEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\SuratJalanEntryForm.Designer.cs">
+      <DependentUpon>SuratJalanEntryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\entry\TrukEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,12 @@
     <Compile Include="view\popup\EditHargaRuteTruk.Designer.cs">
       <DependentUpon>EditHargaRuteTruk.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\popup\EditKeteranganSewaDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\EditKeteranganSewaDetail.Designer.cs">
+      <DependentUpon>EditKeteranganSewaDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\popup\JenisTrukListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +153,12 @@
     </Compile>
     <Compile Include="view\popup\RuteListForm.Designer.cs">
       <DependentUpon>RuteListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\SewaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\SewaListForm.Designer.cs">
+      <DependentUpon>SewaListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="view\popup\SupirListForm.cs">
       <SubType>Form</SubType>
@@ -173,6 +191,9 @@
     <EmbeddedResource Include="view\entry\CustomerEntryForm.resx">
       <DependentUpon>CustomerEntryForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\SuratJalanEntryForm.resx">
+      <DependentUpon>SuratJalanEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\entry\TrukEntryForm.resx">
       <DependentUpon>TrukEntryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +224,9 @@
     <EmbeddedResource Include="view\popup\EditHargaRuteTruk.resx">
       <DependentUpon>EditHargaRuteTruk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\EditKeteranganSewaDetail.resx">
+      <DependentUpon>EditKeteranganSewaDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\popup\JenisTrukListForm.resx">
       <DependentUpon>JenisTrukListForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\RuteListForm.resx">
       <DependentUpon>RuteListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\SewaListForm.resx">
+      <DependentUpon>SewaListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\SupirListForm.resx">
       <DependentUpon>SupirListForm.cs</DependentUpon>

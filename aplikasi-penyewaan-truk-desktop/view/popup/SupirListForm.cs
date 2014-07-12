@@ -32,15 +32,13 @@ namespace desktop.view.popup
         public SupirListForm(ProfilForm profilForm)
         {
             InitializeComponent();
+            this.profilForm = profilForm;
             supirService = new SupirServiceImpl();
             kernetService = new KernetServiceImpl();
             trukService = new TrukServiceImpl();
             if (profilForm == ProfilForm.Unknow) {
                 listTruk = trukService.cariDaftarTruk("");
             }
-            
-            this.profilForm = profilForm;
-
 
             inisialisasiListView(supirService.cariDaftarSupir(""));
 
@@ -84,7 +82,8 @@ namespace desktop.view.popup
 
                     if (profilForm == ProfilForm.Unknow) {
                         
-                        if (listTruk != null) {
+                        if (listTruk != null) 
+                        {
                             if (listTruk.Count > 0) {
                                 foreach (Supir s in list) {
                                     if (validasiSupirUdahPunyaTruk(s.Id)) {
@@ -106,6 +105,25 @@ namespace desktop.view.popup
                                     }
                                     
                                 }
+                            
+                        } else {
+                                foreach (Supir s in list) {
+                            BetterListViewItem items = new BetterListViewItem(s.Id);
+                            items.SubItems.Add(s.Nama);
+                            items.SubItems.Add(s.Alamat);
+                            items.SubItems.Add(s.NomorHp);
+                            if (s.Kernet != null) {
+                                Kernet kernet = kernetService.cari(s.Kernet.Id);
+                                if (kernet != null) {
+                                    items.SubItems.Add(kernet.Id);
+                                    items.SubItems.Add(kernet.Nama);
+                                }
+                            } else {
+                                items.SubItems.Add("-");
+                                items.SubItems.Add("-");
+                            }
+                            lvSupir.Items.Add(items);
+                        }
                             }
                         }
                     } else {

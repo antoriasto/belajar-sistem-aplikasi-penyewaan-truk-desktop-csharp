@@ -28,6 +28,7 @@ namespace desktop.view
 
         // Form Transaksi.
         SewaEntryForm sewaEntryForm;
+        SuratJalanEntryForm suratJalanEntryForm;
 
         // Node Click Variable.
         String nodeCaption = "";
@@ -211,6 +212,19 @@ namespace desktop.view
         {
             nodeCaption = e.Node.Name;
             navigateHandler(nodeCaption);
+        }
+
+        private void suratJalanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.suratJalanEntryForm == null || this.suratJalanEntryForm.IsDisposed)
+            {
+                suratJalanEntryForm = new SuratJalanEntryForm();
+                suratJalanEntryForm.Show();
+            }
+            else if (this.suratJalanEntryForm != null)
+            {
+                suratJalanEntryForm.Show();
+            }
         }
 
     }
