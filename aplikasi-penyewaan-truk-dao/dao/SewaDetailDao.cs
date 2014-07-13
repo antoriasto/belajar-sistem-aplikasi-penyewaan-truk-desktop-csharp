@@ -39,6 +39,9 @@ namespace core.dao
         private readonly string findAllDataQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, KETERANGAN " +
             "from sewa_detail where SEWA_ID like @1 limit @2, @3";
 
+        private readonly string findAllDataBySewaIdQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, KETERANGAN " +
+            "from sewa_detail where SEWA_ID=@1 limit @2, @3";
+
         #endregion
 
         #region Dao Data Acces Object
@@ -114,14 +117,14 @@ namespace core.dao
             return jumlahbaris;
         }
 
-        public List<SewaDetail> findAllData(String search)
+        public List<SewaDetail> findAllData(String id)
         {
             Console.WriteLine(findAllDataQuery);
 
             List<SewaDetail> daftarSewaDetail = new List<SewaDetail>();
-            using (MySqlCommand cmd = new MySqlCommand(findAllDataQuery, connection))
+            using (MySqlCommand cmd = new MySqlCommand(findAllDataBySewaIdQuery, connection))
             {
-                cmd.Parameters.AddWithValue("@1", "%" + search + "%");
+                cmd.Parameters.AddWithValue("@1", id);
                 cmd.Parameters.AddWithValue("@2", 0);
                 cmd.Parameters.AddWithValue("@3", 300);
 

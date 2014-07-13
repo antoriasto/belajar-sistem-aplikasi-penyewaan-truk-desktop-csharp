@@ -8,6 +8,6 @@ namespace domain.service
 {
     public interface ISewaDetailService
     {
-        IList<SewaDetail> findAllData();
+        IList<SewaDetail> findAllData(String id);
     }
 }

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
 using core.utilities;
-using aplikasi_penyewaan_truk_domain.model;
 using domain.model;
 
 namespace core.dao
@@ -24,7 +23,7 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO surat_jalan (SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, KETERANGAN, SEWA_ID) values(@1,@2,@3,@4)";
+        private readonly string insertQuery = "INSERT INTO surat_jalan (SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, SEWA_ID) values(@1,@2,@4)";
 
         private readonly string generateIdQuery = "SELECT SURAT_JALAN_ID " +
             "from surat_jalan " +
@@ -42,7 +41,7 @@ namespace core.dao
                     "from surat_jalan " +
                     "where SURAT_JALAN_ID like @1";
 
-        private readonly string findAllDataQuery = "SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, KETERANGAN, SEWA_ID " +
+        private readonly string findAllDataQuery = "SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, SEWA_ID " +
             "from surat_jalan where SURAT_JALAN_ID like @1 limit @2, @3";
 
         #endregion
@@ -61,7 +60,6 @@ namespace core.dao
             {
                 cmd.Parameters.AddWithValue("@1", suratJalan.Id);
                 cmd.Parameters.AddWithValue("@2", suratJalan.Tanggal);
-                cmd.Parameters.AddWithValue("@3", suratJalan.Keterangan);
                 cmd.Parameters.AddWithValue("@4", suratJalan.Sewa.Id);
 
                 int x = cmd.ExecuteNonQuery();
@@ -134,7 +132,7 @@ namespace core.dao
                         Int32 nilai = Convert.ToInt32(id) + 1;
 
                         String AN = UtilsLeftRightMid.Right("SJ0000000000000", 13 - nilai.ToString().Length) + nilai;
-                        return "SE" + AN.ToString();
+                        return "SJ" + AN.ToString();
                     }
                     else
                     {
@@ -172,7 +170,6 @@ namespace core.dao
             SuratJalan s = new SuratJalan();
             s.Id = mdr.GetString("SURAT_JALAN_ID");
             s.Tanggal = mdr.GetDateTime("TANGGAL_SURAT_JALAN");
-            s.Keterangan = mdr.GetString("KETERANGAN");
             s.Sewa = new Sewa(mdr.GetString("SEWA_ID"));
 
             return s;

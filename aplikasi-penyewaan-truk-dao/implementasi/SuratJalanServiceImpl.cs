@@ -6,7 +6,8 @@ using domain.service;
 using core.dao;
 using MySql.Data.MySqlClient;
 using core.utilities;
-using aplikasi_penyewaan_truk_domain.model;
+using domain.service;
+using domain.model;
 
 namespace core.implementasi
 {
@@ -44,6 +45,27 @@ namespace core.implementasi
         public IList<SuratJalan> findAllData()
         {
             throw new NotImplementedException();
+        }
+
+
+        public string autoNumber()
+        {
+            try
+            {
+                // Setting koneksi dan buka koneksi.
+                suratJalanDao.setConnection = connection;
+                connection.Open();
+                return suratJalanDao.nomorOtomatis();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return null;
         }
     }
 }

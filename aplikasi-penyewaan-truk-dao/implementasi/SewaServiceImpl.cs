@@ -14,11 +14,13 @@ namespace core.implementasi
     {
         private SewaDao sewaDao;
         private SewaDetailDao sewaDetailDao;
+        private TrukDao trukDao;
         private MySqlConnection connection;
 
         public SewaServiceImpl() {
             sewaDao = new SewaDao();
             sewaDetailDao = new SewaDetailDao();
+            trukDao = new TrukDao();
             connection = new MySqlConnection(DataBaseConnection.stringMySqlConnection);
         }
 
@@ -29,9 +31,11 @@ namespace core.implementasi
                 // Setting koneksi dan buka koneksi.
                 sewaDao.setConnection = connection;
                 sewaDetailDao.setConnection = connection;
+                trukDao.setConnection = connection;
                 connection.Open();
                 sewa.Id = sewaDao.nomorOtomatis();
                 sewaDao.save(sewa);
+                
                 return sewa;
             }
             catch (Exception ex)
@@ -45,9 +49,24 @@ namespace core.implementasi
             return null;
         }
 
-        public Sewa findById(string id)
+        public Sewa findById(String id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Setting koneksi dan buka koneksi.
+                sewaDao.setConnection = connection;
+                connection.Open();
+                return sewaDao.findById(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return null;
         }
 
         public string autoNumber() {
@@ -95,10 +114,16 @@ namespace core.implementasi
                 // Setting koneksi dan buka koneksi.
                 sewaDao.setConnection = connection;
                 sewaDetailDao.setConnection = connection;
+                trukDao.setConnection = connection;
                 connection.Open();
                 sewa.Id = sewaDao.nomorOtomatis();
                 sewaDao.save(sewa);
                 sewaDetailDao.save(detailSewa);
+                IList<Truk> listTruk = new List<Truk>();
+                foreach (SewaDetail s in detailSewa) {
+                    listTruk.Add(new Truk(s.Truk.Id));
+                }
+                trukDao.update(listTruk);
                 return sewa;
             }
             catch (Exception ex)

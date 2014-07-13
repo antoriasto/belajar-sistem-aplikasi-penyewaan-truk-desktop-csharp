@@ -2,4 +2,3 @@ K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\bin\
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
-K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\obj\Debug\domain.csprojResolveAssemblyReference.cache

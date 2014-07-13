@@ -19,14 +19,14 @@ namespace core.implementasi
             connection = new MySqlConnection(DataBaseConnection.stringMySqlConnection);
         }
 
-        public IList<SewaDetail> findAllData()
+        public IList<SewaDetail> findAllData(String id)
         {
             try
             {
                 // Setting koneksi dan buka koneksi.
                 sewaDetailDao.setConnection = connection;
                 connection.Open();
-                return sewaDetailDao.findAllData("");
+                return sewaDetailDao.findAllData(id);
             }
             catch (Exception ex)
             {

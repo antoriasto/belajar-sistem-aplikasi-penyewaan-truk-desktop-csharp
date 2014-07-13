@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using domain.model;
 
-namespace aplikasi_penyewaan_truk_domain.model
+namespace domain.model
 {
     public class SuratJalan
     {
@@ -28,13 +27,6 @@ namespace aplikasi_penyewaan_truk_domain.model
         {
             get { return tanggal; }
             set { tanggal = value; }
-        }
-        private String keterangan;
-
-        public String Keterangan
-        {
-            get { return keterangan; }
-            set { keterangan = value; }
         }
 
 

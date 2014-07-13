@@ -30,7 +30,7 @@ namespace core.dao
             "ORDER BY SEWA_ID DESC";
 
         private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
-            "from Sewa " +
+            "from sewa " +
             "where SEWA_ID= @1";
 
         private readonly string countAllDataQuery =

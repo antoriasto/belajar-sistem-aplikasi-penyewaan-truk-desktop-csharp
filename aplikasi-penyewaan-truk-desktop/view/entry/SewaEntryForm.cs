@@ -276,6 +276,7 @@ namespace desktop.view.entry
 
                 if (sewaService.save(sewa, listSewaDetail) != null) {
                     MessageCustom.messageInfo("Sewa", "Data Berhasil Disimpan");
+                    this.Dispose();
                 } else {
                     MessageCustom.messageCritical("Sewa", "Data Gagal Disimpan");
                 }

@@ -5,6 +5,7 @@ using System.Text;
 using MySql.Data.MySqlClient;
 using domain.model;
 using core.utilities;
+using domain.model.enumerasi;
 
 namespace core.dao
 {
@@ -28,6 +29,9 @@ namespace core.dao
 
         private readonly string updateQuery = "UPDATE Truk " +
             "set NOMOR_POLISI=@1, STATUS=@2, SUPIR_ID=@3, JENIS_TRUK_ID=@4 " + "where TRUK_ID=@5";
+
+        private readonly string updateStatusTrukQuery = "UPDATE Truk " +
+            "set STATUS=@2 " + "where TRUK_ID=@5";
 
         private readonly string deleteQuery = "DELETE from Truk " +
             "where TRUK_ID=@1";
@@ -109,6 +113,20 @@ namespace core.dao
                 return truk;
             }
         }
+
+        public Truk updateStatusTruk(Truk truk)
+        {
+            using (MySqlCommand cmd = new MySqlCommand(updateStatusTrukQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@2", truk.Status);
+                cmd.Parameters.AddWithValue("@5", truk.Id);
+
+                int x = cmd.ExecuteNonQuery();
+                return truk;
+            }
+        }
+
+
 
         public Truk delete(Truk truk)
         {
@@ -286,5 +304,13 @@ namespace core.dao
         }
 
         #endregion
+
+        internal void update(IList<Truk> listTruk)
+        {
+            foreach(Truk t in listTruk) {
+                t.Status = StatusTruk.Sedang_Beroperasi.ToString();
+                updateStatusTruk(t);
+            }
+        }
     }
 }
