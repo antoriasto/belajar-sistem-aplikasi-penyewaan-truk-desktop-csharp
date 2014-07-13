@@ -2,3 +2,8 @@ K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\bin\
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb

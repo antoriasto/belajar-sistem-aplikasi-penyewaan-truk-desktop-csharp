@@ -5,3 +5,10 @@ K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Deb
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\obj\Debug\core.pdb
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.dll
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\bin\Debug\core.dll
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\bin\Debug\core.pdb
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\obj\Debug\ResolveAssemblyReference.cache
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\obj\Debug\core.dll
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\obj\Debug\core.pdb
