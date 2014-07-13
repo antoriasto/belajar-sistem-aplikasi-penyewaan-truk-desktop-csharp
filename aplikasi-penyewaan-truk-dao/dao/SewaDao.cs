@@ -44,6 +44,9 @@ namespace core.dao
         private readonly string findAllDataQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
             "from sewa where CUSTOMER_ID like @1 limit @2, @3";
 
+        private readonly string findAllDataNotInSuratJalanQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID FROM sewa " + 
+            "WHERE SEWA_ID NOT IN ( SELECT SEWA_ID FROM surat_jalan);";
+
         #endregion
 
         #region Dao Data Acces Object
@@ -149,12 +152,8 @@ namespace core.dao
             Console.WriteLine(findAllDataQuery);
 
             List<Sewa> daftarKernet = new List<Sewa>();
-            using (MySqlCommand cmd = new MySqlCommand(findAllDataQuery, connection))
+            using (MySqlCommand cmd = new MySqlCommand(findAllDataNotInSuratJalanQuery, connection))
             {
-                cmd.Parameters.AddWithValue("@1", "%" + search + "%");
-                cmd.Parameters.AddWithValue("@2", 0);
-                cmd.Parameters.AddWithValue("@3", 300);
-
                 using (MySqlDataReader mdr = cmd.ExecuteReader())
                 {
                     while (mdr.Read())

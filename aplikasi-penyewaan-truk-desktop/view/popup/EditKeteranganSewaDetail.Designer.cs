@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnEdit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtJenisTruk = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtRute = new System.Windows.Forms.TextBox();
             this.txtKeterangan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,16 +64,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(403, 244);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // btnEdit
+            // label3
             // 
-            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit.Location = new System.Drawing.Point(311, 208);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(79, 23);
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Enabled = false;
+            this.label3.Location = new System.Drawing.Point(13, 44);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Rute:";
             // 
             // label2
             // 
@@ -96,17 +96,6 @@
             this.txtJenisTruk.Size = new System.Drawing.Size(304, 21);
             this.txtJenisTruk.TabIndex = 6;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Enabled = false;
-            this.label3.Location = new System.Drawing.Point(13, 44);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Rute:";
-            // 
             // txtRute
             // 
             this.txtRute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -121,7 +110,7 @@
             // 
             this.txtKeterangan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKeterangan.Location = new System.Drawing.Point(86, 67);
-            this.txtKeterangan.MaxLength = 12;
+            this.txtKeterangan.MaxLength = 255;
             this.txtKeterangan.Multiline = true;
             this.txtKeterangan.Name = "txtKeterangan";
             this.txtKeterangan.Size = new System.Drawing.Size(304, 86);
@@ -136,6 +125,17 @@
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Keterangan:";
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.Location = new System.Drawing.Point(311, 208);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(79, 23);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // EditKeteranganSewaDetail
             // 

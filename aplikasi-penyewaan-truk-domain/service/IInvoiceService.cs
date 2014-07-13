@@ -6,11 +6,9 @@ using domain.model;
 
 namespace domain.service
 {
-    public interface ISuratJalanService
+    public interface IInvoiceService
     {
-        SuratJalan save(SuratJalan suratJalan);
-        SuratJalan findById(String suratJalanId);
-        IList<SuratJalan> findAllData();
+        Invoice save(Invoice invoice, IList<Truk> listTruk);
         String autoNumber();
     }
 }

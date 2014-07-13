@@ -200,7 +200,7 @@ namespace desktop.view.entry
                     supir.Id = (txtSupirId.Text);
                 }
                 
-                if (!txtSupirId.Text.Equals(""))
+                if (!txtJenisTrukId.Text.Equals(""))
                 {
                     jenisTruk.Id = txtJenisTrukId.Text;
                 }
@@ -226,6 +226,16 @@ namespace desktop.view.entry
                     if (validasiUpdate())
                     {
                         truk.Id = txtTrukId.Text;
+                        if (!txtSupirId.Text.Equals(""))
+                        {
+                            truk.Supir = new Supir(txtSupirId.Text);
+                        }
+                
+                        if (!txtJenisTrukId.Text.Equals(""))
+                        {
+                            truk.JenisTruk = new JenisTruk(txtJenisTrukId.Text);
+                        }
+
                         if (trukService.ubah(truk) != null)
                         {
                             MessageCustom.messageInfo("Truk", "Data Berhasil Diubah");
@@ -249,7 +259,7 @@ namespace desktop.view.entry
         {
             if (!txtTrukId.Text.Equals(""))
             {
-                DialogResult result1 = MessageBox.Show("Is Dot Net Perls awesome?",
+                DialogResult result1 = MessageBox.Show("Apakah Anda Yakin Ingin Menghapus Data Truk?",
                                                         "Important Question",
                                                         MessageBoxButtons.YesNo);
 

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
-using core.utilities;
 using domain.model;
+using core.utilities;
 
 namespace core.dao
 {
-    public class SuratJalanDao
+    public class InvoiceDao
     {
         private MySqlConnection connection;
 
@@ -23,13 +23,13 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO surat_jalan (SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, SEWA_ID) values(@1,@2,@4)";
+        private readonly string insertQuery = "INSERT INTO invoice (INVOICE_ID, TANGGAL_INVOICE, SURAT_JALAN_ID) values(@1,@2,@4)";
 
-        private readonly string generateIdQuery = "SELECT SURAT_JALAN_ID " +
-            "from surat_jalan " +
-            "ORDER BY SURAT_JALAN_ID DESC";
+        private readonly string generateIdQuery = "SELECT INVOICE_ID " +
+            "from invoice " +
+            "ORDER BY INVOICE_ID DESC";
 
-        private readonly string findByIdQuery = "SELECT SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, SEWA_ID " +
+        private readonly string findByIdQuery = "SELECT SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, KETERANGAN, SEWA_ID " +
             "from surat_jalan " +
             "where SURAT_JALAN_ID= @1";
 
@@ -44,9 +44,6 @@ namespace core.dao
         private readonly string findAllDataQuery = "SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, SEWA_ID " +
             "from surat_jalan where SURAT_JALAN_ID like @1 limit @2, @3";
 
-        private readonly string findAllDataNotInInvoiceQuery = "SELECT SURAT_JALAN_ID, TANGGAL_SURAT_JALAN, SEWA_ID FROM surat_jalan " + 
-            "WHERE SURAT_JALAN_ID NOT IN ( SELECT SURAT_JALAN_ID FROM invoice);";
-
         #endregion
 
         #region Dao Data Acces Object
@@ -56,26 +53,26 @@ namespace core.dao
         /// Gunain koneksi (MySql) privatenya yang diatas.
         /// </summary>
 
-        public SuratJalan save(SuratJalan suratJalan)
+        public Invoice save(Invoice invoice)
         {
             Console.WriteLine(insertQuery);
             using (MySqlCommand cmd = new MySqlCommand(insertQuery, connection))
             {
-                cmd.Parameters.AddWithValue("@1", suratJalan.Id);
-                cmd.Parameters.AddWithValue("@2", suratJalan.Tanggal);
-                cmd.Parameters.AddWithValue("@4", suratJalan.Sewa.Id);
+                cmd.Parameters.AddWithValue("@1", invoice.Id);
+                cmd.Parameters.AddWithValue("@2", invoice.Tanggal);
+                cmd.Parameters.AddWithValue("@4", invoice.SuratJalan.Id);
 
                 int x = cmd.ExecuteNonQuery();
-                return suratJalan;
+                return invoice;
             }
         }
 
-        public SuratJalan findById(String suratJalanId)
+        public SuratJalan findById(String sewaId)
         {
             Console.WriteLine(findByIdQuery);
             using (MySqlCommand cmd = new MySqlCommand(findByIdQuery, connection))
             {
-                cmd.Parameters.AddWithValue("@1", suratJalanId);
+                cmd.Parameters.AddWithValue("@1", sewaId);
                 using (MySqlDataReader mdr = cmd.ExecuteReader())
                 {
                     if (mdr.Read())
@@ -131,15 +128,15 @@ namespace core.dao
                     String autoNumber = "";
                     if (mdr.Read())
                     {
-                        String id = UtilsLeftRightMid.Mid(mdr.GetString("SURAT_JALAN_ID"), 2, 13);
+                        String id = UtilsLeftRightMid.Mid(mdr.GetString("INVOICE_ID"), 2, 13);
                         Int32 nilai = Convert.ToInt32(id) + 1;
 
-                        String AN = UtilsLeftRightMid.Right("SJ0000000000000", 13 - nilai.ToString().Length) + nilai;
-                        return "SJ" + AN.ToString();
+                        String AN = UtilsLeftRightMid.Right("IN0000000000000", 13 - nilai.ToString().Length) + nilai;
+                        return "IN" + AN.ToString();
                     }
                     else
                     {
-                        autoNumber = "SJ0000000000001";
+                        autoNumber = "IN0000000000001";
                         return autoNumber;
                     }
                 }
@@ -148,11 +145,14 @@ namespace core.dao
 
         public List<SuratJalan> findAllData(String search)
         {
-            Console.WriteLine(findAllDataNotInInvoiceQuery);
+            Console.WriteLine(findAllDataQuery);
 
             List<SuratJalan> daftarSuratJalan = new List<SuratJalan>();
-            using (MySqlCommand cmd = new MySqlCommand(findAllDataNotInInvoiceQuery, connection))
+            using (MySqlCommand cmd = new MySqlCommand(findAllDataQuery, connection))
             {
+                cmd.Parameters.AddWithValue("@1", "%" + search + "%");
+                cmd.Parameters.AddWithValue("@2", 0);
+                cmd.Parameters.AddWithValue("@3", 300);
 
                 using (MySqlDataReader mdr = cmd.ExecuteReader())
                 {

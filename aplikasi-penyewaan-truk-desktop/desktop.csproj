@@ -59,6 +59,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report\InvoicePrinted.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoicePrinted.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="report\ShowReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="view\entry\CustomerEntryForm.Designer.cs">
       <DependentUpon>CustomerEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\entry\InvoiceEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\InvoiceEntryForm.Designer.cs">
+      <DependentUpon>InvoiceEntryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="view\entry\SuratJalanEntryForm.cs">
       <SubType>Form</SubType>
@@ -185,6 +197,12 @@
     <Compile Include="view\popup\SupirListForm.Designer.cs">
       <DependentUpon>SupirListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\popup\SuratJalanListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\SuratJalanListForm.Designer.cs">
+      <DependentUpon>SuratJalanListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\popup\TrukListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +225,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\InvoicePrinted.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvoicePrinted.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\ShowReportForm.resx">
       <DependentUpon>ShowReportForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\entry\CustomerEntryForm.resx">
       <DependentUpon>CustomerEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\InvoiceEntryForm.resx">
+      <DependentUpon>InvoiceEntryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\entry\SuratJalanEntryForm.resx">
       <DependentUpon>SuratJalanEntryForm.cs</DependentUpon>
@@ -267,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\SupirListForm.resx">
       <DependentUpon>SupirListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\SuratJalanListForm.resx">
+      <DependentUpon>SuratJalanListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\TrukListForm.resx">
       <DependentUpon>TrukListForm.cs</DependentUpon>

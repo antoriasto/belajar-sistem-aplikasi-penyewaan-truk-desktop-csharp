@@ -18,6 +18,15 @@ namespace domain.model
         // Additional feld.
         private Command status;
 
+        // Field Tambahan, ini salah konsep.
+        private String keterangan;
+
+        public String Keterangan
+        {
+            get { return keterangan; }
+            set { keterangan = value; }
+        }
+
         public String Id
         {
             get { return id; }

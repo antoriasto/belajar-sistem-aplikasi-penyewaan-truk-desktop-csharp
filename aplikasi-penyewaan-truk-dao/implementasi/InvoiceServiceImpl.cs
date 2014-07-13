@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using domain.service;
-using core.dao;
 using MySql.Data.MySqlClient;
 using core.utilities;
-using domain.service;
+using core.dao;
 using domain.model;
+using domain.model.enumerasi;
 
 namespace core.implementasi
 {
-    public class SuratJalanServiceImpl : ISuratJalanService
+    public class InvoiceServiceImpl : IInvoiceService
     {
-        private SuratJalanDao suratJalanDao = new SuratJalanDao();
+        private InvoiceDao invoiceDao = new InvoiceDao();
+        private TrukDao trukDao = new TrukDao();
         private MySqlConnection connection;
 
-        public SuratJalanServiceImpl() {
+        public InvoiceServiceImpl() {
             connection = new MySqlConnection(DataBaseConnection.stringMySqlConnection);
         }
 
-        public SuratJalan save(SuratJalan suratJalan)
+
+        public Invoice save(Invoice invoice)
         {
             try
             {
                 // Setting koneksi dan buka koneksi.
-                suratJalanDao.setConnection = connection;
+                invoiceDao.setConnection = connection;
                 connection.Open();
-                suratJalan.Id = suratJalanDao.nomorOtomatis();
-                suratJalanDao.save(suratJalan);
-                return suratJalan;
+                return invoice;
             }
             catch (Exception ex)
             {
@@ -42,14 +42,14 @@ namespace core.implementasi
             return null;
         }
 
-        public IList<SuratJalan> findAllData()
+        public String autoNumber()
         {
             try
             {
                 // Setting koneksi dan buka koneksi.
-                suratJalanDao.setConnection = connection;
+                invoiceDao.setConnection = connection;
                 connection.Open();
-                return suratJalanDao.findAllData("");
+                return invoiceDao.nomorOtomatis();
             }
             catch (Exception ex)
             {
@@ -62,36 +62,21 @@ namespace core.implementasi
             return null;
         }
 
-
-        public string autoNumber()
+        public Invoice save(Invoice invoice, IList<Truk> listTruk)
         {
             try
             {
                 // Setting koneksi dan buka koneksi.
-                suratJalanDao.setConnection = connection;
+                invoiceDao.setConnection = connection;
+                trukDao.setConnection = connection;
                 connection.Open();
-                return suratJalanDao.nomorOtomatis();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-            finally
-            {
-                connection.Close();
-            }
-            return null;
-        }
 
-
-        public SuratJalan findById(String suratJalanId)
-        {
-            try
-            {
-                // Setting koneksi dan buka koneksi.
-                suratJalanDao.setConnection = connection;
-                connection.Open();
-                return suratJalanDao.findById(suratJalanId);
+                invoiceDao.save(invoice);
+                foreach(Truk t in listTruk) {
+                    t.Status = StatusTruk.Tersedia.ToString();
+                    trukDao.updateStatusTruk(t);
+                }
+                return invoice;
             }
             catch (Exception ex)
             {

@@ -160,13 +160,12 @@ namespace desktop.view.entry
                     Kernet kernet = kernetService.cari(supir.Kernet.Id);
                     items.SubItems.Add(supir.Kernet.Id);
                     items.SubItems.Add(kernet.Nama);
-                    items.SubItems.Add("");
                 } else {
                     items.SubItems.Add("");
                     items.SubItems.Add("");
-                    items.SubItems.Add("");
                 }
-                
+
+                items.SubItems.Add(h.Keterangan);
                 lvCartTruk.Items.Add(items);
                 hargaTotal += h.Harga;
                 lblJumlahTruk.Text = cartTruk.Count.ToString() + " Unit";
@@ -264,13 +263,13 @@ namespace desktop.view.entry
 
                 Sewa sewa = new Sewa();
                 sewa.Id = sewaService.autoNumber();
-                sewa.Tanggal = new DateTime();
+                sewa.Tanggal = DateTime.Now;
                 sewa.TotalHarga = getTotalPrice();
                 sewa.Customer = new Customer(txtCustomerId.Text);
                 IList<SewaDetail> listSewaDetail = new List<SewaDetail>();
                 foreach (HargaRuteTruk h in cartTruk) {
                     SewaDetail s = new SewaDetail(sewa.Id, h.Harga, new Truk(h.Truk.Id));
-                    s.Keterangan = getKeterangan(h.Truk.Id);
+                    s.Keterangan = h.Keterangan;
                     listSewaDetail.Add(s);
                 }
 
@@ -346,6 +345,13 @@ namespace desktop.view.entry
                     lvCartTruk.Items[x].SubItems[13].Text = keterangan;
                 }
             }
+
+            foreach (HargaRuteTruk h in cartTruk) {
+                if (h.Id.Equals(id)) {
+                    h.Keterangan = keterangan;
+                }
+            }
+
         }
 
         private String getKeterangan(String id) {

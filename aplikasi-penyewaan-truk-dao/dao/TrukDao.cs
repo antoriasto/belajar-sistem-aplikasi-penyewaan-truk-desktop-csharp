@@ -27,7 +27,7 @@ namespace core.dao
         // ----------------------------
         private readonly string insertQuery = "INSERT INTO Truk (TRUK_ID, NOMOR_POLISI, STATUS, SUPIR_ID, JENIS_TRUK_ID) values(@1,@2,@3,@4,@5)";
 
-        private readonly string updateQuery = "UPDATE Truk " +
+        private readonly string updateQuery = "UPDATE truk " +
             "set NOMOR_POLISI=@1, STATUS=@2, SUPIR_ID=@3, JENIS_TRUK_ID=@4 " + "where TRUK_ID=@5";
 
         private readonly string updateStatusTrukQuery = "UPDATE Truk " +
@@ -101,6 +101,7 @@ namespace core.dao
 
         public Truk update(Truk truk)
         {
+            Console.WriteLine(updateQuery);
             using (MySqlCommand cmd = new MySqlCommand(updateQuery, connection))
             {
                 cmd.Parameters.AddWithValue("@1", truk.NomorPolisi);

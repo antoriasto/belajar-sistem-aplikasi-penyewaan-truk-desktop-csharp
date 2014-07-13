@@ -11,7 +11,7 @@ namespace desktop.utilities
     {
         public static string ToRupiah(this long angka)
         {
-            return String.Format(CultureInfo.CreateSpecificCulture("id-id"), "Rp. {0:N}", angka);
+            return String.Format(CultureInfo.CreateSpecificCulture("Id-Id"), "Rp. {0:N}", angka);
         }
         /**
         * // Usage example: //

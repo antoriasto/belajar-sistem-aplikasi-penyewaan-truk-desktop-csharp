@@ -32,3 +32,5 @@ K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
 K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+K:\000 Project Kecil\aplikasi-penyewaan-truk\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources

@@ -57,12 +57,13 @@
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sewaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suratJalanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarAplikasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblNodeInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.suratJalanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -157,7 +158,8 @@
             // 
             this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sewaToolStripMenuItem,
-            this.suratJalanToolStripMenuItem});
+            this.suratJalanToolStripMenuItem,
+            this.invoiceToolStripMenuItem});
             this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
             this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.transaksiToolStripMenuItem.Text = "Transaksi";
@@ -168,6 +170,13 @@
             this.sewaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sewaToolStripMenuItem.Text = "Sewa";
             this.sewaToolStripMenuItem.Click += new System.EventHandler(this.sewaToolStripMenuItem_Click);
+            // 
+            // suratJalanToolStripMenuItem
+            // 
+            this.suratJalanToolStripMenuItem.Name = "suratJalanToolStripMenuItem";
+            this.suratJalanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.suratJalanToolStripMenuItem.Text = "Surat Jalan";
+            this.suratJalanToolStripMenuItem.Click += new System.EventHandler(this.suratJalanToolStripMenuItem_Click);
             // 
             // laporanToolStripMenuItem
             // 
@@ -227,12 +236,12 @@
             this.treeView1.TabIndex = 4;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
-            // suratJalanToolStripMenuItem
+            // invoiceToolStripMenuItem
             // 
-            this.suratJalanToolStripMenuItem.Name = "suratJalanToolStripMenuItem";
-            this.suratJalanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.suratJalanToolStripMenuItem.Text = "Surat Jalan";
-            this.suratJalanToolStripMenuItem.Click += new System.EventHandler(this.suratJalanToolStripMenuItem_Click);
+            this.invoiceToolStripMenuItem.Name = "invoiceToolStripMenuItem";
+            this.invoiceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.invoiceToolStripMenuItem.Text = "Invoice";
+            this.invoiceToolStripMenuItem.Click += new System.EventHandler(this.invoiceToolStripMenuItem_Click);
             // 
             // Index
             // 
@@ -280,5 +289,6 @@
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ToolStripStatusLabel lblNodeInfo;
         private System.Windows.Forms.ToolStripMenuItem suratJalanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invoiceToolStripMenuItem;
     }
 }

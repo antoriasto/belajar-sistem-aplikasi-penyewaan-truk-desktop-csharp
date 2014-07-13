@@ -62,12 +62,19 @@ namespace desktop.view.popup
         }
 
         private Boolean validasiSupirUdahPunyaTruk(String id) {
-            foreach (Truk t in listTruk) {
-                if (t.Supir.Id.Equals(id)) {
-                    MessageBox.Show(t.Supir.Id + id);
-                    return false;
+            if (listTruk != null) {
+                if (listTruk.Count > 0) {
+                    foreach (Truk t in listTruk) {
+                        if (t.Supir != null) {
+                            if (t.Supir.Id.Equals(id)) {
+                                MessageBox.Show(t.Supir.Id + id);
+                                return false;
+                            }
+                        }
+                    }
                 }
             }
+            
             return true;
         }
 

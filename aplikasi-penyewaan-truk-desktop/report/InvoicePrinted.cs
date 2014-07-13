@@ -16,14 +16,14 @@ namespace desktop.report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class SuratJalanPrinted : ReportClass {
+    public class InvoicePrinted : ReportClass {
         
-        public SuratJalanPrinted() {
+        public InvoicePrinted() {
         }
         
         public override string ResourceName {
             get {
-                return "SuratJalanPrinted.rpt";
+                return "InvoicePrinted.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace desktop.report {
         
         public override string FullResourceName {
             get {
-                return "desktop.report.SuratJalanPrinted.rpt";
+                return "desktop.report.InvoicePrinted.rpt";
             }
             set {
                 // Do nothing
@@ -90,7 +90,7 @@ namespace desktop.report {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PARAM_NO_SURAT_JALAN {
+        public CrystalDecisions.Shared.IParameterField Parameter_PARAM_NO_INVOICE {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,9 +98,9 @@ namespace desktop.report {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedSuratJalanPrinted : Component, ICachedReport {
+    public class CachedInvoicePrinted : Component, ICachedReport {
         
-        public CachedSuratJalanPrinted() {
+        public CachedInvoicePrinted() {
         }
         
         [Browsable(false)]
@@ -137,7 +137,7 @@ namespace desktop.report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            SuratJalanPrinted rpt = new SuratJalanPrinted();
+            InvoicePrinted rpt = new InvoicePrinted();
             rpt.Site = this.Site;
             return rpt;
         }

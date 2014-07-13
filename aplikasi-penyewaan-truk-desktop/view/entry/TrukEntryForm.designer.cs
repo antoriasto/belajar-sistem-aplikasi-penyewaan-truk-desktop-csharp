@@ -175,7 +175,6 @@
             this.lblJenisTrukId.Size = new System.Drawing.Size(73, 13);
             this.lblJenisTrukId.TabIndex = 6;
             this.lblJenisTrukId.Text = "Jenis Truk ID:";
-            this.lblJenisTrukId.Visible = false;
             // 
             // txtNomorPolisi
             // 
@@ -225,7 +224,6 @@
             this.txtJenisTrukId.Name = "txtJenisTrukId";
             this.txtJenisTrukId.Size = new System.Drawing.Size(383, 21);
             this.txtJenisTrukId.TabIndex = 7;
-            this.txtJenisTrukId.Visible = false;
             this.txtJenisTrukId.TextChanged += new System.EventHandler(this.txtJenisTrukId_TextChanged);
             // 
             // lblJenisTruk
@@ -255,7 +253,6 @@
             this.lblSupirId.Size = new System.Drawing.Size(49, 13);
             this.lblSupirId.TabIndex = 10;
             this.lblSupirId.Text = "Supir ID:";
-            this.lblSupirId.Visible = false;
             // 
             // label7
             // 
@@ -274,7 +271,6 @@
             this.txtSupirId.Name = "txtSupirId";
             this.txtSupirId.Size = new System.Drawing.Size(383, 21);
             this.txtSupirId.TabIndex = 12;
-            this.txtSupirId.Visible = false;
             this.txtSupirId.TextChanged += new System.EventHandler(this.txtSupirId_TextChanged);
             // 
             // txtNamaSupir
