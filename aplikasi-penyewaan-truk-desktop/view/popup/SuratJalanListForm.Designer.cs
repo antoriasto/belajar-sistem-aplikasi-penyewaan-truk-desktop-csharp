@@ -52,6 +52,7 @@
             this.lvSuratJalan.Name = "lvSuratJalan";
             this.lvSuratJalan.Size = new System.Drawing.Size(639, 232);
             this.lvSuratJalan.TabIndex = 23;
+            this.lvSuratJalan.SelectedIndexChanged += new System.EventHandler(this.lvSuratJalan_SelectedIndexChanged);
             this.lvSuratJalan.DoubleClick += new System.EventHandler(this.lvSuratJalan_DoubleClick);
             // 
             // betterListViewColumnHeader10

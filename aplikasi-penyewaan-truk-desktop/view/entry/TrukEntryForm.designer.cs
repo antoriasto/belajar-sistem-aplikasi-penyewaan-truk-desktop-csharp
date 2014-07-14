@@ -401,6 +401,7 @@
             this.Name = "TrukEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrukEntryForm";
+            this.Load += new System.EventHandler(this.TrukEntryForm_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

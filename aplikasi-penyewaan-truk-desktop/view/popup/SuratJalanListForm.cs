@@ -59,5 +59,10 @@ namespace desktop.view.popup
             }
         }
 
+        private void lvSuratJalan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

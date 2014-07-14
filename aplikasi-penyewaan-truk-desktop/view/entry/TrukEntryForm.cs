@@ -76,7 +76,7 @@ namespace desktop.view.entry
                 }
 
                 totalDataRuteTruk = hargaRuteTrukService.countAllData(truk);
-                MessageBox.Show(totalDataRuteTruk.ToString());
+                //MessageBox.Show(totalDataRuteTruk.ToString());
                 if (totalDataRuteTruk != 0)
                 {
                     cbRute.Text = "Memiliki " + totalDataRuteTruk.ToString() + " Rute";
@@ -327,6 +327,11 @@ namespace desktop.view.entry
         {
             txtSupirId.Clear();
             txtNamaSupir.Clear();
+        }
+
+        private void TrukEntryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

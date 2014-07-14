@@ -6,7 +6,6 @@ using domain.service;
 using core.dao;
 using MySql.Data.MySqlClient;
 using core.utilities;
-using domain.service;
 using domain.model;
 
 namespace core.implementasi

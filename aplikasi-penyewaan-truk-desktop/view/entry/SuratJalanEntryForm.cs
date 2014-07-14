@@ -35,7 +35,7 @@ namespace desktop.view.entry
             InitializeComponent();
             txtNoSuratJalan.Text = suratJalanService.autoNumber();
             
-            MessageBox.Show(DateTime.Now.ToString());
+            //MessageBox.Show(DateTime.Now.ToString());
             
         }
 
@@ -122,6 +122,11 @@ namespace desktop.view.entry
         private void btnBatal_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
 
