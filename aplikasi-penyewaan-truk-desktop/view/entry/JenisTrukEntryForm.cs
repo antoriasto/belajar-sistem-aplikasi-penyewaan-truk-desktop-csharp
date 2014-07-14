@@ -89,16 +89,24 @@ namespace desktop.view.entry
 
         private void btnHapus_Click(object sender, EventArgs e)
         {
-            if (!txtJenisTrukId.Text.Equals("")) {
+            if (!txtJenisTrukId.Text.Equals(""))
+            {
                 JenisTruk jenisTruk = new JenisTruk();
                 jenisTruk.Id = txtJenisTrukId.Text;
-
-                if (jenisTrukService.hapus(jenisTruk) != null) {
+                if (jenisTrukService.hapus(jenisTruk) != null)
+                {
                     MessageCustom.messageInfo("Jenis Truk", "Data Berhasil Di Hapus");
-                } else {
+                    this.Dispose();
+                } else 
+                {
                     MessageCustom.messageCritical("Jenis Truk", "Data Gagal Di Hapus");
                 }
             }
+        }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
 
     }

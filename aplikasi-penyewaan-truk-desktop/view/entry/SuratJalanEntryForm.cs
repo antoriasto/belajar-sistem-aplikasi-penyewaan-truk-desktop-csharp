@@ -119,6 +119,11 @@ namespace desktop.view.entry
             sf.ShowDialog();
         }
 
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
 
     }
 }

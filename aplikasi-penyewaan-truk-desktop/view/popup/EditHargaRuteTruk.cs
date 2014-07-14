@@ -48,5 +48,10 @@ namespace desktop.view.popup
             }
         }
 
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
     }
 }

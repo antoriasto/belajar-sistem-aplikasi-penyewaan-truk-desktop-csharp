@@ -48,6 +48,7 @@
             this.betterListViewColumnHeader6 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader7 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader8 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.columnKeterangan = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.label8 = new System.Windows.Forms.Label();
             this.lblHargaTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -73,7 +74,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.columnKeterangan = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvCartTruk)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -102,7 +102,7 @@
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 17;
-            this.btnSimpan.Text = "Cetak";
+            this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
@@ -255,6 +255,11 @@
             // 
             this.betterListViewColumnHeader8.Name = "betterListViewColumnHeader8";
             this.betterListViewColumnHeader8.Text = "Nama Kernet";
+            // 
+            // columnKeterangan
+            // 
+            this.columnKeterangan.Name = "columnKeterangan";
+            this.columnKeterangan.Text = "Keterangan";
             // 
             // label8
             // 
@@ -540,11 +545,6 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // columnKeterangan
-            // 
-            this.columnKeterangan.Name = "columnKeterangan";
-            this.columnKeterangan.Text = "Keterangan";
             // 
             // SewaEntryForm
             // 

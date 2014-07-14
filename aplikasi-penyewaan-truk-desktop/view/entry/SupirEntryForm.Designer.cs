@@ -159,11 +159,11 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 97);
+            this.label4.Location = new System.Drawing.Point(20, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "No Telefon:";
+            this.label4.Text = "No Telepon:";
             // 
             // txtNoTelefon
             // 
@@ -172,6 +172,7 @@
             this.txtNoTelefon.Name = "txtNoTelefon";
             this.txtNoTelefon.Size = new System.Drawing.Size(339, 21);
             this.txtNoTelefon.TabIndex = 9;
+            this.txtNoTelefon.TextChanged += new System.EventHandler(this.txtNoTelefon_TextChanged);
             // 
             // lblKernetId
             // 

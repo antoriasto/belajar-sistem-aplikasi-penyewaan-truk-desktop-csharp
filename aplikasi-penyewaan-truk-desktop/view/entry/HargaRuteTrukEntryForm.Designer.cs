@@ -343,6 +343,7 @@
             this.btnBatal.TabIndex = 16;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // label6
             // 

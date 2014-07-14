@@ -124,9 +124,53 @@ namespace desktop.view.entry
             }
         }
 
+        private void messageWarning(String judul, String pesan)
+        {
+            MessageBox.Show(pesan,
+                            judul,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Exclamation,
+                            MessageBoxDefaultButton.Button1);
+        }
+
+        private void messageInfo(String judul, String pesan)
+        {
+            MessageBox.Show(pesan,
+                            judul,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information,
+                            MessageBoxDefaultButton.Button1);
+        }
+
+        private void txtNoTelefon_Keypress(object sender, KeyPressEventArgs e)
+        {
+            /// Disable Penggunaan karakter di textbox
+            if (char.IsDigit(e.KeyChar) || (int)e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btnHapus_Click(object sender, EventArgs e)
         {
-
+            if (!txtSupirId.Text.Equals(""))
+            {
+                Supir supir = new Supir();
+                supir.Id = txtSupirId.Text;
+                if (supirService.hapus(supir) != null)
+                {
+                    messageInfo("Supir Service", "Data Berhasil Dihapus");
+                    this.Dispose();
+                }
+                else
+                {
+                    messageWarning("Supir Service", "Data Gagal Dihapus");
+                }
+            }
         }
 
         private void btnCariKernet_Click(object sender, EventArgs e)
@@ -169,8 +213,10 @@ namespace desktop.view.entry
             this.Dispose();
         }
 
-        
+        private void txtNoTelefon_TextChanged(object sender, EventArgs e)
+        {
 
+        }
 
     }
 }

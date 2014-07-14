@@ -241,5 +241,29 @@ namespace desktop.view
             }
         }
 
+        private void keluarAplikasiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void jenisTrukToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            jenisTrukHandler();
+        }
+
+        private void trukToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            trukHandler();
+        }
+
+        private void ruteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ruteHandler();
+        }
+
+        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            customerHandler();
+        }
     }
 }

@@ -49,14 +49,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtHargaTotal = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.txtNoSewa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNamaCustomer = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtHargaTotal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.lvSuratJalan)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -228,6 +228,7 @@
             this.btnBatal.TabIndex = 16;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // label6
             // 
@@ -279,6 +280,24 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(399, 124);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // txtHargaTotal
+            // 
+            this.txtHargaTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHargaTotal.Location = new System.Drawing.Point(96, 84);
+            this.txtHargaTotal.Name = "txtHargaTotal";
+            this.txtHargaTotal.Size = new System.Drawing.Size(300, 21);
+            this.txtHargaTotal.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Harga Total:";
             // 
             // label1
             // 
@@ -332,24 +351,6 @@
             this.txtNamaCustomer.Name = "txtNamaCustomer";
             this.txtNamaCustomer.Size = new System.Drawing.Size(300, 21);
             this.txtNamaCustomer.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Harga Total:";
-            // 
-            // txtHargaTotal
-            // 
-            this.txtHargaTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHargaTotal.Location = new System.Drawing.Point(96, 84);
-            this.txtHargaTotal.Name = "txtHargaTotal";
-            this.txtHargaTotal.Size = new System.Drawing.Size(300, 21);
-            this.txtHargaTotal.TabIndex = 29;
             // 
             // SuratJalanEntryForm
             // 

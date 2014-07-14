@@ -263,5 +263,10 @@ namespace desktop.view.entry
             this.Dispose();
         }
 
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
     }
 }

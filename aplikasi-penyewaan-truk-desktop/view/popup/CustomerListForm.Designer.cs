@@ -109,8 +109,8 @@
             // 
             this.lvCustomer.Columns.Add(this.betterListViewColumnHeader1);
             this.lvCustomer.Columns.Add(this.betterListViewColumnHeader2);
-            this.lvCustomer.Columns.Add(this.betterListViewColumnHeader3);
             this.lvCustomer.Columns.Add(this.betterListViewColumnHeader4);
+            this.lvCustomer.Columns.Add(this.betterListViewColumnHeader3);
             this.lvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvCustomer.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCustomer.Location = new System.Drawing.Point(0, 25);
@@ -138,7 +138,7 @@
             // betterListViewColumnHeader4
             // 
             this.betterListViewColumnHeader4.Name = "betterListViewColumnHeader4";
-            this.betterListViewColumnHeader4.Text = "Telefon";
+            this.betterListViewColumnHeader4.Text = "Telepon";
             // 
             // CustomerListForm
             // 

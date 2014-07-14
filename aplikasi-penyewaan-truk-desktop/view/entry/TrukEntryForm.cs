@@ -317,5 +317,16 @@ namespace desktop.view.entry
                 }
             }
         }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void linkLblSupir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            txtSupirId.Clear();
+            txtNamaSupir.Clear();
+        }
     }
 }

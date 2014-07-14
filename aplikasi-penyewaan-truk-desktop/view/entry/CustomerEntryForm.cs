@@ -100,5 +100,46 @@ namespace desktop.view.entry
 
         }
 
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (!txtCustomerId.Text.Equals(""))
+            {
+                Customer customer = new Customer();
+                customer.Id = txtCustomerId.Text;
+                if (customerService.hapus(customer) != null)
+                {
+                    messageInfo("Customer Service", "Data Berhasil Dihapus");
+                    this.Dispose();
+                }
+                else
+                {
+                    messageWarning("Customer Service", "Data Gagal Dihapus");
+                }
+            }
+        }
+
+        private void messageWarning(String judul, String pesan)
+        {
+            MessageBox.Show(pesan,
+                            judul,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Exclamation,
+                            MessageBoxDefaultButton.Button1);
+        }
+
+        private void messageInfo(String judul, String pesan)
+        {
+            MessageBox.Show(pesan,
+                            judul,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information,
+                            MessageBoxDefaultButton.Button1);
+        }
+
     }
 }

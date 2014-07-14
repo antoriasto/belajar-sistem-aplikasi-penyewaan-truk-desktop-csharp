@@ -34,6 +34,7 @@
             this.btnBatal = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.nuKubikasi = new System.Windows.Forms.NumericUpDown();
             this.lblKubikasi = new System.Windows.Forms.Label();
             this.txtNamaJenis = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,11 +42,10 @@
             this.txtJenisTrukId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.nuTonase = new System.Windows.Forms.NumericUpDown();
-            this.nuKubikasi = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nuTonase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuKubikasi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nuTonase)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,6 +92,7 @@
             this.btnBatal.TabIndex = 16;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // label6
             // 
@@ -130,6 +131,19 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(512, 147);
             this.tableLayoutPanel1.TabIndex = 20;
+            // 
+            // nuKubikasi
+            // 
+            this.nuKubikasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nuKubikasi.Location = new System.Drawing.Point(83, 66);
+            this.nuKubikasi.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.nuKubikasi.Name = "nuKubikasi";
+            this.nuKubikasi.Size = new System.Drawing.Size(417, 21);
+            this.nuKubikasi.TabIndex = 11;
             // 
             // lblKubikasi
             // 
@@ -201,19 +215,6 @@
             this.nuTonase.Size = new System.Drawing.Size(417, 21);
             this.nuTonase.TabIndex = 9;
             // 
-            // nuKubikasi
-            // 
-            this.nuKubikasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nuKubikasi.Location = new System.Drawing.Point(83, 66);
-            this.nuKubikasi.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.nuKubikasi.Name = "nuKubikasi";
-            this.nuKubikasi.Size = new System.Drawing.Size(417, 21);
-            this.nuKubikasi.TabIndex = 11;
-            // 
             // JenisTrukEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,8 +229,8 @@
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nuTonase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuKubikasi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nuTonase)).EndInit();
             this.ResumeLayout(false);
 
         }

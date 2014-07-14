@@ -338,6 +338,7 @@
     <Content Include="resources\edit-paste.ico" />
     <Content Include="resources\icon_i.gif" />
     <Content Include="resources\icon_update.gif" />
+    <Content Include="resources\kop2.jpg" />
     <Content Include="resources\printer-remote.ico" />
     <Content Include="resources\Save_16.png" />
     <Content Include="resources\Truck-icon.png" />

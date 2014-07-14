@@ -101,5 +101,10 @@ namespace desktop.view.entry
             }
         }
 
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
     }
 }

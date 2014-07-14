@@ -83,7 +83,7 @@
             // betterListViewColumnHeader7
             // 
             this.betterListViewColumnHeader7.Name = "betterListViewColumnHeader7";
-            this.betterListViewColumnHeader7.Text = "Telefon";
+            this.betterListViewColumnHeader7.Text = "Telepon";
             // 
             // betterListViewColumnHeader8
             // 

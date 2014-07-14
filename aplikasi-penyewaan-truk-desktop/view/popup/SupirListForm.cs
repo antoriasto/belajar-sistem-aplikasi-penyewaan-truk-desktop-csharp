@@ -67,7 +67,7 @@ namespace desktop.view.popup
                     foreach (Truk t in listTruk) {
                         if (t.Supir != null) {
                             if (t.Supir.Id.Equals(id)) {
-                                MessageBox.Show(t.Supir.Id + id);
+                                //MessageBox.Show(t.Supir.Id + id);
                                 return false;
                             }
                         }

@@ -81,7 +81,7 @@
             // betterListViewColumnHeader4
             // 
             this.betterListViewColumnHeader4.Name = "betterListViewColumnHeader4";
-            this.betterListViewColumnHeader4.Text = "No Telefon";
+            this.betterListViewColumnHeader4.Text = "Telepon";
             // 
             // toolStrip1
             // 
@@ -152,7 +152,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 285);
-            this.ControlBox = false;
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lvKernet);
             this.Controls.Add(this.toolStrip1);
