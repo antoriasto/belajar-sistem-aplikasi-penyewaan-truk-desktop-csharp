@@ -154,6 +154,7 @@
             this.Controls.Add(this.lvJenisTruk);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JenisTrukListForm";
             this.Text = "JenisTrukListForm";
             ((System.ComponentModel.ISupportInitialize)(this.lvJenisTruk)).EndInit();

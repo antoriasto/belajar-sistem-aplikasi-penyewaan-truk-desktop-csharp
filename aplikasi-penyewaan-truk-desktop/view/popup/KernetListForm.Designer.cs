@@ -155,6 +155,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lvKernet);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KernetListForm";
             this.Text = "KernetListForm";
             ((System.ComponentModel.ISupportInitialize)(this.lvKernet)).EndInit();

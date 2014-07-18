@@ -71,3 +71,6 @@ D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-p
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources

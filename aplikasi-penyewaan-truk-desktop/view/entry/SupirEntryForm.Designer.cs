@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SupirEntryForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblJenisTrukId = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@
             // 
             this.txtNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNama.Location = new System.Drawing.Point(91, 39);
+            this.txtNama.MaxLength = 25;
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(339, 21);
             this.txtNama.TabIndex = 4;
@@ -173,6 +175,7 @@
             this.txtNoTelefon.Size = new System.Drawing.Size(339, 21);
             this.txtNoTelefon.TabIndex = 9;
             this.txtNoTelefon.TextChanged += new System.EventHandler(this.txtNoTelefon_TextChanged);
+            this.txtNoTelefon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoTelefon_KeyPress_1);
             // 
             // lblKernetId
             // 
@@ -291,6 +294,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SupirEntryForm";
             this.Text = "SupirEntryFormcs";
             this.tableLayoutPanel1.ResumeLayout(false);

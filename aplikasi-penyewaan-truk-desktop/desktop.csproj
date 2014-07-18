@@ -59,6 +59,30 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report\InvoiceReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\LaporanInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\LaporanInvoiceForm.Designer.cs">
+      <DependentUpon>LaporanInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\LaporanSuratJalanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\LaporanSuratJalanForm.Designer.cs">
+      <DependentUpon>LaporanSuratJalanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\LaporanSewaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\LaporanSewaForm.Designer.cs">
+      <DependentUpon>LaporanSewaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="report\InvoicePrinted.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -225,6 +249,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\InvoiceReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvoiceReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\LaporanInvoiceForm.resx">
+      <DependentUpon>LaporanInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\LaporanSuratJalanForm.resx">
+      <DependentUpon>LaporanSuratJalanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\LaporanSewaForm.resx">
+      <DependentUpon>LaporanSewaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\InvoicePrinted.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InvoicePrinted.cs</LastGenOutput>

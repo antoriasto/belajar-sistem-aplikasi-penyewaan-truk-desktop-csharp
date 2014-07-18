@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SewaListForm));
             this.lvSewa = new ComponentOwl.BetterListView.BetterListView();
             this.betterListViewColumnHeader10 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader1 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
@@ -60,7 +61,7 @@
             // 
             this.betterListViewColumnHeader10.Name = "betterListViewColumnHeader10";
             this.betterListViewColumnHeader10.Text = "Sewa ID";
-            this.betterListViewColumnHeader10.Width = 100;
+            this.betterListViewColumnHeader10.Width = 124;
             // 
             // betterListViewColumnHeader1
             // 
@@ -72,13 +73,13 @@
             // 
             this.betterListViewColumnHeader2.Name = "betterListViewColumnHeader2";
             this.betterListViewColumnHeader2.Text = "Harga Total";
-            this.betterListViewColumnHeader2.Width = 162;
+            this.betterListViewColumnHeader2.Width = 121;
             // 
             // betterListViewColumnHeader11
             // 
             this.betterListViewColumnHeader11.Name = "betterListViewColumnHeader11";
             this.betterListViewColumnHeader11.Text = "Customer ID";
-            this.betterListViewColumnHeader11.Width = 146;
+            this.betterListViewColumnHeader11.Width = 76;
             // 
             // betterListViewColumnHeader12
             // 
@@ -92,6 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 240);
             this.Controls.Add(this.lvSewa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SewaListForm";
             this.Text = "SewaListForm";
             ((System.ComponentModel.ISupportInitialize)(this.lvSewa)).EndInit();

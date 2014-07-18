@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Rute");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrukPopUpForm));
             this.lvHargaRuteTruk = new ComponentOwl.BetterListView.BetterListView();
             this.betterListViewColumnHeader1 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader2 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
@@ -201,6 +202,7 @@
             this.Controls.Add(this.tvRute);
             this.Controls.Add(this.lvHargaRuteTruk);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrukPopUpForm";
             this.Text = "TrukPopUpForm";
             ((System.ComponentModel.ISupportInitialize)(this.lvHargaRuteTruk)).EndInit();

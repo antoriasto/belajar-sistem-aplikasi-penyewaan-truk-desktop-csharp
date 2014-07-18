@@ -13,6 +13,7 @@ using domain.model;
 using domain.model.enumerasi;
 using desktop.view.entry;
 using desktop.utilities;
+using desktop.report;
 
 namespace desktop.view
 {
@@ -30,6 +31,10 @@ namespace desktop.view
         SewaEntryForm sewaEntryForm;
         SuratJalanEntryForm suratJalanEntryForm;
         InvoiceEntryForm invoiceEntryForm;
+
+        LaporanSewaForm laporanSewaForm;
+        LaporanSuratJalanForm laporanSuratJalanForm;
+        LaporanInvoiceForm laporanInvoiceForm;
 
         // Node Click Variable.
         String nodeCaption = "";
@@ -265,5 +270,45 @@ namespace desktop.view
         {
             customerHandler();
         }
+
+        private void sewaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (this.laporanSewaForm == null || this.laporanSewaForm.IsDisposed)
+            {
+                laporanSewaForm = new LaporanSewaForm();
+                laporanSewaForm.Show();
+            }
+            else if (this.laporanSewaForm != null)
+            {
+                laporanSewaForm.Show();
+            }
+        }
+
+        private void suratJalanToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (this.laporanSuratJalanForm == null || this.laporanSuratJalanForm.IsDisposed)
+            {
+                laporanSuratJalanForm = new LaporanSuratJalanForm();
+                laporanSuratJalanForm.Show();
+            }
+            else if (this.laporanSuratJalanForm != null)
+            {
+                laporanSuratJalanForm.Show();
+            }
+        }
+
+        private void invoiceToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (this.laporanInvoiceForm == null || this.laporanInvoiceForm.IsDisposed)
+            {
+                laporanInvoiceForm = new LaporanInvoiceForm();
+                laporanInvoiceForm.Show();
+            }
+            else if (this.laporanInvoiceForm != null)
+            {
+                laporanInvoiceForm.Show();
+            }
+        }
+        }
     }
-}
+

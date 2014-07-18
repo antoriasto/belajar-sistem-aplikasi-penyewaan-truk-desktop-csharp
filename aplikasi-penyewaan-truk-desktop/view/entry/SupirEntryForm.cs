@@ -218,5 +218,18 @@ namespace desktop.view.entry
 
         }
 
+        private void txtNoTelefon_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            /// Disable Penggunaan karakter di textbox
+            if (char.IsDigit(e.KeyChar) || (int)e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }

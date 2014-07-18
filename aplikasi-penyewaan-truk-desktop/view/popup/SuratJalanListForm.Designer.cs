@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuratJalanListForm));
             this.lvSuratJalan = new ComponentOwl.BetterListView.BetterListView();
             this.betterListViewColumnHeader10 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader1 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader11 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
-            this.betterListViewColumnHeader12 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             ((System.ComponentModel.ISupportInitialize)(this.lvSuratJalan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +44,6 @@
             this.lvSuratJalan.Columns.Add(this.betterListViewColumnHeader10);
             this.lvSuratJalan.Columns.Add(this.betterListViewColumnHeader1);
             this.lvSuratJalan.Columns.Add(this.betterListViewColumnHeader11);
-            this.lvSuratJalan.Columns.Add(this.betterListViewColumnHeader12);
             this.lvSuratJalan.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvSuratJalan.FontGroups = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvSuratJalan.GridLines = ComponentOwl.BetterListView.BetterListViewGridLines.Grid;
@@ -73,18 +72,13 @@
             this.betterListViewColumnHeader11.Text = "Customer ID";
             this.betterListViewColumnHeader11.Width = 146;
             // 
-            // betterListViewColumnHeader12
-            // 
-            this.betterListViewColumnHeader12.Name = "betterListViewColumnHeader12";
-            this.betterListViewColumnHeader12.Text = "Nama Customer";
-            this.betterListViewColumnHeader12.Width = 186;
-            // 
             // SuratJalanListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 256);
             this.Controls.Add(this.lvSuratJalan);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SuratJalanListForm";
             this.Text = "SuratJalanListForm";
             ((System.ComponentModel.ISupportInitialize)(this.lvSuratJalan)).EndInit();
@@ -98,6 +92,5 @@
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader10;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader1;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader11;
-        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader12;
     }
 }

@@ -38,8 +38,8 @@
             this.lvCustomer = new ComponentOwl.BetterListView.BetterListView();
             this.betterListViewColumnHeader1 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader2 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
-            this.betterListViewColumnHeader3 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader4 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader3 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvCustomer)).BeginInit();
@@ -130,15 +130,15 @@
             this.betterListViewColumnHeader2.Name = "betterListViewColumnHeader2";
             this.betterListViewColumnHeader2.Text = "Nama";
             // 
-            // betterListViewColumnHeader3
-            // 
-            this.betterListViewColumnHeader3.Name = "betterListViewColumnHeader3";
-            this.betterListViewColumnHeader3.Text = "Alamat";
-            // 
             // betterListViewColumnHeader4
             // 
             this.betterListViewColumnHeader4.Name = "betterListViewColumnHeader4";
             this.betterListViewColumnHeader4.Text = "Telepon";
+            // 
+            // betterListViewColumnHeader3
+            // 
+            this.betterListViewColumnHeader3.Name = "betterListViewColumnHeader3";
+            this.betterListViewColumnHeader3.Text = "Alamat";
             // 
             // CustomerListForm
             // 
@@ -148,6 +148,7 @@
             this.Controls.Add(this.lvCustomer);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CustomerListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerListForm";

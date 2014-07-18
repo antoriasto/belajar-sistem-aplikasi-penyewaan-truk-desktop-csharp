@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SewaEntryForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
@@ -98,7 +99,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSimpan.Location = new System.Drawing.Point(780, 19);
+            this.btnSimpan.Location = new System.Drawing.Point(756, 19);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 17;
@@ -130,7 +131,7 @@
             // btnTambah
             // 
             this.btnTambah.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTambah.Location = new System.Drawing.Point(861, 28);
+            this.btnTambah.Location = new System.Drawing.Point(861, 297);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(75, 23);
             this.btnTambah.TabIndex = 18;
@@ -142,7 +143,7 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(861, 87);
+            this.btnDelete.Location = new System.Drawing.Point(861, 355);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 20;
@@ -172,7 +173,7 @@
             this.lvCartTruk.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCartTruk.FontGroups = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCartTruk.GridLines = ComponentOwl.BetterListView.BetterListViewGridLines.Grid;
-            this.lvCartTruk.Location = new System.Drawing.Point(12, 28);
+            this.lvCartTruk.Location = new System.Drawing.Point(12, 297);
             this.lvCartTruk.Name = "lvCartTruk";
             this.lvCartTruk.Size = new System.Drawing.Size(843, 296);
             this.lvCartTruk.TabIndex = 21;
@@ -265,7 +266,7 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 34);
+            this.label8.Location = new System.Drawing.Point(14, 36);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 13);
             this.label8.TabIndex = 22;
@@ -276,7 +277,7 @@
             this.lblHargaTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHargaTotal.AutoSize = true;
             this.lblHargaTotal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHargaTotal.Location = new System.Drawing.Point(136, 34);
+            this.lblHargaTotal.Location = new System.Drawing.Point(136, 36);
             this.lblHargaTotal.Name = "lblHargaTotal";
             this.lblHargaTotal.Size = new System.Drawing.Size(35, 13);
             this.lblHargaTotal.TabIndex = 23;
@@ -288,7 +289,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel3);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox1.Location = new System.Drawing.Point(12, 351);
+            this.groupBox1.Location = new System.Drawing.Point(18, 171);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(400, 87);
             this.groupBox1.TabIndex = 24;
@@ -358,9 +359,9 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox2.Location = new System.Drawing.Point(15, 444);
+            this.groupBox2.Location = new System.Drawing.Point(15, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(397, 153);
+            this.groupBox2.Size = new System.Drawing.Size(403, 153);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer";
@@ -396,8 +397,9 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(391, 133);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(397, 133);
             this.tableLayoutPanel2.TabIndex = 26;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // btnCariCustomer
             // 
@@ -489,9 +491,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.lblHargaTotal);
-            this.panel2.Location = new System.Drawing.Point(560, 367);
+            this.panel2.Location = new System.Drawing.Point(444, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(295, 201);
+            this.panel2.Size = new System.Drawing.Size(411, 226);
             this.panel2.TabIndex = 27;
             // 
             // lblJumlahTruk
@@ -518,7 +520,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(557, 351);
+            this.label1.Location = new System.Drawing.Point(441, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 28;
@@ -529,7 +531,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label15.Location = new System.Drawing.Point(12, 12);
+            this.label15.Location = new System.Drawing.Point(12, 281);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(110, 13);
             this.label15.TabIndex = 26;
@@ -538,7 +540,7 @@
             // btnEdit
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit.Location = new System.Drawing.Point(861, 57);
+            this.btnEdit.Location = new System.Drawing.Point(861, 326);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 29;
@@ -562,10 +564,12 @@
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(964, 704);
             this.Name = "SewaEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SewaEntryForm";
+            this.Load += new System.EventHandler(this.SewaEntryForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lvCartTruk)).EndInit();
             this.groupBox1.ResumeLayout(false);
