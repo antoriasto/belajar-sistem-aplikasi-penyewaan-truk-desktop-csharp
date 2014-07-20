@@ -23,7 +23,23 @@ namespace desktop.report
 
         private void btnCetak_Click(object sender, EventArgs e)
         {
+            printedReport();
+        }
 
+        private void printedReport()
+        {
+            // Create a CrystalReport1 object 
+            SewaReport myReport = new SewaReport();
+            myReport.SetParameterValue("PARAM_START_DATE", dtpStart.Value);
+
+            myReport.SetParameterValue("PARAM_END_DATE", dtpEnd.Value);
+            // Set the DataSource of the report 
+            //myReport.SetDataSource(custDB); 
+            // Set the Report Source to ReportView 
+            ShowReportForm sf = new ShowReportForm();
+            sf.crystalReportViewer1.ReportSource = myReport;
+            sf.crystalReportViewer1.Zoom(100);
+            sf.Show();
         }
     }
 }

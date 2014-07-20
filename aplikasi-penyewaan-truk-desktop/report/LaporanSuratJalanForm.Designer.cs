@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaporanSuratJalanForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpStart = new System.Windows.Forms.DateTimePicker();
+            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
             this.btnCetak = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -46,19 +46,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Laporan Surat Jalan";
             // 
-            // dateTimePicker1
+            // dtpStart
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 73);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpStart.Location = new System.Drawing.Point(12, 73);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(200, 20);
+            this.dtpStart.TabIndex = 1;
             // 
-            // dateTimePicker2
+            // dtpEnd
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(254, 73);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 2;
+            this.dtpEnd.Location = new System.Drawing.Point(254, 73);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(200, 20);
+            this.dtpEnd.TabIndex = 2;
             // 
             // btnCetak
             // 
@@ -68,6 +68,7 @@
             this.btnCetak.TabIndex = 3;
             this.btnCetak.Text = "Cetak";
             this.btnCetak.UseVisualStyleBackColor = true;
+            this.btnCetak.Click += new System.EventHandler(this.btnCetak_Click);
             // 
             // btnBatal
             // 
@@ -86,8 +87,8 @@
             this.ClientSize = new System.Drawing.Size(476, 174);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.btnCetak);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpEnd);
+            this.Controls.Add(this.dtpStart);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LaporanSuratJalanForm";
@@ -100,8 +101,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpStart;
+        private System.Windows.Forms.DateTimePicker dtpEnd;
         private System.Windows.Forms.Button btnCetak;
         private System.Windows.Forms.Button btnBatal;
     }

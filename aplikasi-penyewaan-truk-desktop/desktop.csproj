@@ -89,6 +89,12 @@
       <DependentUpon>InvoicePrinted.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="report\SewaReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SewaReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="report\ShowReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SuratJalanPrinted.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\SuratJalanReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuratJalanReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="utilities\CustomNumericUpDown.cs">
@@ -266,12 +278,20 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InvoicePrinted.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="report\SewaReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SewaReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\ShowReportForm.resx">
       <DependentUpon>ShowReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="report\SuratJalanPrinted.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SuratJalanPrinted.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\SuratJalanReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SuratJalanReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="view\entry\CustomerEntryForm.resx">
       <DependentUpon>CustomerEntryForm.cs</DependentUpon>
