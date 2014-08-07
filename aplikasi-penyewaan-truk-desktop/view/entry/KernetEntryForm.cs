@@ -39,7 +39,7 @@ namespace desktop.view.entry
                 txtNama.Text = kernet.Nama;
                 txtAlamat.Text = kernet.Alamat;
                 txtNoTelefon.Text = kernet.NomorHp;
-                btnSimpan.Text = "Update";
+                btnSimpan.Text = "Ubah";
                 btnHapus.Show();
             }
             

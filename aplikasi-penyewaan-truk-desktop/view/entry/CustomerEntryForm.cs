@@ -37,7 +37,7 @@ namespace desktop.view.entry
                 txtAlamat.Text = c.Alamat;
                 txtNoTelefon.Text = c.Telefon;
                 btnHapus.Show();
-                btnSimpan.Text = "Update";
+                btnSimpan.Text = "Ubah";
             }
 
         }

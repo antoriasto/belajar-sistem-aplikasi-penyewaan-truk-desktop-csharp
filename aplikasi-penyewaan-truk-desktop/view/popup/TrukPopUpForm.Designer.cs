@@ -39,10 +39,10 @@
             this.betterListViewColumnHeader12 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader5 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader6 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader10 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader7 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader8 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader9 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
-            this.betterListViewColumnHeader10 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.tvRute = new System.Windows.Forms.TreeView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPilih = new System.Windows.Forms.Button();
@@ -65,10 +65,10 @@
             this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader12);
             this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader5);
             this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader6);
+            this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader10);
             this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader7);
             this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader8);
             this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader9);
-            this.lvHargaRuteTruk.Columns.Add(this.betterListViewColumnHeader10);
             this.lvHargaRuteTruk.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvHargaRuteTruk.Location = new System.Drawing.Point(139, 12);
             this.lvHargaRuteTruk.MultiSelect = false;
@@ -117,6 +117,11 @@
             this.betterListViewColumnHeader6.Name = "betterListViewColumnHeader6";
             this.betterListViewColumnHeader6.Text = "Nama Jenis Truk";
             // 
+            // betterListViewColumnHeader10
+            // 
+            this.betterListViewColumnHeader10.Name = "betterListViewColumnHeader10";
+            this.betterListViewColumnHeader10.Text = "Harga";
+            // 
             // betterListViewColumnHeader7
             // 
             this.betterListViewColumnHeader7.Name = "betterListViewColumnHeader7";
@@ -131,11 +136,6 @@
             // 
             this.betterListViewColumnHeader9.Name = "betterListViewColumnHeader9";
             this.betterListViewColumnHeader9.Text = "Kernet ID";
-            // 
-            // betterListViewColumnHeader10
-            // 
-            this.betterListViewColumnHeader10.Name = "betterListViewColumnHeader10";
-            this.betterListViewColumnHeader10.Text = "Nama Kernet";
             // 
             // tvRute
             // 
@@ -172,6 +172,7 @@
             this.btnPilih.TabIndex = 17;
             this.btnPilih.Text = "Pilih";
             this.btnPilih.UseVisualStyleBackColor = true;
+            this.btnPilih.Visible = false;
             // 
             // btnBatal
             // 
@@ -182,6 +183,7 @@
             this.btnBatal.TabIndex = 16;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // label6
             // 

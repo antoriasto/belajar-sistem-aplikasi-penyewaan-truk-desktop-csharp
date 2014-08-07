@@ -152,5 +152,10 @@ namespace desktop.view.popup
                 this.Close();
             }
         }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

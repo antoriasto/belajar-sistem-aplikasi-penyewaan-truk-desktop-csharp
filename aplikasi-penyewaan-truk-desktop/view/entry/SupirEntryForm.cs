@@ -35,7 +35,7 @@ namespace desktop.view.entry
                 Supir sup = supirService.cari(supir.Id);
                 if (sup != null)
                 {
-                    btnSimpan.Text = "Edit";
+                    btnSimpan.Text = "Ubah";
                     btnHapus.Show();
 
                     txtSupirId.Text = sup.Id;

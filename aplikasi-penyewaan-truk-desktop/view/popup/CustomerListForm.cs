@@ -94,5 +94,9 @@ namespace desktop.view.popup
             get { return this.customer; }
         }
 
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }

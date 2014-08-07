@@ -134,6 +134,11 @@ namespace desktop.view.popup
             }
            
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+
+        }
        
     }
 }

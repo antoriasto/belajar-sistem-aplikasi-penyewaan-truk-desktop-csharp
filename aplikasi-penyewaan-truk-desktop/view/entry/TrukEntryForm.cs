@@ -82,7 +82,7 @@ namespace desktop.view.entry
                     cbRute.Text = "Memiliki " + totalDataRuteTruk.ToString() + " Rute";
                 }
 
-                btnSimpan.Text = "Update";
+                btnSimpan.Text = "Ubah";
                 btnHapus.Show();
             }
         }

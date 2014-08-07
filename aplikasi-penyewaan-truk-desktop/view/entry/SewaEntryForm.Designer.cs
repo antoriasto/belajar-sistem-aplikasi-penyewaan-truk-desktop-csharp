@@ -289,7 +289,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel3);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox1.Location = new System.Drawing.Point(18, 171);
+            this.groupBox1.Location = new System.Drawing.Point(12, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(400, 87);
             this.groupBox1.TabIndex = 24;
@@ -359,12 +359,13 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox2.Location = new System.Drawing.Point(15, 12);
+            this.groupBox2.Location = new System.Drawing.Point(12, 105);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(403, 153);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // tableLayoutPanel2
             // 

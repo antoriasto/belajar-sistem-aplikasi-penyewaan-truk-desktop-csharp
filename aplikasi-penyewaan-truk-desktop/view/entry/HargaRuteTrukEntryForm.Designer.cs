@@ -217,7 +217,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 20;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "Ubah";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -331,7 +331,7 @@
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 17;
-            this.btnSimpan.Text = "Update";
+            this.btnSimpan.Text = "Ubah";
             this.btnSimpan.UseVisualStyleBackColor = true;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 

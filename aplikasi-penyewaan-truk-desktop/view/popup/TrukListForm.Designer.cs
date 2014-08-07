@@ -45,6 +45,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnEditHargaRuteTruk = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.lvTruk)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +119,9 @@
             this.toolStrip1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnTambah,
+            this.toolStripSeparator2,
             this.btnEdit,
+            this.toolStripSeparator3,
             this.btnRefresh,
             this.toolStripSeparator1,
             this.btnEditHargaRuteTruk});
@@ -144,8 +148,8 @@
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(29, 22);
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Size = new System.Drawing.Size(36, 22);
+            this.btnEdit.Text = "Ubah";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnRefresh
@@ -170,8 +174,8 @@
             this.btnEditHargaRuteTruk.Image = ((System.Drawing.Image)(resources.GetObject("btnEditHargaRuteTruk.Image")));
             this.btnEditHargaRuteTruk.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditHargaRuteTruk.Name = "btnEditHargaRuteTruk";
-            this.btnEditHargaRuteTruk.Size = new System.Drawing.Size(79, 22);
-            this.btnEditHargaRuteTruk.Text = "Edit Rute Truk";
+            this.btnEditHargaRuteTruk.Size = new System.Drawing.Size(99, 22);
+            this.btnEditHargaRuteTruk.Text = "Tambah Rute Truk";
             this.btnEditHargaRuteTruk.Click += new System.EventHandler(this.btnEditHargaRuteTruk_Click);
             // 
             // statusStrip1
@@ -181,6 +185,16 @@
             this.statusStrip1.Size = new System.Drawing.Size(651, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
             // TrukListForm
             // 
@@ -220,5 +234,7 @@
         private System.Windows.Forms.ToolStripButton btnRefresh;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnEditHargaRuteTruk;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }

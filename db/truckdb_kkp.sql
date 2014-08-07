@@ -1,11 +1,26 @@
-﻿# Host: localhost  (Version: 5.1.30-community)
-# Date: 2014-07-14 01:58:06
-# Generator: MySQL-Front 5.3  (Build 4.113)
+﻿# Host: localhost  (Version: 5.5.25a)
+# Date: 2014-07-22 23:24:00
+# Generator: MySQL-Front 5.3  (Build 2.11)
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE */;
+/*!40101 SET SQL_MODE='' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES */;
+/*!40103 SET SQL_NOTES='ON' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS */;
+/*!40014 SET FOREIGN_KEY_CHECKS=0 */;
+
+DROP DATABASE IF EXISTS `truckdb_kkp`;
+CREATE DATABASE `truckdb_kkp` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `truckdb_kkp`;
 
 #
-# Structure for table "customer"
+# Source for table "customer"
 #
 
 DROP TABLE IF EXISTS `customer`;
@@ -21,10 +36,10 @@ CREATE TABLE `customer` (
 # Data for table "customer"
 #
 
-INSERT INTO `customer` VALUES ('C0001','Joni','Jl. Piodsd','90232323');
+INSERT INTO `customer` VALUES ('C0002','linfox','jababeka','02136546'),('C0003','unilever','gatot subroto','02179764'),('C0004','ucok','kemang','021'),('C0005','unilever','jababeka 2','03323425');
 
 #
-# Structure for table "jenis_truk"
+# Source for table "jenis_truk"
 #
 
 DROP TABLE IF EXISTS `jenis_truk`;
@@ -40,10 +55,10 @@ CREATE TABLE `jenis_truk` (
 # Data for table "jenis_truk"
 #
 
-INSERT INTO `jenis_truk` VALUES ('J0001','Container',5,50.00),('J0002','Van',6,100.00),('J0003','Engkle',7,200.00),('J0004','Jumbo',8,300.00),('J0005','Yankee',6,1.00);
+INSERT INTO `jenis_truk` VALUES ('J0001','Container',5,50.00),('J0002','Van',6,100.00),('J0003','Engkle',7,200.00),('J0004','Jumbo',8,300.00);
 
 #
-# Structure for table "kernet"
+# Source for table "kernet"
 #
 
 DROP TABLE IF EXISTS `kernet`;
@@ -62,7 +77,7 @@ CREATE TABLE `kernet` (
 INSERT INTO `kernet` VALUES ('K0001','Roy','rebo','12112'),('K0002','gaps','bayoran','42314321'),('K0003','david','kebon','43243'),('K0004','ucok','kebon','0214424'),('K0005','jon','bayoran','02143243');
 
 #
-# Structure for table "rute"
+# Source for table "rute"
 #
 
 DROP TABLE IF EXISTS `rute`;
@@ -79,7 +94,7 @@ CREATE TABLE `rute` (
 INSERT INTO `rute` VALUES ('R0001','Jakarta'),('R0002','bekasi'),('R0003','bogor'),('R0004','depok'),('R0005','tanggerang');
 
 #
-# Structure for table "sewa"
+# Source for table "sewa"
 #
 
 DROP TABLE IF EXISTS `sewa`;
@@ -97,10 +112,10 @@ CREATE TABLE `sewa` (
 # Data for table "sewa"
 #
 
-INSERT INTO `sewa` VALUES ('SE0000000000001','2014-07-13',1350000,'C0001'),('SE0000000000002','2014-07-13',750000,'C0001'),('SE0000000000003','2014-07-13',1200000,'C0001');
+INSERT INTO `sewa` VALUES ('SE0000000000001','2014-07-14',810000,'C0002'),('SE0000000000002','2014-07-14',1830000,'C0003'),('SE0000000000003','2014-07-15',1920000,'C0002'),('SE0000000000004','2014-07-15',230000,'C0003'),('SE0000000000005','2014-07-16',2720000,'C0003');
 
 #
-# Structure for table "supir"
+# Source for table "supir"
 #
 
 DROP TABLE IF EXISTS `supir`;
@@ -119,10 +134,10 @@ CREATE TABLE `supir` (
 # Data for table "supir"
 #
 
-INSERT INTO `supir` VALUES ('S0001','Panjul','petukangan','7897897','K0001'),('S0002','Karno','Kemanggisan','123123123','K0002'),('S0003','Robet','cinangka','321455','K0003'),('S0004','roni','kebon jeruk','02143543','K0004'),('S0005','boni','tanggerang','0214354','K0005');
+INSERT INTO `supir` VALUES ('S0001','Panjul','petukangan','7897897','K0001'),('S0002','Karno','Kemanggisan','123123','K0002'),('S0003','Robet','cinangka','32145','K0003'),('S0004','roni','kebon jeruk','02143543','K0004'),('S0005','boni','tanggerang','0214354','K0005');
 
 #
-# Structure for table "surat_jalan"
+# Source for table "surat_jalan"
 #
 
 DROP TABLE IF EXISTS `surat_jalan`;
@@ -139,10 +154,10 @@ CREATE TABLE `surat_jalan` (
 # Data for table "surat_jalan"
 #
 
-INSERT INTO `surat_jalan` VALUES ('SJ0000000000001','2014-07-13','SE0000000000001'),('SJ0000000000002','2014-07-13','SE0000000000002'),('SJ0000000000003','2014-07-13','SE0000000000003');
+INSERT INTO `surat_jalan` VALUES ('SJ0000000000001','2014-07-15','SE0000000000001'),('SJ0000000000002','2014-07-15','SE0000000000002'),('SJ0000000000003','2014-07-15','SE0000000000003'),('SJ0000000000004','2014-07-15','SE0000000000004'),('SJ0000000000005','2014-07-18','SE0000000000005');
 
 #
-# Structure for table "invoice"
+# Source for table "invoice"
 #
 
 DROP TABLE IF EXISTS `invoice`;
@@ -159,10 +174,10 @@ CREATE TABLE `invoice` (
 # Data for table "invoice"
 #
 
-INSERT INTO `invoice` VALUES ('IN0000000000001','2014-07-14','SJ0000000000001');
+INSERT INTO `invoice` VALUES ('IN0000000000001','2014-07-15','SJ0000000000003'),('IN0000000000002','2014-07-15','SJ0000000000002'),('IN0000000000003','2014-07-16','SJ0000000000004'),('IN0000000000004','2014-07-16','SJ0000000000001'),('IN0000000000005','2014-07-20','SJ0000000000005');
 
 #
-# Structure for table "truk"
+# Source for table "truk"
 #
 
 DROP TABLE IF EXISTS `truk`;
@@ -183,10 +198,10 @@ CREATE TABLE `truk` (
 # Data for table "truk"
 #
 
-INSERT INTO `truk` VALUES ('T0001','B940234','S0001','J0003','Tersedia'),('T0002','B6523VAN','S0002','J0002','Tersedia'),('T0003','B4321JUM','S0003','J0004','Tersedia'),('T0004','B3124YAN','S0005','J0005','Tersedia'),('T0005','B7545CON','S0004','J0001','Tersedia');
+INSERT INTO `truk` VALUES ('T0001','B4566VAN','S0001','J0002','Tersedia'),('T0002','B3456VAN','S0002','J0002','Tersedia'),('T0003','B3214ENG','S0003','J0003','Tersedia'),('T0004','B6587CON','S0004','J0001','Tersedia'),('T0005','B5678JUM','S0005','J0004','Tersedia');
 
 #
-# Structure for table "sewa_detail"
+# Source for table "sewa_detail"
 #
 
 DROP TABLE IF EXISTS `sewa_detail`;
@@ -205,10 +220,10 @@ CREATE TABLE `sewa_detail` (
 # Data for table "sewa_detail"
 #
 
-INSERT INTO `sewa_detail` VALUES ('SE0000000000001',450000,'T0005','PT Kemana ,jl poris siti'),('SE0000000000001',200000,'T0003','PT ALFAMART , bekasi utara siti'),('SE0000000000001',700000,'T0002','PT INDOMART , jl kebagusan siti'),('SE0000000000002',50000,'T0004','GANDARIA siti'),('SE0000000000002',700000,'T0001','PIM'),('SE0000000000003',700000,'T0002','bekasi barat'),('SE0000000000003',500000,'T0001','priok');
+INSERT INTO `sewa_detail` VALUES ('SE0000000000001',10000,'T0001','gandaria city'),('SE0000000000001',100000,'T0003','pondok indah'),('SE0000000000001',700000,'T0004','cimacan'),('SE0000000000002',80000,'T0002','poris no34'),('SE0000000000002',1750000,'T0005','cimanggis'),('SE0000000000003',1000000,'T0005','PT alfa'),('SE0000000000003',10000,'T0001','PT alfa'),('SE0000000000003',10000,'T0002','PT alfa'),('SE0000000000003',600000,'T0004','PT indomart'),('SE0000000000003',300000,'T0003','PT indomart'),('SE0000000000004',200000,'T0003','PT Alfa Mart'),('SE0000000000004',30000,'T0002','PT Indo Mart'),('SE0000000000005',20000,'T0001','PT Alfamart'),('SE0000000000005',2000000,'T0005','PT Indomarco'),('SE0000000000005',700000,'T0004','Carefour');
 
 #
-# Structure for table "harga_truk_rute"
+# Source for table "harga_truk_rute"
 #
 
 DROP TABLE IF EXISTS `harga_truk_rute`;
@@ -228,4 +243,12 @@ CREATE TABLE `harga_truk_rute` (
 # Data for table "harga_truk_rute"
 #
 
-INSERT INTO `harga_truk_rute` VALUES ('H0001','R0001','T0001',500000),('H0002','R0002','T0001',600000),('H0003','R0003','T0001',700000),('H0004','R0004','T0001',800000),('H0005','R0005','T0001',900000),('H0006','R0001','T0002',600000),('H0007','R0002','T0002',700000),('H0008','R0003','T0002',800000),('H0009','R0004','T0002',900000),('H0010','R0005','T0002',1000000),('H0011','R0001','T0003',100000),('H0012','R0002','T0003',200000),('H0013','R0003','T0003',300000),('H0014','R0004','T0003',400000),('H0015','R0005','T0003',500000),('H0016','R0001','T0004',50000),('H0017','R0002','T0004',60000),('H0018','R0003','T0004',70000),('H0019','R0004','T0004',80000),('H0020','R0005','T0004',90000),('H0021','R0001','T0005',100000),('H0022','R0002','T0005',200000),('H0023','R0003','T0005',300000),('H0024','R0004','T0005',400000),('H0025','R0005','T0005',450000);
+INSERT INTO `harga_truk_rute` VALUES ('H0001','R0001','T0001',10000),('H0002','R0002','T0001',20000),('H0003','R0003','T0001',30000),('H0004','R0004','T0001',50000),('H0005','R0005','T0001',80000),('H0011','R0001','T0003',100000),('H0012','R0002','T0003',200000),('H0013','R0003','T0003',300000),('H0014','R0004','T0003',400000),('H0015','R0005','T0003',500000),('H0016','R0001','T0004',500000),('H0017','R0002','T0004',600000),('H0018','R0003','T0004',700000),('H0019','R0004','T0004',800000),('H0020','R0005','T0004',900000),('H0021','R0001','T0005',1000000),('H0022','R0002','T0005',12000000),('H0023','R0003','T0005',1500000),('H0024','R0004','T0005',1700000),('H0025','R0005','T0005',2000000),('H0026','R0001','T0002',10000),('H0027','R0002','T0002',20000),('H0028','R0003','T0002',30000),('H0029','R0004','T0002',50000),('H0030','R0005','T0002',80000);
+
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
