@@ -91,6 +91,7 @@ namespace desktop.view.popup
                             items.SubItems.Add(jenis.Id);
                             items.SubItems.Add(jenis.Nama);
                             items.SubItems.Add(h.Harga);
+                            items.SubItems.Add(h.Harga_supir);
 
                             items.SubItems.Add(truk.Supir.Id);
                             Supir supir = supirService.cari(truk.Supir.Id);
@@ -156,6 +157,16 @@ namespace desktop.view.popup
         private void btnBatal_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnPilih_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvHargaRuteTruk_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

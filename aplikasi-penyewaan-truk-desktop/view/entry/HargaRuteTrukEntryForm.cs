@@ -74,6 +74,7 @@ namespace desktop.view.entry
                     items.SubItems.Add(h.Rute.Id);
                     items.SubItems.Add(ruteService.cari(h.Rute.Id).Nama);
                     items.SubItems.Add(h.Harga);
+                    items.SubItems.Add(h.Harga_supir);
                     items.SubItems.Add(h.Status);
                     
                     lvHargaRute.Items.Add(items);
@@ -89,13 +90,16 @@ namespace desktop.view.entry
                 String harga = FormatRupiah.ToRupiah(Convert.ToInt64(items.SubItems[3].Text));
                 items.SubItems[3].Text = harga;
 
-                if (items.SubItems[4].Text == Command.None.ToString())
+                String harga_supir = FormatRupiah.ToRupiah(Convert.ToInt64(items.SubItems[4].Text));
+                items.SubItems[4].Text = harga_supir;
+
+                if (items.SubItems[5].Text == Command.None.ToString())
                 {
-                    items.SubItems[4].Text = "";
+                    items.SubItems[5].Text = "";
                 }
-                else if (items.SubItems[4].Text == Command.New.ToString())
+                else if (items.SubItems[5].Text == Command.New.ToString())
                 {
-                    items.SubItems[4].ForeColor = Color.Green;
+                    items.SubItems[5].ForeColor = Color.Green;
                 }
 
             }
@@ -167,6 +171,25 @@ namespace desktop.view.entry
             }
             initializeListView();
         }
+        private void searchDataInList1(String id, String harga_supir, Command command)
+        {
+            foreach (HargaRuteTruk compare in listHargaRuteTruk)
+            {
+                if (compare.Rute.Id.Equals(id))
+                {
+                    compare.Harga_supir = Convert.ToDecimal(harga_supir);
+                    if (compare.Id != null && command == Command.Update)
+                    {
+                        compare.Status = command;
+                    }
+                    else if (compare.Id != null && command == Command.Delete)
+                    {
+                        compare.Status = command;
+                    }
+                }
+            }
+            initializeListView();
+        }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -226,16 +249,19 @@ namespace desktop.view.entry
             {
                 btnEdit.Enabled = true;
                 btnDelete.Enabled = true;
+                button1.Enabled = true;
             }
             else if (lvHargaRute.SelectedItems.Count > 1)
             {
                 btnDelete.Enabled = true;
                 btnEdit.Enabled = false;
+                button1.Enabled = false;
             }
             else
             {
                 btnDelete.Enabled = false;
                 btnEdit.Enabled = false;
+                button1.Enabled = false;
             }
         }
 
@@ -268,5 +294,35 @@ namespace desktop.view.entry
             this.Dispose();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (lvHargaRute.SelectedItems.Count == 1)
+            {
+                int index = lvHargaRute.SelectedIndices[0];
+                String ruteId = lvHargaRute.Items[index].SubItems[1].Text;
+                EditHargaSupir eh = new EditHargaSupir();
+                eh.ShowDialog();
+
+                if (!String.IsNullOrEmpty(eh.Harga_supir))
+                {
+                    if (!lvHargaRute.Items[index].Text.Equals(""))
+                    {
+                        //lvHargaRute.Items[index].SubItems[1].ImageIndex = 1;
+                        searchDataInList1(ruteId, eh.Harga_supir, Command.Update);
+                        //lvHargaRute.Items[index].SubItems[5].Text = Command.Update.ToString();
+                    }
+                    else
+                    {
+                        searchDataInList1(ruteId, eh.Harga_supir, Command.New);
+                    }
+                    //lvHargaRute.Items[index].SubItems[4].Text = eh.Harga;
+                }
+            }
+        }
+
+        private void HargaRuteTrukEntryForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

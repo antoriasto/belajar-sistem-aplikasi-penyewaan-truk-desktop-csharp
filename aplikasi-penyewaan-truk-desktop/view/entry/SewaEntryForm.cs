@@ -12,6 +12,7 @@ using domain.service;
 using core.implementasi;
 using ComponentOwl.BetterListView;
 using desktop.utilities;
+using domain.model.enumerasi;
 
 namespace desktop.view.entry
 {
@@ -104,8 +105,8 @@ namespace desktop.view.entry
             }
 
             for (int x=0; x<lvCartTruk.Items.Count; x++) {
-                if (lvCartTruk.Items[x].SubItems[13].Text.Equals("")) {
-                    MessageCustom.messageWarning("Sewa", "Keterangan Truk Belum Di Isi. \n Nomor Polisi: " + lvCartTruk.Items[x].SubItems[2].Text);
+                if (lvCartTruk.Items[x].SubItems[14].Text.Equals("")) {
+                    MessageCustom.messageWarning("Sewa", "Nomor Referensi DN Belum Di Isi. \n Nomor Polisi: " + lvCartTruk.Items[x].SubItems[2].Text);
                     return false;
                 }
             }
@@ -128,6 +129,7 @@ namespace desktop.view.entry
         private void initializeListView()
         {
             Decimal hargaTotal = 0;
+            Decimal hargaSupirTotal = 0;
             lvCartTruk.Items.Clear();
 
             foreach (HargaRuteTruk h in cartTruk) {
@@ -146,6 +148,7 @@ namespace desktop.view.entry
                 items.SubItems.Add(jenis.Id);
                 items.SubItems.Add(jenis.Nama);
                 items.SubItems.Add(FormatRupiah.ToRupiah(Convert.ToInt64(h.Harga.ToString())));
+                items.SubItems.Add(FormatRupiah.ToRupiah(Convert.ToInt64(h.Harga_supir.ToString())));
                 items.SubItems[1].AlignHorizontal = ComponentOwl.BetterListView.TextAlignmentHorizontal.Right;
                 //this.betterListViewSubItem2.BackColor = System.Drawing.Color.Cyan;
                 //this.betterListViewSubItem2.ForeColor = System.Drawing.Color.Maroon;
@@ -168,11 +171,13 @@ namespace desktop.view.entry
                 items.SubItems.Add(h.Keterangan);
                 lvCartTruk.Items.Add(items);
                 hargaTotal += h.Harga;
+                hargaSupirTotal += h.Harga_supir;
                 lblJumlahTruk.Text = cartTruk.Count.ToString() + " Unit";
             }
 
             lblJumlahTruk.Text = cartTruk.Count.ToString() + " Unit";
             lblHargaTotal.Text = FormatRupiah.ToRupiah(Convert.ToInt64(hargaTotal.ToString()));
+            lblHargaSupirTotal.Text = FormatRupiah.ToRupiah(Convert.ToInt64(hargaSupirTotal.ToString()));
         }
 
         public DataTable ToDataTable<T>(IList<T> Data)
@@ -210,13 +215,25 @@ namespace desktop.view.entry
             return retVal;
         }
 
-        private Decimal getTotalPrice() {
+        private Decimal getTotalPrice() 
+        {
             Decimal total = 0;
             foreach (HargaRuteTruk h in cartTruk) {
                 total += h.Harga;
             }
             return total;
         }
+
+        private Decimal getTotalPrice2()
+        {
+            Decimal total = 0;
+            foreach (HargaRuteTruk h in cartTruk)
+            {
+                total += h.Harga_supir;
+            }
+            return total;
+        }
+
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
@@ -265,10 +282,12 @@ namespace desktop.view.entry
                 sewa.Id = sewaService.autoNumber();
                 sewa.Tanggal = DateTime.Now;
                 sewa.TotalHarga = getTotalPrice();
+                sewa.TotalHargaSupir = getTotalPrice2();
                 sewa.Customer = new Customer(txtCustomerId.Text);
                 IList<SewaDetail> listSewaDetail = new List<SewaDetail>();
                 foreach (HargaRuteTruk h in cartTruk) {
-                    SewaDetail s = new SewaDetail(sewa.Id, h.Harga, new Truk(h.Truk.Id));
+                    SewaDetail s = new SewaDetail(sewa.Id, h.Harga, h.Harga_supir, new Truk(h.Truk.Id));
+                    s.HargaRuteTruk = new HargaRuteTruk(h.Id);
                     s.Keterangan = h.Keterangan;
                     listSewaDetail.Add(s);
                 }
@@ -278,6 +297,7 @@ namespace desktop.view.entry
                     this.Dispose();
                 } else {
                     MessageCustom.messageCritical("Sewa", "Data Gagal Disimpan");
+                    this.Dispose();
                 }
             }
         }
@@ -303,8 +323,10 @@ namespace desktop.view.entry
         {
             if (lvCartTruk.SelectedItems.Count > 0) {
                 btnDelete.Enabled = true;
+                btnEdit.Enabled = true;
             } else {
                 btnDelete.Enabled = false;
+                btnEdit.Enabled = false;
             }
         }
 
@@ -312,7 +334,7 @@ namespace desktop.view.entry
         {
             foreach (BetterListViewItem items in lvCartTruk.SelectedItems) {
                 String id = items.Text;
-                MessageBox.Show(items.Text);
+                //MessageBox.Show(items.Text);
                 deleteCartTruk(id);
             }
             initializeListView();
@@ -328,7 +350,7 @@ namespace desktop.view.entry
             if (lvCartTruk.SelectedItems.Count == 1) {
                 int x = lvCartTruk.SelectedIndices[0];
                 String id = lvCartTruk.Items[x].Text;
-                MessageBox.Show(id);
+                //MessageBox.Show(id);
                 EditKeteranganSewaDetail ek = new EditKeteranganSewaDetail(lvCartTruk.Items[x].SubItems[7].Text,
                     lvCartTruk.Items[x].SubItems[5].Text);
                 ek.ShowDialog();
@@ -342,7 +364,7 @@ namespace desktop.view.entry
         {
             for (int x=0; x < lvCartTruk.Items.Count; x++) {
                 if (lvCartTruk.Items[x].Text.Equals(id)){
-                    lvCartTruk.Items[x].SubItems[13].Text = keterangan;
+                    lvCartTruk.Items[x].SubItems[14].Text = keterangan;
                 }
             }
 
@@ -358,7 +380,7 @@ namespace desktop.view.entry
             String keteranagan = "";
             for (int x=0; x < lvCartTruk.Items.Count; x++) {
                 if (lvCartTruk.Items[x].SubItems[1].Text.Equals(id)) {
-                    keteranagan = lvCartTruk.Items[x].SubItems[13].Text;
+                    keteranagan = lvCartTruk.Items[x].SubItems[14].Text;
                 }
             }
             return keteranagan;
@@ -375,6 +397,16 @@ namespace desktop.view.entry
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHargaTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

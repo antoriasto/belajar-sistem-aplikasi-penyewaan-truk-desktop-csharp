@@ -128,6 +128,7 @@
             // 
             this.txtNamaRute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNamaRute.Location = new System.Drawing.Point(82, 39);
+            this.txtNamaRute.MaxLength = 55;
             this.txtNamaRute.Name = "txtNamaRute";
             this.txtNamaRute.Size = new System.Drawing.Size(353, 21);
             this.txtNamaRute.TabIndex = 4;
@@ -157,6 +158,7 @@
             this.txtRuteId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRuteId.Enabled = false;
             this.txtRuteId.Location = new System.Drawing.Point(82, 12);
+            this.txtRuteId.MaxLength = 15;
             this.txtRuteId.Name = "txtRuteId";
             this.txtRuteId.Size = new System.Drawing.Size(353, 21);
             this.txtRuteId.TabIndex = 2;
@@ -168,6 +170,7 @@
             this.ClientSize = new System.Drawing.Size(447, 204);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RuteEntryForm";

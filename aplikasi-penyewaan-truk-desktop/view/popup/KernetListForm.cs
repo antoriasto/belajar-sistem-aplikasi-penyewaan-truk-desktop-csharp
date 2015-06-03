@@ -57,7 +57,7 @@ namespace desktop.view.popup
         private void initializeListView()
         {
             lvKernet.Items.Clear();
-            IList<Kernet> list =  kernetService.cariDaftarTruk("");
+            IList<Kernet> list =  kernetService.cariDaftarKernet("");
             if (list != null)
             {
                 if (list.Count > 0)
@@ -116,6 +116,16 @@ namespace desktop.view.popup
 
                 this.Close();
             }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            initializeListView();
+        }
+
+        private void initializeListView(IList<Kernet> iList)
+        {
+           
         }
 
     }

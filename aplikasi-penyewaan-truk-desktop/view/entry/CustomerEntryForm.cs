@@ -141,5 +141,10 @@ namespace desktop.view.entry
                             MessageBoxDefaultButton.Button1);
         }
 
+        private void txtAlamat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

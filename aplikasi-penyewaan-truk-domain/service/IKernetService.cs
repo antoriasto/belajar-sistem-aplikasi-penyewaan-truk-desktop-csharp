@@ -13,6 +13,6 @@ namespace domain.service
         Kernet hapus(Kernet domain);
         Kernet cari(String id);
         String nomorOtomatis();
-        IList<Kernet> cariDaftarTruk(String search);
+        IList<Kernet> cariDaftarKernet(String search);
     }
 }

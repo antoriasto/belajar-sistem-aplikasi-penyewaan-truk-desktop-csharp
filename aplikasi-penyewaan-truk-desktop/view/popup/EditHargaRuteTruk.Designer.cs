@@ -50,7 +50,7 @@
             // btnEdit
             // 
             this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnEdit.Location = new System.Drawing.Point(286, 17);
+            this.btnEdit.Location = new System.Drawing.Point(312, 17);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(44, 23);
             this.btnEdit.TabIndex = 2;
@@ -61,7 +61,7 @@
             // btnBatal
             // 
             this.btnBatal.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnBatal.Location = new System.Drawing.Point(336, 17);
+            this.btnBatal.Location = new System.Drawing.Point(362, 17);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(44, 23);
             this.btnBatal.TabIndex = 3;
@@ -86,7 +86,7 @@
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(393, 57);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(419, 57);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // txtHarga
@@ -95,7 +95,7 @@
             this.txtHarga.Location = new System.Drawing.Point(59, 18);
             this.txtHarga.MaxLength = 12;
             this.txtHarga.Name = "txtHarga";
-            this.txtHarga.Size = new System.Drawing.Size(221, 21);
+            this.txtHarga.Size = new System.Drawing.Size(247, 21);
             this.txtHarga.TabIndex = 4;
             this.txtHarga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHarga_KeyPress);
             // 
@@ -103,8 +103,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 57);
+            this.ClientSize = new System.Drawing.Size(419, 57);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -112,6 +113,7 @@
             this.Name = "EditHargaRuteTruk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Harga";
+            this.Load += new System.EventHandler(this.EditHargaRuteTruk_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

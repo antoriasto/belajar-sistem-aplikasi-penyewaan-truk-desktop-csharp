@@ -9,10 +9,11 @@ namespace core.utilities
     {
 
         // Script alamat koneksi database mysql.
-        public static readonly string stringMySqlConnection = "Database=truckdb_kkp;" +
+        public static readonly string stringMySqlConnection = "Database=truck_db;" +
                                     "Server=localhost;" +
                                     "port=3306;" +
-                                    "Uid=root;";
+                                    "Uid=root;" +
+                                    "password=admin;";
 
     }
 }

@@ -33,13 +33,15 @@ namespace desktop.view.popup
             initializeListView();
         }
 
-        private void initializeListView() {
+        private void initializeListView() 
+        {
             lvSewa.Items.Clear();
             if (listSewa != null) 
             {
                 if (listSewa.Count > 0) 
                 {
-                    foreach (Sewa sewa in listSewa) {
+                    foreach (Sewa sewa in listSewa)
+                    {
                         BetterListViewItem items = new BetterListViewItem(sewa.Id);
                         items.SubItems.Add(sewa.Tanggal);
                         items.SubItems.Add(sewa.TotalHarga);
@@ -52,6 +54,32 @@ namespace desktop.view.popup
         }
 
         private void lvSewa_DoubleClick(object sender, EventArgs e)
+        {
+            if (lvSewa.SelectedItems.Count == 1)
+            {
+                int x = lvSewa.SelectedIndices[0];
+                this.sewaId = lvSewa.Items[x].Text;
+
+                this.Close();
+            }
+        }
+
+        private void SewaListForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvSewa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnPilih_Click(object sender, EventArgs e)
         {
             if (lvSewa.SelectedItems.Count == 1)
             {

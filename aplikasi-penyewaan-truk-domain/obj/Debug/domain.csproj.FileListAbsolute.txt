@@ -7,3 +7,33 @@ D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-p
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\ResolveAssemblyReference.cache
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.dll
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\aplikasi-penyewaan-truk-domain.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Debug\domain.csprojResolveAssemblyReference.cache

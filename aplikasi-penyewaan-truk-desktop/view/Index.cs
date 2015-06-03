@@ -30,11 +30,14 @@ namespace desktop.view
         // Form Transaksi.
         SewaEntryForm sewaEntryForm;
         SuratJalanEntryForm suratJalanEntryForm;
+        KwitansiSupirEntryForm kwitansiSupirEntryForm;
         InvoiceEntryForm invoiceEntryForm;
 
+        // Form Laporan
         LaporanSewaForm laporanSewaForm;
         LaporanSuratJalanForm laporanSuratJalanForm;
         LaporanInvoiceForm laporanInvoiceForm;
+        LaporanKwitansiSupirForm laporanKwitansiSupirForm;
 
         // Node Click Variable.
         String nodeCaption = "";
@@ -43,7 +46,6 @@ namespace desktop.view
         {
             InitializeComponent();
             treeView1.ExpandAll();
-            
         }
 
         #region Handler Component
@@ -80,6 +82,12 @@ namespace desktop.view
                     lblNodeInfo.Text = "";
                     break;
             }
+        }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            nodeCaption = e.Node.Name;
+            navigateHandler(nodeCaption);
         }
 
         private void kernetHandler()
@@ -159,7 +167,7 @@ namespace desktop.view
                 customerListForm.WindowState = FormWindowState.Maximized;
                 customerListForm.Show();
             }
-            else if (this.ruteListForm != null)
+            else if (this.customerListForm != null)
             {
                 customerListForm.MdiParent = this;
                 this.customerListForm.BringToFront();
@@ -176,7 +184,7 @@ namespace desktop.view
                 jenisTrukListForm.WindowState = FormWindowState.Maximized;
                 jenisTrukListForm.Show();
             }
-            else if (this.ruteListForm != null)
+            else if (this.jenisTrukListForm != null)
             {
                 jenisTrukListForm.MdiParent = this;
                 this.jenisTrukListForm.BringToFront();
@@ -196,6 +204,31 @@ namespace desktop.view
             kernetHandler();
         }
 
+        private void supirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            supirHandler();
+        }
+
+        private void jenisTrukToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            jenisTrukHandler();
+        }
+
+        private void trukToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            trukHandler();
+        }
+
+        private void ruteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ruteHandler();
+        }
+
+        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            customerHandler();
+        }
+
         private void sewaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.sewaEntryForm == null || this.sewaEntryForm.IsDisposed)
@@ -207,17 +240,6 @@ namespace desktop.view
             {
                 sewaEntryForm.Show();
             }
-        }
-
-        private void supirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            supirHandler();
-        }
-
-        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
-        {
-            nodeCaption = e.Node.Name;
-            navigateHandler(nodeCaption);
         }
 
         private void suratJalanToolStripMenuItem_Click(object sender, EventArgs e)
@@ -244,31 +266,6 @@ namespace desktop.view
             {
                 invoiceEntryForm.Show();
             }
-        }
-
-        private void keluarAplikasiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
-        private void jenisTrukToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            jenisTrukHandler();
-        }
-
-        private void trukToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            trukHandler();
-        }
-
-        private void ruteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ruteHandler();
-        }
-
-        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            customerHandler();
         }
 
         private void sewaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -309,6 +306,42 @@ namespace desktop.view
                 laporanInvoiceForm.Show();
             }
         }
+
+        private void kwitansiSupirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.kwitansiSupirEntryForm == null || this.kwitansiSupirEntryForm.IsDisposed)
+            {
+                kwitansiSupirEntryForm = new KwitansiSupirEntryForm();
+                kwitansiSupirEntryForm.Show();
+            }
+            else if (this.kwitansiSupirEntryForm != null)
+            {
+                kwitansiSupirEntryForm.Show();
+            }
         }
-    }
+
+        private void kwitansiSupirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (this.laporanKwitansiSupirForm == null || this.laporanKwitansiSupirForm.IsDisposed)
+            {
+                laporanKwitansiSupirForm = new LaporanKwitansiSupirForm();
+                laporanKwitansiSupirForm.Show();
+            }
+            else if (this.laporanInvoiceForm != null)
+            {
+                laporanKwitansiSupirForm.Show();
+            }
+        }
+
+        private void keluarAplikasiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void Index_Load(object sender, EventArgs e)
+        {
+
+        }
+     }
+ }
 

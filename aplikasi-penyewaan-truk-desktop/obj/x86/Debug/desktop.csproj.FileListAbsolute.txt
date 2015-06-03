@@ -74,3 +74,263 @@ D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-p
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
 D:\kkp terakhir\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe.config
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.exe
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.pdb
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.pdb
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\MySql.Data.dll
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.Properties.Resources.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.CustomerEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SuratJalanEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.TrukEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.HargaRuteTrukEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.JenisTrukEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KernetEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.RuteEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SewaEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SupirEntryForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.Index.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.CustomerListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaRuteTruk.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.JenisTrukListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.KernetListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.RuteListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SupirListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukListForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\kuliah dll\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe.config
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.exe
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.pdb
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.pdb
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\MySql.Data.dll
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.Properties.Resources.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.CustomerEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SuratJalanEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.TrukEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.HargaRuteTrukEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.JenisTrukEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KernetEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.RuteEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SewaEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SupirEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.Index.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.CustomerListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaRuteTruk.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.JenisTrukListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.KernetListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.RuteListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SupirListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukListForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaSupir.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KwitansiSupirEntryForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanKwitansiSupirForm.resources
+D:\kuliah\kuliah\KKP\kkp penyewaan truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListKwitansiForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe.config
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.exe
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.pdb
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.pdb
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.Properties.Resources.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanKwitansiSupirForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.CustomerEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KwitansiSupirEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SuratJalanEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.TrukEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.HargaRuteTrukEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.JenisTrukEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KernetEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.RuteEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SewaEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SupirEntryForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.Index.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.CustomerListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaRuteTruk.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaSupir.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.JenisTrukListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.KernetListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.RuteListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListKwitansiForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SupirListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukListForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kuliah\kuliah\TA\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.login.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe.config
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.exe
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.pdb
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.pdb
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.Properties.Resources.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanKwitansiSupirForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.CustomerEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KwitansiSupirEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SuratJalanEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.TrukEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.HargaRuteTrukEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.JenisTrukEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KernetEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.RuteEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SewaEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SupirEntryForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.Index.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.login.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.CustomerListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaRuteTruk.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaSupir.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.JenisTrukListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.KernetListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.RuteListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListKwitansiForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SupirListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukListForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\kuliah\kuliah\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe.config
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.exe
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.pdb
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.Properties.Resources.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanKwitansiSupirForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.CustomerEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KwitansiSupirEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SuratJalanEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.TrukEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.HargaRuteTrukEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.JenisTrukEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KernetEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.RuteEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SewaEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SupirEntryForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.Index.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.login.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.CustomerListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaRuteTruk.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaSupir.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.JenisTrukListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.KernetListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.RuteListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListKwitansiForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SupirListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukListForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.pdb
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\TciToolboxInstaller.exe
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
+D:\kuliah\Kedepan\TA\SIstem Penyewaan Truk\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe.config
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.exe
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.csprojResolveAssemblyReference.cache
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.Properties.Resources.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanInvoiceForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanKwitansiSupirForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSuratJalanForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.LaporanSewaForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.report.ShowReportForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.CustomerEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.InvoiceEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KwitansiSupirEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SuratJalanEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.TrukEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.HargaRuteTrukEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.JenisTrukEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.KernetEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.RuteEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SewaEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.SupirEntryForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.Index.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.login.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.CustomerListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaRuteTruk.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditKeteranganSewaDetail.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.EditHargaSupir.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.JenisTrukListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.KernetListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.RuteListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SewaListKwitansiForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SupirListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.SuratJalanListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukListForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.popup.TrukPopUpForm.resources
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.csproj.GenerateResource.Cache
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.exe
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\desktop.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.dll
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb

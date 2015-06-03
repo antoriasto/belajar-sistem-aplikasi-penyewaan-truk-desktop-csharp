@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="model\Customer.cs" />
     <Compile Include="model\Invoice.cs" />
+    <Compile Include="model\KwitansiSupir.cs" />
     <Compile Include="model\SewaDetail.cs" />
     <Compile Include="model\enumerasi\Command.cs" />
     <Compile Include="model\enumerasi\StatusTruk.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="service\IInvoiceService.cs" />
     <Compile Include="service\IJenisTrukService.cs" />
     <Compile Include="service\IKernetService.cs" />
+    <Compile Include="service\IKwitansiSupirService.cs" />
     <Compile Include="service\IRuteService.cs" />
     <Compile Include="service\ISewaDetailService.cs" />
     <Compile Include="service\ISewaService.cs" />

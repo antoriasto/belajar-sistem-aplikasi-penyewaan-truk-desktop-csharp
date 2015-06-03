@@ -10,6 +10,8 @@ namespace domain.model
         private String id;
         private DateTime tanggal;
         private Decimal totalHarga;
+        private Decimal totalHargaSupir;
+
 
         // custom field.
         private Customer customer;
@@ -36,6 +38,12 @@ namespace domain.model
         {
             get { return totalHarga; }
             set { totalHarga = value; }
+        }
+
+        public Decimal TotalHargaSupir
+        {
+            get { return totalHargaSupir; }
+            set { totalHargaSupir = value; }
         }
 
         public Customer Customer

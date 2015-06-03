@@ -24,10 +24,10 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO harga_truk_rute (HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA) values(@1,@2,@3,@4)";
+        private readonly string insertQuery = "INSERT INTO harga_truk_rute (HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA, HARGA_SUPIR) values(@1,@2,@3,@4,@5)";
 
         private readonly string updateQuery = "UPDATE harga_truk_rute " +
-            "set HARGA=@1, RUTE_ID=@2, TRUK_ID=@3 " + "where HARGA_TRUK_RUTE_ID=@4";
+            "set HARGA=@1, RUTE_ID=@2, TRUK_ID=@3, HARGA_SUPIR=@5 " + "where HARGA_TRUK_RUTE_ID=@4";
 
         private readonly string deleteQuery = "DELETE from harga_truk_rute " +
             "where HARGA_TRUK_RUTE_ID=@1";
@@ -35,7 +35,7 @@ namespace core.dao
         private readonly string deleteByTrukIdQuery = "DELETE from harga_truk_rute " +
             "where TRUK_ID=@1";
 
-        private readonly string findByIdQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA " +
+        private readonly string findByIdQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA, HARGA_SUPIR " +
             "from harga_truk_rute " +
             "where HARGA_TRUK_RUTE_ID= @1";
 
@@ -43,15 +43,15 @@ namespace core.dao
             "from harga_truk_rute " +
             "ORDER BY HARGA_TRUK_RUTE_ID DESC";
 
-        private readonly string findAllDataQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA " +
+        private readonly string findAllDataQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA, HARGA_SUPIR " +
             "from harga_truk_rute " +
             "where NOMOR_POLISI LIKE @1 OR SUPIR_ID =@2 OR JENIS_TRUK_ID =@3 OR STATUS =@4";
 
-        private readonly string findAllDataByTrukIdQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA " +
+        private readonly string findAllDataByTrukIdQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA, HARGA_SUPIR " +
             "from harga_truk_rute " +
             "where TRUK_ID = @1";
 
-        private readonly string findAllDataByRuteIdQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA " +
+        private readonly string findAllDataByRuteIdQuery = "SELECT HARGA_TRUK_RUTE_ID, RUTE_ID, TRUK_ID, HARGA, HARGA_SUPIR " +
             "from harga_truk_rute " +
             "where RUTE_ID = @1";
 
@@ -104,6 +104,8 @@ namespace core.dao
                 cmd.Parameters.AddWithValue("@2", h.Rute.Id);
                 cmd.Parameters.AddWithValue("@3", h.Truk.Id);
                 cmd.Parameters.AddWithValue("@4", h.Harga);
+                cmd.Parameters.AddWithValue("@5", h.Harga_supir);
+
 
                 cmd.ExecuteNonQuery();
 
@@ -120,6 +122,8 @@ namespace core.dao
                 cmd.Parameters.AddWithValue("@2", h.Rute.Id);
                 cmd.Parameters.AddWithValue("@3", h.Truk.Id);
                 cmd.Parameters.AddWithValue("@4", h.Id);
+                cmd.Parameters.AddWithValue("@5", h.Harga_supir);
+
 
                 int x = cmd.ExecuteNonQuery();
                 return h;
@@ -238,6 +242,7 @@ namespace core.dao
             h.Truk = new Truk((mdr.GetString("TRUK_ID")));
             h.Rute = new Rute((mdr.GetString("RUTE_ID")));
             h.Harga = mdr.GetDecimal("HARGA");
+            h.Harga_supir = mdr.GetDecimal("HARGA_SUPIR");
             h.Status = Command.None;
 
             return h;

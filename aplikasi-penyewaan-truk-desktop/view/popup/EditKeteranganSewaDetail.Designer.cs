@@ -116,6 +116,7 @@
             this.txtKeterangan.Name = "txtKeterangan";
             this.txtKeterangan.Size = new System.Drawing.Size(304, 86);
             this.txtKeterangan.TabIndex = 9;
+            this.txtKeterangan.TextChanged += new System.EventHandler(this.txtKeterangan_TextChanged);
             // 
             // label4
             // 
@@ -144,6 +145,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 244);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditKeteranganSewaDetail";

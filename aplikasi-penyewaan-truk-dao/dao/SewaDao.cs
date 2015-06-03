@@ -23,13 +23,13 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO Sewa (SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID) values(@1,@2,@3,@4)";
+        private readonly string insertQuery = "INSERT INTO Sewa (SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, HARGA_TOTAL_SUPIR, CUSTOMER_ID) values(@1,@2,@3,@4,@5)";
 
         private readonly string generateIdQuery = "SELECT SEWA_ID " +
             "from Sewa " +
             "ORDER BY SEWA_ID DESC";
 
-        private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
+        private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, HARGA_TOTAL_SUPIR, CUSTOMER_ID " +
             "from sewa " +
             "where SEWA_ID= @1";
 
@@ -41,10 +41,10 @@ namespace core.dao
                     "from Sewa " +
                     "where SEWA_ID like @1";
 
-        private readonly string findAllDataQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID " +
+        private readonly string findAllDataQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, HARGA_TOTAL_SUPIR, CUSTOMER_ID " +
             "from sewa where CUSTOMER_ID like @1 limit @2, @3";
 
-        private readonly string findAllDataNotInSuratJalanQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, CUSTOMER_ID FROM sewa " + 
+        private readonly string findAllDataNotInSuratJalanQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, HARGA_TOTAL_SUPIR, CUSTOMER_ID FROM sewa " + 
             "WHERE SEWA_ID NOT IN ( SELECT SEWA_ID FROM surat_jalan);";
 
         #endregion
@@ -64,7 +64,8 @@ namespace core.dao
                 cmd.Parameters.AddWithValue("@1", sewa.Id);
                 cmd.Parameters.AddWithValue("@2", sewa.Tanggal);
                 cmd.Parameters.AddWithValue("@3", sewa.TotalHarga);
-                cmd.Parameters.AddWithValue("@4", sewa.Customer.Id);
+                cmd.Parameters.AddWithValue("@4", sewa.TotalHargaSupir);
+                cmd.Parameters.AddWithValue("@5", sewa.Customer.Id);
 
                 int x = cmd.ExecuteNonQuery();
                 return sewa;
@@ -171,6 +172,7 @@ namespace core.dao
             s.Id = mdr.GetString("SEWA_ID");
             s.Tanggal = mdr.GetDateTime("TANGGAL_SEWA");
             s.TotalHarga = mdr.GetDecimal("HARGA_TOTAL");
+            s.TotalHargaSupir = mdr.GetDecimal("HARGA_TOTAL_SUPIR");
             s.Customer = new Customer(mdr.GetString("CUSTOMER_ID"));
 
             return s;

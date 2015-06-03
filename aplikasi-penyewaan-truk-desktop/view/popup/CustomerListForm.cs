@@ -96,6 +96,12 @@ namespace desktop.view.popup
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
+            initializeDataListView();
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
 
     }

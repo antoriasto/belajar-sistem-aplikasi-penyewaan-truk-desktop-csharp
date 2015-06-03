@@ -35,12 +35,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BetterListViewExpress, Version=3.9.1.0, Culture=neutral, PublicKeyToken=e6c91a3add447be2, processorArchitecture=MSIL" />
+    <Reference Include="BetterListViewExpress, Version=3.13.0.0, Culture=neutral, PublicKeyToken=e6c91a3add447be2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\ube\Documents\Component Owl\Better ListView Express Samples\C#\bin\BetterListViewExpress.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -55,6 +62,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TciToolboxInstaller">
+      <HintPath>C:\Program Files\Component Owl\Better ListView Express\TciToolboxInstaller.exe</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -65,11 +75,29 @@
       <DependentUpon>InvoiceReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="report\KwitansiSupirPrinted.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KwitansiSupirPrinted.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\KwitansiSupirReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KwitansiSupirReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="report\LaporanInvoiceForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="report\LaporanInvoiceForm.Designer.cs">
       <DependentUpon>LaporanInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\LaporanKwitansiSupirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\LaporanKwitansiSupirForm.Designer.cs">
+      <DependentUpon>LaporanKwitansiSupirForm.cs</DependentUpon>
     </Compile>
     <Compile Include="report\LaporanSuratJalanForm.cs">
       <SubType>Form</SubType>
@@ -131,6 +159,12 @@
     <Compile Include="view\entry\InvoiceEntryForm.Designer.cs">
       <DependentUpon>InvoiceEntryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\entry\KwitansiSupirEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\entry\KwitansiSupirEntryForm.Designer.cs">
+      <DependentUpon>KwitansiSupirEntryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\entry\SuratJalanEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +219,12 @@
     <Compile Include="view\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\popup\CustomerListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +242,12 @@
     </Compile>
     <Compile Include="view\popup\EditKeteranganSewaDetail.Designer.cs">
       <DependentUpon>EditKeteranganSewaDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\EditHargaSupir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\EditHargaSupir.Designer.cs">
+      <DependentUpon>EditHargaSupir.cs</DependentUpon>
     </Compile>
     <Compile Include="view\popup\JenisTrukListForm.cs">
       <SubType>Form</SubType>
@@ -226,6 +272,12 @@
     </Compile>
     <Compile Include="view\popup\SewaListForm.Designer.cs">
       <DependentUpon>SewaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\popup\SewaListKwitansiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\popup\SewaListKwitansiForm.Designer.cs">
+      <DependentUpon>SewaListKwitansiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="view\popup\SupirListForm.cs">
       <SubType>Form</SubType>
@@ -265,8 +317,19 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InvoiceReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="report\KwitansiSupirPrinted.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>KwitansiSupirPrinted.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\KwitansiSupirReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>KwitansiSupirReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\LaporanInvoiceForm.resx">
       <DependentUpon>LaporanInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\LaporanKwitansiSupirForm.resx">
+      <DependentUpon>LaporanKwitansiSupirForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="report\LaporanSuratJalanForm.resx">
       <DependentUpon>LaporanSuratJalanForm.cs</DependentUpon>
@@ -299,6 +362,9 @@
     <EmbeddedResource Include="view\entry\InvoiceEntryForm.resx">
       <DependentUpon>InvoiceEntryForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\entry\KwitansiSupirEntryForm.resx">
+      <DependentUpon>KwitansiSupirEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\entry\SuratJalanEntryForm.resx">
       <DependentUpon>SuratJalanEntryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +392,9 @@
     <EmbeddedResource Include="view\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\popup\CustomerListForm.resx">
       <DependentUpon>CustomerListForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\EditKeteranganSewaDetail.resx">
       <DependentUpon>EditKeteranganSewaDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\EditHargaSupir.resx">
+      <DependentUpon>EditHargaSupir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\JenisTrukListForm.resx">
       <DependentUpon>JenisTrukListForm.cs</DependentUpon>
@@ -346,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\SewaListForm.resx">
       <DependentUpon>SewaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\popup\SewaListKwitansiForm.resx">
+      <DependentUpon>SewaListKwitansiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\popup\SupirListForm.resx">
       <DependentUpon>SupirListForm.cs</DependentUpon>
@@ -399,6 +474,9 @@
     <Content Include="resources\printer-remote.ico" />
     <Content Include="resources\Save_16.png" />
     <Content Include="resources\Truck-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

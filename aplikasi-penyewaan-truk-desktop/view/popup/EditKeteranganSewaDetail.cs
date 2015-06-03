@@ -36,6 +36,11 @@ namespace desktop.view.popup
             }
         }
 
+        private void txtKeterangan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
 
     }

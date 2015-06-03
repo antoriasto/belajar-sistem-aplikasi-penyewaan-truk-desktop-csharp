@@ -35,6 +35,8 @@
             this.betterListViewColumnHeader2 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader11 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader12 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.btnBatal = new System.Windows.Forms.Button();
+            this.btnPilih = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.lvSewa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,8 +55,9 @@
             this.lvSewa.GridLines = ComponentOwl.BetterListView.BetterListViewGridLines.Grid;
             this.lvSewa.Location = new System.Drawing.Point(12, 12);
             this.lvSewa.Name = "lvSewa";
-            this.lvSewa.Size = new System.Drawing.Size(511, 216);
+            this.lvSewa.Size = new System.Drawing.Size(511, 211);
             this.lvSewa.TabIndex = 22;
+            this.lvSewa.SelectedIndexChanged += new System.EventHandler(this.lvSewa_SelectedIndexChanged);
             this.lvSewa.DoubleClick += new System.EventHandler(this.lvSewa_DoubleClick);
             // 
             // betterListViewColumnHeader10
@@ -87,15 +90,39 @@
             this.betterListViewColumnHeader12.Text = "Nama Customer";
             this.betterListViewColumnHeader12.Width = 186;
             // 
+            // btnBatal
+            // 
+            this.btnBatal.Location = new System.Drawing.Point(439, 242);
+            this.btnBatal.Name = "btnBatal";
+            this.btnBatal.Size = new System.Drawing.Size(75, 23);
+            this.btnBatal.TabIndex = 23;
+            this.btnBatal.Text = "Batal";
+            this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
+            // 
+            // btnPilih
+            // 
+            this.btnPilih.Location = new System.Drawing.Point(358, 242);
+            this.btnPilih.Name = "btnPilih";
+            this.btnPilih.Size = new System.Drawing.Size(75, 23);
+            this.btnPilih.TabIndex = 24;
+            this.btnPilih.Text = "Pilih";
+            this.btnPilih.UseVisualStyleBackColor = true;
+            this.btnPilih.Click += new System.EventHandler(this.btnPilih_Click);
+            // 
             // SewaListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 240);
+            this.ClientSize = new System.Drawing.Size(535, 282);
+            this.Controls.Add(this.btnPilih);
+            this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.lvSewa);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SewaListForm";
             this.Text = "SewaListForm";
+            this.Load += new System.EventHandler(this.SewaListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lvSewa)).EndInit();
             this.ResumeLayout(false);
 
@@ -109,5 +136,7 @@
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader2;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader11;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader12;
+        private System.Windows.Forms.Button btnBatal;
+        private System.Windows.Forms.Button btnPilih;
     }
 }

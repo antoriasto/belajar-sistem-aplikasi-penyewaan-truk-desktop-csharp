@@ -144,6 +144,7 @@
             // 
             this.txtNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNama.Location = new System.Drawing.Point(83, 39);
+            this.txtNama.MaxLength = 55;
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(329, 21);
             this.txtNama.TabIndex = 4;
@@ -173,6 +174,7 @@
             this.txtKernetId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKernetId.Enabled = false;
             this.txtKernetId.Location = new System.Drawing.Point(83, 12);
+            this.txtKernetId.MaxLength = 15;
             this.txtKernetId.Name = "txtKernetId";
             this.txtKernetId.Size = new System.Drawing.Size(329, 21);
             this.txtKernetId.TabIndex = 2;
@@ -181,6 +183,7 @@
             // 
             this.txtAlamat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAlamat.Location = new System.Drawing.Point(83, 66);
+            this.txtAlamat.MaxLength = 100;
             this.txtAlamat.Name = "txtAlamat";
             this.txtAlamat.Size = new System.Drawing.Size(329, 21);
             this.txtAlamat.TabIndex = 7;
@@ -199,6 +202,7 @@
             // 
             this.txtNoTelefon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoTelefon.Location = new System.Drawing.Point(83, 93);
+            this.txtNoTelefon.MaxLength = 15;
             this.txtNoTelefon.Name = "txtNoTelefon";
             this.txtNoTelefon.Size = new System.Drawing.Size(329, 21);
             this.txtNoTelefon.TabIndex = 9;
@@ -212,9 +216,11 @@
             this.ClientSize = new System.Drawing.Size(424, 240);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KernetEntryForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kernet Entry Form";
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

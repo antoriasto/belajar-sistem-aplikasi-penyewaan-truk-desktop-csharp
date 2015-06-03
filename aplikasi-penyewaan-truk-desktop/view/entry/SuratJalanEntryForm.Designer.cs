@@ -364,11 +364,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCariSewa);
             this.Controls.Add(this.lvSuratJalan);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SuratJalanEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SuratJalanEntryForm";
+            this.Load += new System.EventHandler(this.SuratJalanEntryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lvSuratJalan)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);

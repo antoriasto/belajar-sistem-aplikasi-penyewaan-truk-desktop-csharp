@@ -47,5 +47,10 @@ namespace desktop.report
             sf.crystalReportViewer1.Zoom(100);
             sf.Show();
         }
+
+        private void dtpEnd_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

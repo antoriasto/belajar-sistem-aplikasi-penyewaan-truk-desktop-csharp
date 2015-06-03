@@ -49,6 +49,7 @@
     <Compile Include="dao\InvoiceDao.cs" />
     <Compile Include="dao\JenisTrukDao.cs" />
     <Compile Include="dao\KernetDao.cs" />
+    <Compile Include="dao\KwitansiSupirDao.cs" />
     <Compile Include="dao\RuteDao.cs" />
     <Compile Include="dao\SewaDao.cs" />
     <Compile Include="dao\SewaDetailDao.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="implementasi\InvoiceServiceImpl.cs" />
     <Compile Include="implementasi\JenisTrukServiceImpl.cs" />
     <Compile Include="implementasi\KernetServiceImpl.cs" />
+    <Compile Include="implementasi\KwitansiSupirServiceImpl.cs" />
     <Compile Include="implementasi\RuteServiceImpl.cs" />
     <Compile Include="implementasi\SewaDetailServiceImpl.cs" />
     <Compile Include="implementasi\SewaServiceImpl.cs" />

@@ -42,11 +42,10 @@
             this.betterListViewColumnHeader9 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader10 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader11 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
-            this.betterListViewColumnHeader12 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader14 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader13 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTambah = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtJenisTrukNama = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,6 +54,9 @@
             this.lblTrukId = new System.Windows.Forms.Label();
             this.lblJenisTrukId = new System.Windows.Forms.Label();
             this.txtJenisTrukId = new System.Windows.Forms.TextBox();
+            this.btnTambah = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
@@ -115,9 +117,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.lvHargaRute, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnTambah, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnEdit, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.btnDelete, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtJenisTrukNama, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
@@ -126,11 +126,14 @@
             this.tableLayoutPanel1.Controls.Add(this.lblTrukId, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblJenisTrukId, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtJenisTrukId, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnTambah, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btnDelete, 2, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -138,6 +141,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(601, 352);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
@@ -150,9 +154,10 @@
             this.lvHargaRute.Columns.Add(this.betterListViewColumnHeader9);
             this.lvHargaRute.Columns.Add(this.betterListViewColumnHeader10);
             this.lvHargaRute.Columns.Add(this.betterListViewColumnHeader11);
-            this.lvHargaRute.Columns.Add(this.betterListViewColumnHeader12);
+            this.lvHargaRute.Columns.Add(this.betterListViewColumnHeader14);
+            this.lvHargaRute.Columns.Add(this.betterListViewColumnHeader13);
             this.lvHargaRute.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvHargaRute.Location = new System.Drawing.Point(88, 121);
+            this.lvHargaRute.Location = new System.Drawing.Point(88, 123);
             this.lvHargaRute.Name = "lvHargaRute";
             this.tableLayoutPanel1.SetRowSpan(this.lvHargaRute, 3);
             this.lvHargaRute.Size = new System.Drawing.Size(419, 218);
@@ -181,62 +186,45 @@
             // betterListViewColumnHeader11
             // 
             this.betterListViewColumnHeader11.Name = "betterListViewColumnHeader11";
-            this.betterListViewColumnHeader11.Text = "Harga";
-            this.betterListViewColumnHeader11.Width = 195;
+            this.betterListViewColumnHeader11.Text = "Harga Truk";
+            this.betterListViewColumnHeader11.Width = 96;
             // 
-            // betterListViewColumnHeader12
+            // betterListViewColumnHeader14
             // 
-            this.betterListViewColumnHeader12.Name = "betterListViewColumnHeader12";
-            this.betterListViewColumnHeader12.Text = "Status";
-            this.betterListViewColumnHeader12.Width = 84;
+            this.betterListViewColumnHeader14.Name = "betterListViewColumnHeader14";
+            this.betterListViewColumnHeader14.Text = "Harga Supir";
+            // 
+            // betterListViewColumnHeader13
+            // 
+            this.betterListViewColumnHeader13.Name = "betterListViewColumnHeader13";
+            this.betterListViewColumnHeader13.Text = "Status";
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 126);
+            this.label1.Location = new System.Drawing.Point(13, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Rute Truk";
             // 
-            // btnTambah
-            // 
-            this.btnTambah.Location = new System.Drawing.Point(513, 121);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(75, 23);
-            this.btnTambah.TabIndex = 19;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.UseVisualStyleBackColor = true;
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
-            // 
             // btnEdit
             // 
             this.btnEdit.Enabled = false;
-            this.btnEdit.Location = new System.Drawing.Point(513, 150);
+            this.btnEdit.Location = new System.Drawing.Point(513, 152);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 20;
-            this.btnEdit.Text = "Ubah";
+            this.btnEdit.Text = "Harga Truk";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(513, 179);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 21;
-            this.btnDelete.Text = "Hapus";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 98);
+            this.label2.Location = new System.Drawing.Point(13, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 22;
@@ -245,7 +233,7 @@
             // txtJenisTrukNama
             // 
             this.txtJenisTrukNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtJenisTrukNama.Location = new System.Drawing.Point(88, 94);
+            this.txtJenisTrukNama.Location = new System.Drawing.Point(88, 95);
             this.txtJenisTrukNama.Name = "txtJenisTrukNama";
             this.txtJenisTrukNama.ReadOnly = true;
             this.txtJenisTrukNama.Size = new System.Drawing.Size(419, 21);
@@ -312,6 +300,38 @@
             this.txtJenisTrukId.TabIndex = 29;
             this.txtJenisTrukId.Visible = false;
             // 
+            // btnTambah
+            // 
+            this.btnTambah.Location = new System.Drawing.Point(513, 94);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Size = new System.Drawing.Size(75, 23);
+            this.btnTambah.TabIndex = 19;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(513, 181);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Harga Supir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Enabled = false;
+            this.btnDelete.Location = new System.Drawing.Point(513, 123);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 21;
+            this.btnDelete.Text = "Hapus";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
@@ -363,11 +383,13 @@
             this.ClientSize = new System.Drawing.Size(601, 415);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HargaRuteTrukEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HargaRuteTrukEntryForm";
+            this.Load += new System.EventHandler(this.HargaRuteTrukEntryForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvHargaRute)).EndInit();
@@ -401,12 +423,14 @@
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader9;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader10;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader11;
-        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader12;
         private System.Windows.Forms.Label lblJenisTrukId;
         private System.Windows.Forms.TextBox txtJenisTrukId;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Label label6;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader14;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader13;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -10,6 +10,7 @@ namespace domain.model
     {
         private String id;
         private Decimal harga;
+        private Decimal harga_supir;
 
         // Custom field.
         private Truk truk;
@@ -20,6 +21,10 @@ namespace domain.model
 
         // Field Tambahan, ini salah konsep.
         private String keterangan;
+
+        public HargaRuteTruk() { }
+
+        public HargaRuteTruk(String id) { this.id = id; }
 
         public String Keterangan
         {
@@ -37,6 +42,11 @@ namespace domain.model
         {
             get { return harga; }
             set { harga = value; }
+        }
+        public Decimal Harga_supir
+        {
+            get { return harga_supir; }
+            set { harga_supir = value; }
         }
 
         public Truk Truk

@@ -160,9 +160,11 @@
             // 
             this.txtNamaJenis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNamaJenis.Location = new System.Drawing.Point(83, 39);
+            this.txtNamaJenis.MaxLength = 55;
             this.txtNamaJenis.Name = "txtNamaJenis";
             this.txtNamaJenis.Size = new System.Drawing.Size(417, 21);
             this.txtNamaJenis.TabIndex = 4;
+            this.txtNamaJenis.TextChanged += new System.EventHandler(this.txtNamaJenis_TextChanged);
             // 
             // label2
             // 
@@ -189,6 +191,7 @@
             this.txtJenisTrukId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtJenisTrukId.Enabled = false;
             this.txtJenisTrukId.Location = new System.Drawing.Point(83, 12);
+            this.txtJenisTrukId.MaxLength = 5;
             this.txtJenisTrukId.Name = "txtJenisTrukId";
             this.txtJenisTrukId.Size = new System.Drawing.Size(417, 21);
             this.txtJenisTrukId.TabIndex = 2;
@@ -223,6 +226,7 @@
             this.ClientSize = new System.Drawing.Size(512, 210);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JenisTrukEntryForm";

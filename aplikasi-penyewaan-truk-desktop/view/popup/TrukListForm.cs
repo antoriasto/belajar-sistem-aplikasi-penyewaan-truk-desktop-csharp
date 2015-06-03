@@ -120,6 +120,7 @@ namespace desktop.view.popup
             else
             {
                 btnEdit.Enabled = false;
+                btnEditHargaRuteTruk.Enabled = false;
             }
         }
 
@@ -183,6 +184,11 @@ namespace desktop.view.popup
             TrukEntryForm t = new TrukEntryForm(null);
             t.ShowDialog();
             initializeListView(trukService.cariDaftarTruk(""));
+        }
+
+        private void TrukListForm_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

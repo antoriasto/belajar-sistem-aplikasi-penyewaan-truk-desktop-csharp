@@ -45,6 +45,7 @@
             this.betterListViewColumnHeader3 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader4 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader9 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader14 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader5 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader6 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             this.betterListViewColumnHeader7 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
@@ -70,11 +71,14 @@
             this.txtCustomerId = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblHargaSupirTotal = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblJumlahTruk = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.cachedSuratJalanReport1 = new desktop.report.CachedSuratJalanReport();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvCartTruk)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -165,6 +169,7 @@
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader3);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader4);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader9);
+            this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader14);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader5);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader6);
             this.lvCartTruk.Columns.Add(this.betterListViewColumnHeader7);
@@ -233,6 +238,11 @@
             this.betterListViewColumnHeader9.Name = "betterListViewColumnHeader9";
             this.betterListViewColumnHeader9.Text = "Harga";
             // 
+            // betterListViewColumnHeader14
+            // 
+            this.betterListViewColumnHeader14.Name = "betterListViewColumnHeader14";
+            this.betterListViewColumnHeader14.Text = "Harga Supir";
+            // 
             // betterListViewColumnHeader5
             // 
             this.betterListViewColumnHeader5.AllowResize = false;
@@ -260,7 +270,7 @@
             // columnKeterangan
             // 
             this.columnKeterangan.Name = "columnKeterangan";
-            this.columnKeterangan.Text = "Keterangan";
+            this.columnKeterangan.Text = "Nomor DN";
             // 
             // label8
             // 
@@ -282,6 +292,7 @@
             this.lblHargaTotal.Size = new System.Drawing.Size(35, 13);
             this.lblHargaTotal.TabIndex = 23;
             this.lblHargaTotal.Text = "Rp. 0";
+            this.lblHargaTotal.Click += new System.EventHandler(this.lblHargaTotal_Click);
             // 
             // groupBox1
             // 
@@ -415,6 +426,7 @@
             // txtCustomerTelefon
             // 
             this.txtCustomerTelefon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCustomerTelefon.Enabled = false;
             this.txtCustomerTelefon.Location = new System.Drawing.Point(80, 59);
             this.txtCustomerTelefon.Name = "txtCustomerTelefon";
             this.txtCustomerTelefon.Size = new System.Drawing.Size(252, 21);
@@ -433,6 +445,7 @@
             // txtCustomerAlamat
             // 
             this.txtCustomerAlamat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCustomerAlamat.Enabled = false;
             this.txtCustomerAlamat.Location = new System.Drawing.Point(80, 86);
             this.txtCustomerAlamat.Name = "txtCustomerAlamat";
             this.txtCustomerAlamat.Size = new System.Drawing.Size(252, 21);
@@ -441,6 +454,7 @@
             // txtCustomerNama
             // 
             this.txtCustomerNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCustomerNama.Enabled = false;
             this.txtCustomerNama.Location = new System.Drawing.Point(80, 31);
             this.txtCustomerNama.Name = "txtCustomerNama";
             this.txtCustomerNama.Size = new System.Drawing.Size(252, 21);
@@ -469,6 +483,7 @@
             // txtCustomerId
             // 
             this.txtCustomerId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCustomerId.Enabled = false;
             this.txtCustomerId.Location = new System.Drawing.Point(80, 3);
             this.txtCustomerId.Name = "txtCustomerId";
             this.txtCustomerId.Size = new System.Drawing.Size(252, 21);
@@ -488,6 +503,8 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblHargaSupirTotal);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.lblJumlahTruk);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label8);
@@ -496,6 +513,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(411, 226);
             this.panel2.TabIndex = 27;
+            // 
+            // lblHargaSupirTotal
+            // 
+            this.lblHargaSupirTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHargaSupirTotal.AutoSize = true;
+            this.lblHargaSupirTotal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHargaSupirTotal.Location = new System.Drawing.Point(136, 63);
+            this.lblHargaSupirTotal.Name = "lblHargaSupirTotal";
+            this.lblHargaSupirTotal.Size = new System.Drawing.Size(35, 13);
+            this.lblHargaSupirTotal.TabIndex = 28;
+            this.lblHargaSupirTotal.Text = "Rp. 0";
+            this.lblHargaSupirTotal.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Harga Supir Total: ";
             // 
             // lblJumlahTruk
             // 
@@ -564,6 +603,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(964, 704);
@@ -634,5 +674,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnEdit;
         private ComponentOwl.BetterListView.BetterListViewColumnHeader columnKeterangan;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader14;
+        private System.Windows.Forms.Label lblHargaSupirTotal;
+        private System.Windows.Forms.Label label3;
+        private report.CachedSuratJalanReport cachedSuratJalanReport1;
     }
 }

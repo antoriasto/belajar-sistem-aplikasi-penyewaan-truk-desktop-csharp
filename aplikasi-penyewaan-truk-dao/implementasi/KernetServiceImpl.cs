@@ -116,7 +116,7 @@ namespace core.implementasi
             return null;
         }
 
-        public IList<Kernet> cariDaftarTruk(String search)
+        public IList<Kernet> cariDaftarKernet(String search)
         {
             try
             {

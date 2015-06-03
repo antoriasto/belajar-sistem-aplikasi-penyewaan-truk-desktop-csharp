@@ -182,6 +182,7 @@
             // 
             this.txtNomorPolisi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomorPolisi.Location = new System.Drawing.Point(91, 39);
+            this.txtNomorPolisi.MaxLength = 55;
             this.txtNomorPolisi.Name = "txtNomorPolisi";
             this.txtNomorPolisi.Size = new System.Drawing.Size(383, 21);
             this.txtNomorPolisi.TabIndex = 4;
@@ -213,6 +214,7 @@
             this.txtTrukId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTrukId.Enabled = false;
             this.txtTrukId.Location = new System.Drawing.Point(91, 12);
+            this.txtTrukId.MaxLength = 15;
             this.txtTrukId.Name = "txtTrukId";
             this.txtTrukId.Size = new System.Drawing.Size(383, 21);
             this.txtTrukId.TabIndex = 2;
@@ -398,6 +400,7 @@
             this.ClientSize = new System.Drawing.Size(593, 357);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrukEntryForm";

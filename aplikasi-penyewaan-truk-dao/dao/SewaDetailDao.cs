@@ -22,9 +22,9 @@ namespace core.dao
         // Script semua Query yang diapake.
         // Create, Find, Update, Delete.
         // ----------------------------
-        private readonly string insertQuery = "INSERT INTO sewa_detail (SEWA_ID, TRUK_ID, HARGA, KETERANGAN) values(@1,@2,@3,@4)";
+        private readonly string insertQuery = "INSERT INTO sewa_detail (SEWA_ID, HARGA_TRUK_RUTE_ID, HARGA, HARGA_SUPIR, NO_REF_DN) values(@1,@2,@3,@4,@5)";
 
-        private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA " +
+        private readonly string findByIdQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA, HARGA_SUPIR " +
             "from Sewa " +
             "where SEWA_ID= @1";
 
@@ -36,10 +36,10 @@ namespace core.dao
                     "from sewa_detail " +
                     "where SEWA_ID like @1";
 
-        private readonly string findAllDataQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, KETERANGAN " +
+        private readonly string findAllDataQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, HARGA_SUPIR, NO_REF_DN " +
             "from sewa_detail where SEWA_ID like @1 limit @2, @3";
 
-        private readonly string findAllDataBySewaIdQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, KETERANGAN " +
+        private readonly string findAllDataBySewaIdQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, HARGA_SUPIR, NO_REF_DN " +
             "from sewa_detail where SEWA_ID=@1 limit @2, @3";
 
         #endregion
@@ -59,6 +59,8 @@ namespace core.dao
                 cmd.Parameters.AddWithValue("@1", sewaDetail.Id);
                 cmd.Parameters.AddWithValue("@2", sewaDetail.Truk.Id);
                 cmd.Parameters.AddWithValue("@3", sewaDetail.Price);
+                cmd.Parameters.AddWithValue("@4", sewaDetail.Harga_supir);
+
 
                 int x = cmd.ExecuteNonQuery();
                 return sewaDetail;
@@ -127,6 +129,7 @@ namespace core.dao
                 cmd.Parameters.AddWithValue("@1", id);
                 cmd.Parameters.AddWithValue("@2", 0);
                 cmd.Parameters.AddWithValue("@3", 300);
+                cmd.Parameters.AddWithValue("@4", 300);
 
                 using (MySqlDataReader mdr = cmd.ExecuteReader())
                 {
@@ -145,7 +148,8 @@ namespace core.dao
             s.Id = mdr.GetString("SEWA_ID");
             s.Truk = new Truk(mdr.GetString("TRUK_ID"));
             s.Price = mdr.GetDecimal("HARGA");
-            s.Keterangan = mdr.GetString("KETERANGAN");
+            s.Harga_supir = mdr.GetDecimal("HARGA_SUPIR");
+            s.Keterangan = mdr.GetString("NO_REF_DN");
             return s;
         }
 
@@ -158,9 +162,10 @@ namespace core.dao
                 using (MySqlCommand cmd = new MySqlCommand(insertQuery, connection)) {
                 
                     cmd.Parameters.AddWithValue("@1", s.Id);
-                    cmd.Parameters.AddWithValue("@2", s.Truk.Id);
+                    cmd.Parameters.AddWithValue("@2", s.HargaRuteTruk.Id);
                     cmd.Parameters.AddWithValue("@3", s.Price);
-                    cmd.Parameters.AddWithValue("@4", s.Keterangan);
+                    cmd.Parameters.AddWithValue("@4", s.Harga_supir);
+                    cmd.Parameters.AddWithValue("@5", s.Keterangan);
                     
                     int x = cmd.ExecuteNonQuery();
                 }

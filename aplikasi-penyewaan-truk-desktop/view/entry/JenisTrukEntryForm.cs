@@ -109,5 +109,10 @@ namespace desktop.view.entry
             this.Dispose();
         }
 
+        private void txtNamaJenis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

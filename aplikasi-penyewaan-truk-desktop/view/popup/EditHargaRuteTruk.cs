@@ -53,5 +53,10 @@ namespace desktop.view.popup
             this.Dispose();
         }
 
+        private void EditHargaRuteTruk_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

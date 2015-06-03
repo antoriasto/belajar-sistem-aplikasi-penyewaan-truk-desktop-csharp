@@ -15,5 +15,10 @@ namespace desktop.report
         {
             InitializeComponent();
         }
+
+        private void ShowReportForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

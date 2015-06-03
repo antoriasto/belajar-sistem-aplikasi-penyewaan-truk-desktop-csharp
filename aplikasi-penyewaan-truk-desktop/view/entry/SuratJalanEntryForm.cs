@@ -46,7 +46,7 @@ namespace desktop.view.entry
             if (s.GetSewaId != null) 
             {
                 if (!s.GetSewaId.Equals("")) {
-                    MessageBox.Show(s.GetSewaId);
+                    //MessageBox.Show(s.GetSewaId);
                     Sewa sewa = sewaService.findById(s.GetSewaId);
                     txtNoSewa.Text = sewa.Id;
                     txtNamaCustomer.Text = customerService.cari(sewa.Customer.Id).Nama;
@@ -62,9 +62,12 @@ namespace desktop.view.entry
         private void initializeListView() 
         {
             lvSuratJalan.Items.Clear();
-            if (listSewaDetail != null) {
-                if (listSewaDetail.Count > 0) {
-                    foreach (SewaDetail s in listSewaDetail) {
+            if (listSewaDetail != null)
+            {
+                if (listSewaDetail.Count > 0)
+                {
+                    foreach (SewaDetail s in listSewaDetail)
+                    {
                         BetterListViewItem items = new BetterListViewItem(s.Id);
                         items.SubItems.Add(s.Truk.Id);
                         Truk truk = trukService.cari(s.Truk.Id);
@@ -83,22 +86,26 @@ namespace desktop.view.entry
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            if (txtNoSuratJalan.Text.Equals("")) {
+            if (txtNoSuratJalan.Text.Equals(""))
+            {
                 MessageCustom.messageWarning("Surat Jalan", "Nomor Sewa Belum Di Input");
                 return;
-            } else {
-                SuratJalan sj = new SuratJalan();
-                sj.Id = txtNoSuratJalan.Text;
-                sj.Tanggal = DateTime.Now;
-                sj.Sewa = new Sewa(txtNoSewa.Text);
+            } else
+                {
+                    SuratJalan sj = new SuratJalan();
+                    sj.Id = txtNoSuratJalan.Text;
+                    sj.Tanggal = DateTime.Now;
+                    sj.Sewa = new Sewa(txtNoSewa.Text);
 
-                if (suratJalanService.save(sj) != null) {
-                    MessageCustom.messageInfo("Surat Jalan", "Data Berhasil Di Simpan");
-                    printedReport();
-                    this.Dispose();
-                } else {
-                    MessageCustom.messageCritical("Surat Jalan", "Data Gagal Di Simpan");
-                }
+                    if (suratJalanService.save(sj) != null)
+                         {
+                             MessageCustom.messageInfo("Surat Jalan", "Data Berhasil Di Simpan");
+                             printedReport();
+                             this.Dispose();
+                         } else 
+                    {
+                        MessageCustom.messageCritical("Surat Jalan", "Data Gagal Di Simpan");
+                    }
             }
         }
 
@@ -125,6 +132,11 @@ namespace desktop.view.entry
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SuratJalanEntryForm_Load(object sender, EventArgs e)
         {
 
         }
