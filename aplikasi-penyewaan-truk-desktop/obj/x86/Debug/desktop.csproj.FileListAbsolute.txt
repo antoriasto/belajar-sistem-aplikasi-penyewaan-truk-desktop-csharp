@@ -334,3 +334,4 @@ G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk
 G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.dll
 G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\core.pdb
 G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\bin\Debug\aplikasi-penyewaan-truk-domain.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-desktop\obj\x86\Debug\desktop.view.entry.DphEntryForm.resources

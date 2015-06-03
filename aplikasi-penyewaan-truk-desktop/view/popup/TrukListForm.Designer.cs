@@ -47,6 +47,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnEditHargaRuteTruk = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.betterListViewColumnHeader7 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             ((System.ComponentModel.ISupportInitialize)(this.lvTruk)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             this.lvTruk.Columns.Add(this.betterListViewColumnHeader4);
             this.lvTruk.Columns.Add(this.betterListViewColumnHeader5);
             this.lvTruk.Columns.Add(this.betterListViewColumnHeader6);
+            this.lvTruk.Columns.Add(this.betterListViewColumnHeader7);
             this.lvTruk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvTruk.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvTruk.GridLines = ComponentOwl.BetterListView.BetterListViewGridLines.Grid;
@@ -196,6 +198,11 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // betterListViewColumnHeader7
+            // 
+            this.betterListViewColumnHeader7.Name = "betterListViewColumnHeader7";
+            this.betterListViewColumnHeader7.Text = "Status";
+            // 
             // TrukListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,5 +245,6 @@
         private System.Windows.Forms.ToolStripButton btnEditHargaRuteTruk;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader7;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using domain.model;
+using domain.model.enumerasi;
 
 namespace domain.service
 {
@@ -16,6 +17,8 @@ namespace domain.service
         Truk cari(String id);
         Boolean validatePoliceNumber(String policeNumber);
         String nomorOtomatis();
-        IList<Truk> cariDaftarTruk(String search); 
+        IList<Truk> cariDaftarTruk(String search);
+        long countAllDataByJenisTruk(String jenisTrukId);
+        long countAllDataByJenisTrukAndStatus(String jenisTrukId, StatusTruk statusTruk);
     }
 }

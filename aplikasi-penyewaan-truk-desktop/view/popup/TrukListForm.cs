@@ -73,6 +73,7 @@ namespace desktop.view.popup
                     items.SubItems.Add(t.JenisTruk.Id);
                     JenisTruk jt = jenisTrukService.cari(t.JenisTruk.Id);
                     items.SubItems.Add(jt.Nama);
+                    
                 }
                 else
                 {
@@ -91,7 +92,7 @@ namespace desktop.view.popup
                     items.SubItems.Add("");
                     items.SubItems.Add("");
                 }
-
+                items.SubItems.Add(t.Status);
                 lvTruk.Items.Add(items);
             }
         }

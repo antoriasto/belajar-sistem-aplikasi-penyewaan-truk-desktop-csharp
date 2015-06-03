@@ -60,6 +60,14 @@ namespace core.dao
             "from Truk " +
             "where NOMOR_POLISI LIKE @1 OR SUPIR_ID =@2 OR JENIS_TRUK_ID =@3 OR STATUS =@4";
 
+        private readonly string countAllTrukByJenisQuery = "SELECT count(Truk.TRUK_ID) " +
+                    "from Truk " +
+                    "where JENIS_TRUK_ID = @1";
+
+        private readonly string countAllTrukByJenisAndStatusQuery = "SELECT count(Truk.TRUK_ID) " +
+                    "from Truk " +
+                    "where JENIS_TRUK_ID = @1 AND STATUS = @2 ";
+
         #endregion
 
         #region Dao Data Acces Object
@@ -247,6 +255,44 @@ namespace core.dao
             }
             return jumlahbaris;
         }
+
+        public long countAllDataByJenisTruk(String jenisTrukId)
+        {
+            int jumlahbaris = 0;
+
+            using (MySqlCommand cmd = new MySqlCommand(countAllTrukByJenisQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@1", jenisTrukId);
+                using (MySqlDataReader mdr = cmd.ExecuteReader())
+                {
+                    if (mdr.Read())
+                    {
+                        jumlahbaris = mdr.GetInt32("count(Truk.TRUK_ID)");
+                    }
+                }
+            }
+            return jumlahbaris;
+        }
+
+        public long countAllDataByJenisTrukAndStatus(String jenisTrukId, StatusTruk statusTruk)
+        {
+            int jumlahbaris = 0;
+
+            using (MySqlCommand cmd = new MySqlCommand(countAllTrukByJenisAndStatusQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@1", jenisTrukId);
+                cmd.Parameters.AddWithValue("@2", statusTruk.ToString());
+                using (MySqlDataReader mdr = cmd.ExecuteReader())
+                {
+                    if (mdr.Read())
+                    {
+                        jumlahbaris = mdr.GetInt32("count(Truk.TRUK_ID)");
+                    }
+                }
+            }
+            return jumlahbaris;
+        }
+
 
         public List<Truk> findAllData(String search)
         {

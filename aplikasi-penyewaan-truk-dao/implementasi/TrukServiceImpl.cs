@@ -219,5 +219,48 @@ namespace core.implementasi
                 hargaRuteTrukDao.setConnection = null;
             }
         }
+
+
+        public long countAllDataByJenisTruk(string jenisTrukId)
+        {
+            try
+            {
+                trukDao.setConnection = connection;
+                connection.Open();
+                return trukDao.countAllDataByJenisTruk(jenisTrukId);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 0;
+            }
+            finally
+            {
+                connection.Close();
+                trukDao.setConnection = null;
+                hargaRuteTrukDao.setConnection = null;
+            }
+        }
+
+        public long countAllDataByJenisTrukAndStatus(string jenisTrukId, domain.model.enumerasi.StatusTruk statusTruk)
+        {
+            try
+            {
+                trukDao.setConnection = connection;
+                connection.Open();
+                return trukDao.countAllDataByJenisTrukAndStatus(jenisTrukId, statusTruk);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 0;
+            }
+            finally
+            {
+                connection.Close();
+                trukDao.setConnection = null;
+                hargaRuteTrukDao.setConnection = null;
+            }
+        }
     }
 }

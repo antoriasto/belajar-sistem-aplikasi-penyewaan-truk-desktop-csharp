@@ -43,6 +43,9 @@
             this.btnEdit = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+            this.betterListViewColumnHeader1 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader2 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
+            this.betterListViewColumnHeader3 = new ComponentOwl.BetterListView.BetterListViewColumnHeader();
             ((System.ComponentModel.ISupportInitialize)(this.lvJenisTruk)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -54,6 +57,9 @@
             this.lvJenisTruk.Columns.Add(this.betterListViewColumnHeader5);
             this.lvJenisTruk.Columns.Add(this.betterListViewColumnHeader6);
             this.lvJenisTruk.Columns.Add(this.betterListViewColumnHeader7);
+            this.lvJenisTruk.Columns.Add(this.betterListViewColumnHeader1);
+            this.lvJenisTruk.Columns.Add(this.betterListViewColumnHeader2);
+            this.lvJenisTruk.Columns.Add(this.betterListViewColumnHeader3);
             this.lvJenisTruk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvJenisTruk.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvJenisTruk.Location = new System.Drawing.Point(0, 25);
@@ -160,6 +166,21 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // betterListViewColumnHeader1
+            // 
+            this.betterListViewColumnHeader1.Name = "betterListViewColumnHeader1";
+            this.betterListViewColumnHeader1.Text = "Jumlah truk";
+            // 
+            // betterListViewColumnHeader2
+            // 
+            this.betterListViewColumnHeader2.Name = "betterListViewColumnHeader2";
+            this.betterListViewColumnHeader2.Text = "Jumlah yang tersedia";
+            // 
+            // betterListViewColumnHeader3
+            // 
+            this.betterListViewColumnHeader3.Name = "betterListViewColumnHeader3";
+            this.betterListViewColumnHeader3.Text = "Jumlah yang beroperasi";
+            // 
             // JenisTrukListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,5 +219,8 @@
         private System.Windows.Forms.ToolStripButton btnRefresh;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader1;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader2;
+        private ComponentOwl.BetterListView.BetterListViewColumnHeader betterListViewColumnHeader3;
     }
 }

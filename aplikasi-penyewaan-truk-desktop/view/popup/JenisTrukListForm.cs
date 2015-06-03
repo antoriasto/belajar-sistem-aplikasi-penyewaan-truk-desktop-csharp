@@ -19,6 +19,7 @@ namespace desktop.view.popup
     {
         private JenisTruk jenisTruk;
         IJenisTrukService jenisTrukService;
+        ITrukService trukService;
 
         public JenisTruk GetJenisTruk
         {
@@ -29,6 +30,7 @@ namespace desktop.view.popup
         {
             InitializeComponent();
             jenisTrukService = new JenisTrukServiceImpl();
+            trukService = new TrukServiceImpl();
             if (pf == ProfilForm.Menu) {
                 statusStrip1.Hide();
                 this.ControlBox = false;
@@ -66,6 +68,10 @@ namespace desktop.view.popup
                         items.SubItems.Add(j.Nama);
                         items.SubItems.Add(j.Kubikasi);
                         items.SubItems.Add(j.Tonase);
+
+                        items.SubItems.Add(trukService.countAllDataByJenisTruk(j.Id));
+                        items.SubItems.Add(trukService.countAllDataByJenisTrukAndStatus(j.Id, domain.model.enumerasi.StatusTruk.Tersedia));
+                        items.SubItems.Add(trukService.countAllDataByJenisTrukAndStatus(j.Id, domain.model.enumerasi.StatusTruk.Sedang_Beroperasi));
 
                         lvJenisTruk.Items.Add(items);
                     }
