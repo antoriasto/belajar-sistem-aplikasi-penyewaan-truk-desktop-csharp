@@ -47,6 +47,26 @@ namespace desktop.view.popup
 
         }
 
+
+        public KernetListForm(ProfilForm pf, IList<Supir> supirList)
+        {
+            InitializeComponent();
+            this.profilForm = pf;
+            kernetService = new KernetServiceImpl();
+            initializeListView(supirList);
+
+            if (pf == ProfilForm.Menu)
+            {
+                statusStrip1.Hide();
+            }
+            else
+            {
+                toolStrip1.Hide();
+            }
+
+        }
+
+
         private void btnTambah_Click(object sender, EventArgs e)
         {
             KernetEntryForm k = new KernetEntryForm(null);
@@ -74,6 +94,43 @@ namespace desktop.view.popup
                 }
             }
             
+        }
+
+        private void initializeListView(IList<Supir> supirList)
+        {
+            lvKernet.Items.Clear();
+            IList<Kernet> list = kernetService.cariDaftarKernet("");
+            if (list != null)
+            {
+                if (list.Count > 0)
+                {
+                    foreach (Kernet k in list)
+                    {
+                            if (!isHaving(supirList, k.Id))
+                            {
+                                BetterListViewItem items = new BetterListViewItem(k.Id);
+                                items.SubItems.Add(k.Nama);
+                                items.SubItems.Add(k.Alamat);
+                                items.SubItems.Add(k.NomorHp);
+
+                                lvKernet.Items.Add(items);
+                            }
+                    }
+                }
+            }
+
+        }
+
+        private Boolean isHaving(IList<Supir> supirList, String id)
+        {
+            foreach (Supir s in supirList)
+            {
+                if (s.Kernet.Id.Equals(id))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private void lvKernet_SelectedIndexChanged(object sender, EventArgs e)

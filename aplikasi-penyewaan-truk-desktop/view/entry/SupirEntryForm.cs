@@ -177,7 +177,7 @@ namespace desktop.view.entry
         {
             KernetListForm j = null;
             if (j == null) {
-                j = new KernetListForm(ProfilForm.Unknow);
+                j = new KernetListForm(ProfilForm.Unknow, supirService.cariDaftarSupir(""));
                 j.ShowDialog(this);
 
                 if (j.GetKernet != null) {
