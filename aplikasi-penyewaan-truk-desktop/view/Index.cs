@@ -32,6 +32,7 @@ namespace desktop.view
         SuratJalanEntryForm suratJalanEntryForm;
         KwitansiSupirEntryForm kwitansiSupirEntryForm;
         InvoiceEntryForm invoiceEntryForm;
+        DphEntryForm dphEntryForm;
 
         // Form Laporan
         LaporanSewaForm laporanSewaForm;
@@ -341,6 +342,19 @@ namespace desktop.view
         private void Index_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dPHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this. dphEntryForm== null || this.dphEntryForm.IsDisposed)
+            {
+                dphEntryForm = new DphEntryForm();
+                dphEntryForm.Show();
+            }
+            else if (this.dphEntryForm != null)
+            {
+                dphEntryForm.Show();
+            }
         }
      }
  }

@@ -1,0 +1,1 @@
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-dao\obj\Release\core.csprojResolveAssemblyReference.cache

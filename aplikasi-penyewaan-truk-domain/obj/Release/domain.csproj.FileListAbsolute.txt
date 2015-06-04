@@ -1,0 +1,4 @@
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Release\aplikasi-penyewaan-truk-domain.dll
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\bin\Release\aplikasi-penyewaan-truk-domain.pdb
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Release\aplikasi-penyewaan-truk-domain.dll
+G:\belajar-sistem-aplikasi-penyewaan-truk-desktop-csharp\aplikasi-penyewaan-truk-domain\obj\Release\aplikasi-penyewaan-truk-domain.pdb

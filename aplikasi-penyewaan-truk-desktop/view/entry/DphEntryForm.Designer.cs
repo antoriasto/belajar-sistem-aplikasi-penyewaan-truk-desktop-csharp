@@ -44,7 +44,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtNoSewa = new System.Windows.Forms.TextBox();
+            this.txtNoDph = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
@@ -111,6 +111,7 @@
             this.btnCariCustomer.TabIndex = 24;
             this.btnCariCustomer.Text = "Cari";
             this.btnCariCustomer.UseVisualStyleBackColor = true;
+            this.btnCariCustomer.Click += new System.EventHandler(this.btnCariCustomer_Click);
             // 
             // txtCustomerTelefon
             // 
@@ -210,7 +211,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label19, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txtNoSewa, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtNoDph, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -250,13 +251,13 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(252, 21);
             this.dateTimePicker1.TabIndex = 2;
             // 
-            // txtNoSewa
+            // txtNoDph
             // 
-            this.txtNoSewa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNoSewa.Location = new System.Drawing.Point(81, 3);
-            this.txtNoSewa.Name = "txtNoSewa";
-            this.txtNoSewa.Size = new System.Drawing.Size(252, 21);
-            this.txtNoSewa.TabIndex = 3;
+            this.txtNoDph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNoDph.Location = new System.Drawing.Point(81, 3);
+            this.txtNoDph.Name = "txtNoDph";
+            this.txtNoDph.Size = new System.Drawing.Size(252, 21);
+            this.txtNoDph.TabIndex = 3;
             // 
             // panel1
             // 
@@ -279,6 +280,7 @@
             this.btnSimpan.TabIndex = 17;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnBatal
             // 
@@ -339,7 +341,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txtNoSewa;
+        private System.Windows.Forms.TextBox txtNoDph;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnBatal;

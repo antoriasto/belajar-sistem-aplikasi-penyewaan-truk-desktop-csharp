@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\CustomerDao.cs" />
+    <Compile Include="dao\DphDao.cs" />
     <Compile Include="dao\HargaRuteTrukDao.cs" />
     <Compile Include="dao\InvoiceDao.cs" />
     <Compile Include="dao\JenisTrukDao.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="dao\SuratJalanDao.cs" />
     <Compile Include="dao\TrukDao.cs" />
     <Compile Include="implementasi\CustomerServiceImpl.cs" />
+    <Compile Include="implementasi\DphServiceImpl.cs" />
     <Compile Include="implementasi\HargaRuteTrukServiceImpl.cs" />
     <Compile Include="implementasi\InvoiceServiceImpl.cs" />
     <Compile Include="implementasi\JenisTrukServiceImpl.cs" />
