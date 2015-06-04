@@ -11,13 +11,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Dumping database structure for truck_db
-DROP DATABASE IF EXISTS `truck_db`;
 CREATE DATABASE IF NOT EXISTS `truck_db` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `truck_db`;
 
 
 -- Dumping structure for table truck_db.customer
-DROP TABLE IF EXISTS `customer`;
 CREATE TABLE IF NOT EXISTS `customer` (
   `CUSTOMER_ID` varchar(15) NOT NULL DEFAULT '',
   `NAMA_CUSTOMER` varchar(55) NOT NULL DEFAULT '',
@@ -29,8 +27,20 @@ CREATE TABLE IF NOT EXISTS `customer` (
 -- Data exporting was unselected.
 
 
+-- Dumping structure for table truck_db.dph
+CREATE TABLE IF NOT EXISTS `dph` (
+  `DPH_ID` varchar(15) NOT NULL DEFAULT '',
+  `TANGGAL_DPH` date NOT NULL,
+  `CUSTOMER_ID` varchar(15) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`DPH_ID`),
+  KEY `CUSTOMER_ID` (`CUSTOMER_ID`),
+  CONSTRAINT `dph` FOREIGN KEY (`CUSTOMER_ID`) REFERENCES `customer` (`CUSTOMER_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+-- Data exporting was unselected.
+
+
 -- Dumping structure for table truck_db.harga_truk_rute
-DROP TABLE IF EXISTS `harga_truk_rute`;
 CREATE TABLE IF NOT EXISTS `harga_truk_rute` (
   `HARGA_TRUK_RUTE_ID` varchar(15) NOT NULL DEFAULT '',
   `RUTE_ID` varchar(15) NOT NULL,
@@ -48,7 +58,6 @@ CREATE TABLE IF NOT EXISTS `harga_truk_rute` (
 
 
 -- Dumping structure for table truck_db.invoice
-DROP TABLE IF EXISTS `invoice`;
 CREATE TABLE IF NOT EXISTS `invoice` (
   `INVOICE_ID` varchar(15) NOT NULL,
   `TANGGAL_INVOICE` date NOT NULL DEFAULT '0000-00-00',
@@ -62,7 +71,6 @@ CREATE TABLE IF NOT EXISTS `invoice` (
 
 
 -- Dumping structure for table truck_db.jenis_truk
-DROP TABLE IF EXISTS `jenis_truk`;
 CREATE TABLE IF NOT EXISTS `jenis_truk` (
   `JENIS_TRUK_ID` varchar(5) NOT NULL DEFAULT '',
   `NAMA_JENIS_TRUK` varchar(55) NOT NULL DEFAULT '',
@@ -75,7 +83,6 @@ CREATE TABLE IF NOT EXISTS `jenis_truk` (
 
 
 -- Dumping structure for table truck_db.kernet
-DROP TABLE IF EXISTS `kernet`;
 CREATE TABLE IF NOT EXISTS `kernet` (
   `KERNET_ID` varchar(15) NOT NULL DEFAULT '',
   `NAMA_KERNET` varchar(55) NOT NULL DEFAULT '',
@@ -88,7 +95,6 @@ CREATE TABLE IF NOT EXISTS `kernet` (
 
 
 -- Dumping structure for table truck_db.kwitansi_supir
-DROP TABLE IF EXISTS `kwitansi_supir`;
 CREATE TABLE IF NOT EXISTS `kwitansi_supir` (
   `KWITANSI_SUPIR_ID` varchar(15) NOT NULL DEFAULT '',
   `SEWA_ID` varchar(15) NOT NULL,
@@ -102,7 +108,6 @@ CREATE TABLE IF NOT EXISTS `kwitansi_supir` (
 
 
 -- Dumping structure for table truck_db.rute
-DROP TABLE IF EXISTS `rute`;
 CREATE TABLE IF NOT EXISTS `rute` (
   `RUTE_ID` varchar(15) NOT NULL DEFAULT '',
   `NAMA_RUTE` varchar(55) NOT NULL DEFAULT '',
@@ -113,7 +118,6 @@ CREATE TABLE IF NOT EXISTS `rute` (
 
 
 -- Dumping structure for table truck_db.sewa
-DROP TABLE IF EXISTS `sewa`;
 CREATE TABLE IF NOT EXISTS `sewa` (
   `SEWA_ID` varchar(15) NOT NULL DEFAULT '',
   `TANGGAL_SEWA` date NOT NULL,
@@ -129,7 +133,6 @@ CREATE TABLE IF NOT EXISTS `sewa` (
 
 
 -- Dumping structure for table truck_db.sewa_detail
-DROP TABLE IF EXISTS `sewa_detail`;
 CREATE TABLE IF NOT EXISTS `sewa_detail` (
   `SEWA_ID` varchar(15) NOT NULL DEFAULT '0',
   `HARGA` decimal(11,0) NOT NULL,
@@ -146,7 +149,6 @@ CREATE TABLE IF NOT EXISTS `sewa_detail` (
 
 
 -- Dumping structure for table truck_db.supir
-DROP TABLE IF EXISTS `supir`;
 CREATE TABLE IF NOT EXISTS `supir` (
   `SUPIR_ID` varchar(15) NOT NULL DEFAULT '',
   `NAMA_SUPIR` varchar(55) NOT NULL DEFAULT '',
@@ -162,7 +164,6 @@ CREATE TABLE IF NOT EXISTS `supir` (
 
 
 -- Dumping structure for table truck_db.surat_jalan
-DROP TABLE IF EXISTS `surat_jalan`;
 CREATE TABLE IF NOT EXISTS `surat_jalan` (
   `SURAT_JALAN_ID` varchar(15) NOT NULL,
   `TANGGAL_SURAT_JALAN` date NOT NULL DEFAULT '0000-00-00',
@@ -176,7 +177,6 @@ CREATE TABLE IF NOT EXISTS `surat_jalan` (
 
 
 -- Dumping structure for table truck_db.truk
-DROP TABLE IF EXISTS `truk`;
 CREATE TABLE IF NOT EXISTS `truk` (
   `TRUK_ID` varchar(15) NOT NULL DEFAULT '',
   `NOMOR_POLISI` varchar(55) NOT NULL,
