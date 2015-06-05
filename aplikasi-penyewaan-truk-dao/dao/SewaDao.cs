@@ -47,6 +47,9 @@ namespace core.dao
         private readonly string findAllDataNotInSuratJalanQuery = "SELECT SEWA_ID, TANGGAL_SEWA, HARGA_TOTAL, HARGA_TOTAL_SUPIR, CUSTOMER_ID FROM sewa " + 
             "WHERE SEWA_ID NOT IN ( SELECT SEWA_ID FROM surat_jalan);";
 
+        private readonly string findAllDataNotInKwitansiQuery = "select * from sewa where sewa.SEWA_ID NOT IN " +
+"(select kwitansi_supir.SEWA_ID from kwitansi_supir);";
+
         #endregion
 
         #region Dao Data Acces Object
@@ -165,6 +168,26 @@ namespace core.dao
             }
             return daftarKernet;
         }
+
+        public List<Sewa> findAllDataNotInKwitansi()
+        {
+            Console.WriteLine(findAllDataQuery);
+
+            List<Sewa> daftarKernet = new List<Sewa>();
+            using (MySqlCommand cmd = new MySqlCommand(findAllDataNotInKwitansiQuery, connection))
+            {
+                using (MySqlDataReader mdr = cmd.ExecuteReader())
+                {
+                    while (mdr.Read())
+                    {
+                        daftarKernet.Add(mappingKeObject(mdr));
+                    }
+                }
+            }
+            return daftarKernet;
+        }
+
+        
 
         private Sewa mappingKeObject(MySqlDataReader mdr)
         {

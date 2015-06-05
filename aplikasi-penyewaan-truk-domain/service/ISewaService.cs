@@ -13,5 +13,6 @@ namespace domain.service
         Sewa findById(String id);
         String autoNumber();
         IList<Sewa> findAllData(String search);
+        IList<Sewa> findAllDataNotInKwitansi();
     }
 }

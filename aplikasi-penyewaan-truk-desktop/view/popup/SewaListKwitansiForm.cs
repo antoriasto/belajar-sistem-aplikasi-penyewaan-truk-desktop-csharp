@@ -28,7 +28,7 @@ namespace desktop.view.popup
         public SewaListKwitansiForm()
         {
             InitializeComponent();
-            listSewa = sewaService.findAllData("");
+            listSewa = sewaService.findAllDataNotInKwitansi();
             initializeListView();
         }
 

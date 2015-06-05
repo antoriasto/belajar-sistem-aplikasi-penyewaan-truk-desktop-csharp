@@ -106,6 +106,26 @@ namespace core.implementasi
             return null;
         }
 
+        public IList<Sewa> findAllDataNotInKwitansi()
+        {
+            try
+            {
+                // Setting koneksi dan buka koneksi.
+                sewaDao.setConnection = connection;
+                connection.Open();
+                return sewaDao.findAllDataNotInKwitansi();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return null;
+        }
+
 
         public Sewa save(Sewa sewa, IList<SewaDetail> detailSewa)
         {

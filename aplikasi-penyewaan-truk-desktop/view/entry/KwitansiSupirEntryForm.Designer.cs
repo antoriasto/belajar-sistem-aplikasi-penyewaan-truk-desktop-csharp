@@ -58,6 +58,8 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCariSewa = new System.Windows.Forms.Button();
+            this.cachedSuratJalanReport1 = new desktop.report.CachedSuratJalanReport();
+            this.cachedSuratJalanReport2 = new desktop.report.CachedSuratJalanReport();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lvKwitansiSupir)).BeginInit();
@@ -410,5 +412,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCariSewa;
+        private report.CachedSuratJalanReport cachedSuratJalanReport1;
+        private report.CachedSuratJalanReport cachedSuratJalanReport2;
     }
 }
