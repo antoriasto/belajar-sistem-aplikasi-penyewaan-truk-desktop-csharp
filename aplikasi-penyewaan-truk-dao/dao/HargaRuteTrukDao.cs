@@ -248,7 +248,22 @@ namespace core.dao
             return h;
         }
 
-
+        public HargaRuteTruk findById(String id)
+        {
+            using (MySqlCommand cmd = new MySqlCommand(findByIdQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@1", id);
+                using (MySqlDataReader mdr = cmd.ExecuteReader())
+                {
+                    if (mdr.Read())
+                    {
+                        HargaRuteTruk h = mappingKeObject(mdr);
+                        return h;
+                    }
+                }
+            }
+            return null;
+        }
 
     }
 }

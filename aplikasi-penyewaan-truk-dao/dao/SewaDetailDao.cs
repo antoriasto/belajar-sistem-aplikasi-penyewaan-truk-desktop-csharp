@@ -36,10 +36,10 @@ namespace core.dao
                     "from sewa_detail " +
                     "where SEWA_ID like @1";
 
-        private readonly string findAllDataQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, HARGA_SUPIR, NO_REF_DN " +
+        private readonly string findAllDataQuery = "SELECT SEWA_ID, HARGA_TRUK_RUTE_ID, HARGA, HARGA_SUPIR, NO_REF_DN " +
             "from sewa_detail where SEWA_ID like @1 limit @2, @3";
 
-        private readonly string findAllDataBySewaIdQuery = "SELECT SEWA_ID, TRUK_ID, HARGA, HARGA_SUPIR, NO_REF_DN " +
+        private readonly string findAllDataBySewaIdQuery = "SELECT SEWA_ID, HARGA_TRUK_RUTE_ID, HARGA, HARGA_SUPIR, NO_REF_DN " +
             "from sewa_detail where SEWA_ID=@1 limit @2, @3";
 
         #endregion
@@ -146,7 +146,9 @@ namespace core.dao
         {
             SewaDetail s = new SewaDetail();
             s.Id = mdr.GetString("SEWA_ID");
-            s.Truk = new Truk(mdr.GetString("TRUK_ID"));
+            //s.Truk = new Truk(mdr.GetString("TRUK_ID"));
+            s.HargaRuteTruk = new HargaRuteTruk();
+            s.HargaRuteTruk.Id = mdr.GetString("HARGA_TRUK_RUTE_ID");
             s.Price = mdr.GetDecimal("HARGA");
             s.Harga_supir = mdr.GetDecimal("HARGA_SUPIR");
             s.Keterangan = mdr.GetString("NO_REF_DN");

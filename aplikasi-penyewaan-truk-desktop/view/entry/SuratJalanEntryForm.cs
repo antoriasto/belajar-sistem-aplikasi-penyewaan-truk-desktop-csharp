@@ -69,8 +69,10 @@ namespace desktop.view.entry
                     foreach (SewaDetail s in listSewaDetail)
                     {
                         BetterListViewItem items = new BetterListViewItem(s.Id);
-                        items.SubItems.Add(s.Truk.Id);
-                        Truk truk = trukService.cari(s.Truk.Id);
+                        items.SubItems.Add(s.HargaRuteTruk.Id);
+                        HargaRuteTruk h = hargaRuteTrukService.findById(s.HargaRuteTruk.Id);
+
+                        Truk truk = trukService.cari(h.Truk.Id);
                         JenisTruk jenisTruk = jenisTrukService.cari(truk.JenisTruk.Id); 
                         items.SubItems.Add(truk.NomorPolisi);
                         items.SubItems.Add(truk.JenisTruk.Id);

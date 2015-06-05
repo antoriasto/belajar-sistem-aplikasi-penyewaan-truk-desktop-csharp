@@ -63,9 +63,11 @@ namespace desktop.view.entry
                 if (listSewaDetail.Count > 0) {
                     foreach (SewaDetail s in listSewaDetail) {
                         BetterListViewItem items = new BetterListViewItem(s.Id);
-                        items.SubItems.Add(s.Truk.Id);
-                        Truk truk = trukService.cari(s.Truk.Id);
-                        JenisTruk jenisTruk = jenisTrukService.cari(truk.JenisTruk.Id); 
+                        items.SubItems.Add(s.HargaRuteTruk.Id);
+                        HargaRuteTruk h = hargaRuteTrukService.findById(s.HargaRuteTruk.Id);
+
+                        Truk truk = trukService.cari(h.Truk.Id);
+                        JenisTruk jenisTruk = jenisTrukService.cari(truk.JenisTruk.Id);
                         items.SubItems.Add(truk.NomorPolisi);
                         items.SubItems.Add(truk.JenisTruk.Id);
                         items.SubItems.Add(jenisTruk.Nama);
@@ -91,9 +93,14 @@ namespace desktop.view.entry
             invoice.SuratJalan = new SuratJalan(txtNoSuratJalan.Text);
 
             IList<Truk> listTruk = new List<Truk>();
-            foreach(SewaDetail s in listSewaDetail) {
-                listTruk.Add(new Truk(s.Truk.Id));
+            if (listTruk.Count > 0)
+            {
+                foreach (SewaDetail s in listSewaDetail)
+                {
+                    listTruk.Add(new Truk(s.Truk.Id));
+                }
             }
+            
 
             if (invoiceService.save(invoice, listTruk)!= null) {
                 MessageCustom.messageInfo("Invoice", "Data Berhasil Di Simpan");

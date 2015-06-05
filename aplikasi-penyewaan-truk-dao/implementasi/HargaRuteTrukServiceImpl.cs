@@ -202,5 +202,27 @@ namespace core.implementasi
                 connection.Close();
             }
         }
+
+        public HargaRuteTruk findById(String id)
+        {
+            try
+            {
+                // Setting koneksi dan buka koneksi di class Dao dari sini.
+                hargaRuteTrukDao.setConnection = connection;
+                connection.Open();
+                return hargaRuteTrukDao.findById(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                // Tutup Koneksi.
+                connection.Close();
+            }
+            return null;
+        }
+
     }
 }
