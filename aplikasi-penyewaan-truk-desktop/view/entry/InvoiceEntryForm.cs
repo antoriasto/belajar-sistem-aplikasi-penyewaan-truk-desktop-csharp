@@ -93,22 +93,36 @@ namespace desktop.view.entry
             invoice.SuratJalan = new SuratJalan(txtNoSuratJalan.Text);
 
             IList<Truk> listTruk = new List<Truk>();
-            if (listTruk.Count > 0)
-            {
+
                 foreach (SewaDetail s in listSewaDetail)
                 {
-                    listTruk.Add(new Truk(s.Truk.Id));
+                    HargaRuteTruk h = hargaRuteTrukService.findById(s.HargaRuteTruk.Id);
+
+                        Truk truk = trukService.cari(h.Truk.Id);
+                    listTruk.Add(new Truk(truk.Id));
                 }
-            }
             
 
-            if (invoiceService.save(invoice, listTruk)!= null) {
-                MessageCustom.messageInfo("Invoice", "Data Berhasil Di Simpan");
-                printedReport();
-                this.Dispose();
-            } else {
-                MessageCustom.messageCritical("Invoice", "Data Gagal Di Simpan");
+
+            if (listTruk.Count == 0)
+            {
+                MessageCustom.messageCritical("Invoice", "Erorr");
             }
+            else
+            {
+                if (invoiceService.save(invoice, listTruk) != null)
+                {
+                    MessageCustom.messageInfo("Invoice", "Data Berhasil Di Simpan");
+                    printedReport();
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageCustom.messageCritical("Invoice", "Data Gagal Di Simpan");
+                }
+            }
+
+            
         }
 
         private void printedReport() {

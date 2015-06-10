@@ -48,17 +48,19 @@ namespace desktop.view.entry
             {
                 if (listSewaDetail.Count > 0)
                 {
-                    foreach (SewaDetail h in listSewaDetail)
+                    foreach (SewaDetail s in listSewaDetail)
                     {
-                        BetterListViewItem items = new BetterListViewItem(h.Id);
-                        items.SubItems.Add(h.Truk.Id);
+                        BetterListViewItem items = new BetterListViewItem(s.Id);
+                        items.SubItems.Add(s.HargaRuteTruk.Id);
+                        HargaRuteTruk h = hargaRuteTrukService.findById(s.HargaRuteTruk.Id);
+
                         Truk truk = trukService.cari(h.Truk.Id);
                         JenisTruk jenisTruk = jenisTrukService.cari(truk.JenisTruk.Id);
                         items.SubItems.Add(truk.NomorPolisi);
                         items.SubItems.Add(truk.JenisTruk.Id);
                         items.SubItems.Add(jenisTruk.Nama);
-                        items.SubItems.Add(FormatRupiah.ToRupiah(Convert.ToInt64(h.Harga_supir.ToString())));
-                        items.SubItems.Add(h.Keterangan);
+                        items.SubItems.Add(FormatRupiah.ToRupiah(Convert.ToInt64(s.Price.ToString())));
+                        items.SubItems.Add(s.Keterangan);
 
                         lvKwitansiSupir.Items.Add(items);
                     }

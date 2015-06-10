@@ -59,6 +59,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNamaCustomer = new System.Windows.Forms.TextBox();
             this.cachedSuratJalanReport1 = new desktop.report.CachedSuratJalanReport();
+            this.cachedSuratJalanReport2 = new desktop.report.CachedSuratJalanReport();
             ((System.ComponentModel.ISupportInitialize)(this.lvSuratJalan)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -416,5 +417,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNamaCustomer;
         private report.CachedSuratJalanReport cachedSuratJalanReport1;
+        private report.CachedSuratJalanReport cachedSuratJalanReport2;
     }
 }
